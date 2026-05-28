@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIVA CAFE / TRATTORIA | 名古屋駅前のカジュアルイタリアン</title>
+  <meta name="description" content="名古屋駅前にある架空のイタリアンカフェ、RIVA CAFE / TRATTORIA。気取らず、おいしく、ちょうどいい。ランチ、カフェ、夜のひと皿まで、気分に合わせて選べるホームページ。">
+  <meta property="og:title" content="RIVA CAFE / TRATTORIA">
+  <meta property="og:description" content="カジュアルでおしゃれなイタリアンカフェの架空サイト。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/riva-hero.svg">
+  <meta name="theme-color" content="#f5ecdf">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Noto+Serif+JP:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5ecdf;
+      --surface: rgba(255, 249, 241, 0.9);
+      --surface-strong: rgba(255, 252, 248, 0.98);
+      --line: rgba(46, 36, 30, 0.1);
+      --text: #2e241e;
+      --muted: #6d5f54;
+      --terracotta: #c86b4a;
+      --olive: #94a58a;
+      --olive-deep: #5d6f59;
+      --gold: #c8a46a;
+      --paper: #fff9f1;
+      --mint: #dde8e0;
+      --shadow: 0 16px 42px rgba(69, 49, 39, 0.08);
+      --shadow-strong: 0 28px 72px rgba(40, 28, 20, 0.16);
+      --radius-xl: 40px;
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: 'Noto Sans JP', system-ui, sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255, 239, 213, 0.9), transparent 18%),
+        radial-gradient(circle at 90% 8%, rgba(148, 165, 138, 0.28), transparent 15%),
+        linear-gradient(180deg, #fffaf5 0%, var(--bg) 100%);
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(70, 48, 35, 0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.24;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 84%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .page {
+      width: min(calc(100% - 28px), var(--max));
+      margin: 0 auto;
+      padding: 18px 0 48px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      border-top: 2px solid var(--olive-deep);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 251, 247, 0.82);
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 800;
+      color: var(--olive-deep);
+      background: linear-gradient(135deg, #fffef8, #e4d3ad 58%, #c99f63);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.88);
+    }
+    .brand-copy strong { display: block; font-size: 0.98rem; }
+    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.78rem; }
+
+    .issue {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2px;
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .issue strong {
+      color: var(--olive-deep);
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      text-transform: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--olive-deep);
+      background: rgba(148, 165, 138, 0.12);
+      border: 1px solid rgba(148, 165, 138, 0.16);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 6px rgba(200, 164, 106, 0.12);
+    }
+
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { font-family: 'Noto Serif JP', serif; }
+    h1 {
+      margin-top: 14px;
+      color: var(--text);
+      font-size: clamp(3rem, 5.8vw, 6rem);
+      line-height: 1.03;
+      letter-spacing: 0.02em;
+      text-wrap: balance;
+    }
+    h2 {
+      color: var(--text);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.03fr 0.97fr;
+      gap: 30px;
+      align-items: center;
+      padding: 34px 0 20px;
+    }
+
+    .deck {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .deck::before,
+    .deck::after {
+      content: '';
+      display: block;
+      width: 34px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .lead {
+      margin-top: 18px;
+      max-width: 41rem;
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.95;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 18px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-meta span::before {
+      content: '';
+      width: 22px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 20px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 900;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .button:hover { transform: translateY(-1px); }
+    .button-primary {
+      color: #fff8ef;
+      background: linear-gradient(135deg, var(--terracotta), #a9442d);
+      box-shadow: 0 16px 32px rgba(168, 72, 44, 0.24);
+    }
+    .button-ghost {
+      color: var(--text);
+      background: rgba(255,255,255,0.8);
+      border-color: var(--line);
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 22px rgba(71, 44, 20, 0.06);
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    .chip::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--olive);
+    }
+
+    .visual {
+      position: relative;
+      min-height: 640px;
+      display: grid;
+      place-items: center;
+      perspective: 1200px;
+    }
+    .visual-shell {
+      width: min(100%, 540px);
+      aspect-ratio: 0.92;
+      border-radius: 34px;
+      padding: 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,248,240,0.72)),
+        linear-gradient(145deg, rgba(46,36,30,0.06), rgba(148,165,138,0.12));
+      border: 1px solid rgba(148, 165, 138, 0.16);
+      box-shadow: var(--shadow-strong);
+      position: relative;
+      overflow: hidden;
+    }
+    .visual-shell::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 22% 18%, rgba(255,255,255,0.92), transparent 18%),
+        radial-gradient(circle at 76% 8%, rgba(148,165,138,0.18), transparent 12%),
+        linear-gradient(135deg, rgba(46,36,30,0.05), transparent 45%);
+      pointer-events: none;
+    }
+
+    .visual-frame {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid rgba(148, 165, 138, 0.16);
+      border-radius: 28px;
+      pointer-events: none;
+    }
+
+    .hero-art {
+      position: absolute;
+      inset: 28px 26px 108px;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
+      background: #fff7eb;
+      transform: translate3d(var(--px, 0px), var(--py, 0px), 0) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+      transition: transform 0.2s ease;
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .visual-note,
+    .visual-tag,
+    .visual-pill {
+      position: absolute;
+      border-radius: 22px;
+      border: 1px solid rgba(148, 165, 138, 0.14);
+      background: rgba(255, 252, 248, 0.84);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 16px 40px rgba(34, 17, 8, 0.11);
+    }
+
+    .visual-note {
+      left: -6px;
+      bottom: 120px;
+      width: 230px;
+      padding: 16px 18px;
+    }
+    .visual-note strong {
+      display: block;
+      color: var(--olive-deep);
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    .visual-note span { color: var(--muted); font-size: 0.84rem; line-height: 1.8; }
+
+    .visual-tag {
+      right: 18px;
+      bottom: 18px;
+      width: 150px;
+      padding: 14px 16px;
+      text-align: right;
+      background: linear-gradient(135deg, rgba(46,36,30,0.96), rgba(93,111,89,0.94));
+      color: #fff9f1;
+      border-color: rgba(255,255,255,0.1);
+      transform: rotate(-4deg);
+    }
+    .visual-tag small {
+      display: block;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0.72;
+      font-size: 0.68rem;
+    }
+    .visual-tag strong {
+      display: block;
+      margin-top: 4px;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.1rem;
+    }
+
+    .visual-pill {
+      top: 34px;
+      right: -2px;
+      width: 180px;
+      padding: 14px 16px;
+      transform: rotate(6deg);
+      background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(221,232,224,0.92));
+    }
+    .visual-pill strong {
+      display: block;
+      font-family: 'Noto Serif JP', serif;
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .section {
+      margin-top: 28px;
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-head p {
+      max-width: 36rem;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 0.96rem;
+    }
+
+    .marquee {
+      margin: 26px -28px 0;
+      overflow: hidden;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.55);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 22px;
+      width: max-content;
+      padding: 14px 0;
+      animation: marquee 24s linear infinite;
+      color: var(--olive-deep);
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .stat {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .stat strong {
+      display: block;
+      color: var(--olive-deep);
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      line-height: 1;
+    }
+    .stat span {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+
+    .card {
+      padding: 22px;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 44px rgba(61, 41, 30, 0.11);
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--terracotta), transparent);
+      opacity: 0.72;
+    }
+    .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
+
+    .menu-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .menu-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .menu-list strong { color: var(--text); }
+    .menu-list span { color: var(--muted); }
+
+    .feature-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .feature {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(221, 232, 224, 0.64);
+      color: var(--olive-deep);
+      border: 1px solid rgba(93, 111, 89, 0.12);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .cta {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 16px;
+      align-items: center;
+      padding: 24px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148, 165, 138, 0.15);
+      background: linear-gradient(135deg, rgba(46,36,30,0.96), rgba(93,111,89,0.93));
+      color: #fff9f1;
+      box-shadow: var(--shadow-strong);
+      margin-top: 28px;
+    }
+    .cta h2, .cta p { color: inherit; }
+    .cta p {
+      margin-top: 12px;
+      color: rgba(255,249,241,0.84);
+      line-height: 1.9;
+    }
+    .cta .button-ghost {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.18);
+      color: #fff9f1;
+    }
+
+    .cta-panel {
+      border-radius: 24px;
+      padding: 20px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+    }
+    .cta-panel .meta {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+      color: rgba(255,249,241,0.88);
+      font-size: 0.92rem;
+    }
+    .cta-panel .meta div {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .cta-panel .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .faq { display: grid; gap: 12px; }
+    .faq details {
+      padding: 18px 20px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.76);
+    }
+    .faq summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
+
+    .footer {
+      margin-top: 28px;
+      padding: 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .float { animation: float 8s ease-in-out infinite; }
+    .float-slow { animation: float 11s ease-in-out infinite reverse; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(var(--rotate, 0deg)); }
+      50% { transform: translateY(-10px) rotate(var(--rotate, 0deg)); }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 980px) {
+      .hero, .cta { grid-template-columns: 1fr; }
+      .visual { min-height: 540px; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+    }
+
+    @media (max-width: 720px) {
+      .page { width: min(calc(100% - 18px), var(--max)); padding-top: 10px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .nav { justify-content: flex-start; }
+      .hero { padding-top: 24px; }
+      .visual-shell { width: 100%; }
+      .visual-pill { width: 162px; }
+      .visual-note { width: 210px; }
+      .section, .cta { padding: 18px; }
+      h1 { font-size: clamp(2.4rem, 13vw, 3.8rem); }
+      .stats { grid-template-columns: 1fr; }
+      .marquee { margin-left: -18px; margin-right: -18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header id="top" class="topbar fade-up">
+      <div class="brand">
+        <div class="brand-mark">R</div>
+        <div class="brand-copy">
+          <strong>RIVA CAFE / TRATTORIA</strong>
+          <span>名古屋駅前のカジュアルイタリアン</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <a href="#concept">Concept</a>
+        <a href="#menu">Menu</a>
+        <a href="#space">Space</a>
+        <a href="#faq">FAQ</a>
+        <a href="#access">Access</a>
+      </nav>
+      <div class="issue">
+        <span>EST. 2026</span>
+        <strong>Easy Italian, Good Mood</strong>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="fade-up">
+        <div class="deck">Editorial / Cafe Feature</div>
+        <span class="eyebrow">Nagoya Station West Exit</span>
+        <h1>気取らず、<br>ちゃんとおいしい。</h1>
+        <p class="lead">RIVA CAFE / TRATTORIA は、昼はやさしいランチ、午後は気分がほどけるカフェ、夜は軽やかなイタリアンと自然派ワインを楽しめる、架空のカフェレストランです。</p>
+        <div class="hero-meta">
+          <span>Terrace 6 seats</span>
+          <span>Indoor 24 seats</span>
+          <span>Cashless only</span>
+          <span>Pet friendly</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">メニューを見る</a>
+          <a class="button button-ghost" href="#access">営業時間と場所</a>
+        </div>
+        <div class="hero-points">
+          <span class="chip">Basil & Tomato</span>
+          <span class="chip">Pasta & Espresso</span>
+          <span class="chip">Lunch / Cafe / Dinner</span>
+        </div>
+      </div>
+
+      <div class="visual fade-up" id="heroVisual">
+        <div class="visual-shell float" style="--rotate:-1deg;">
+          <div class="visual-frame"></div>
+          <div class="hero-art" id="heroArt"><img src="./assets/riva-hero.svg" alt="RIVA CAFE / TRATTORIAのヒーローアート"></div>
+          <div class="visual-pill float-slow" style="--rotate:6deg;">
+            <strong>昼は軽やかに、<br>夜は少しだけ特別に。</strong>
+          </div>
+          <div class="visual-note float-slow" style="--rotate:-3deg;">
+            <strong>Fresh, warm, relaxed</strong>
+            <span>窓辺の光、ハーブの香り、ちょっと気分が上がる色使い。そんな空気をページ全体でつくります。</span>
+          </div>
+          <div class="visual-tag float" style="--rotate:-4deg;">
+            <small>signature</small>
+            <strong>RIVA PLATE</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee fade-up" aria-label="キーワードの流れ">
+      <div class="marquee-track">
+        <span>FRESH PASTA</span><span>ESPRESSO</span><span>OLIVE OIL</span><span>APERITIVO</span><span>TERACE</span><span>HOMEMADE DESSERT</span>
+        <span>FRESH PASTA</span><span>ESPRESSO</span><span>OLIVE OIL</span><span>APERITIVO</span><span>TERACE</span><span>HOMEMADE DESSERT</span>
+      </div>
+    </section>
+
+    <section id="concept" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Concept</span>
+          <h2>参考サイトの構成を、もっとカジュアルに。</h2>
+        </div>
+        <p>メッセージ、3つのメニュー軸、空間、アクセスという流れを踏襲しながら、イタリアンらしい軽さとオシャレさを前面に出した架空のカフェサイトとして再構成しています。</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <strong data-count="6">6</strong>
+          <span>参考にしたページ構成要素。視線の流れをそのまま活かしています。</span>
+        </div>
+        <div class="stat">
+          <strong data-count="3">3</strong>
+          <span>メニューの軸。昼・午後・夜で利用シーンを分けます。</span>
+        </div>
+        <div class="stat">
+          <strong data-count="24">24</strong>
+          <span>想定席数。小さすぎず、でも落ち着けるスケール感です。</span>
+        </div>
+        <div class="stat">
+          <strong data-count="1">1</strong>
+          <span>モバイルでも最初の画面で世界観が伝わるように最適化します。</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Menu</span>
+          <h2>その日の気分で選べる、3つのイタリアン。</h2>
+        </div>
+        <p>参考サイトの「Naturally / Balance / Energy」のように、利用目的が一目で分かる分け方を採用しつつ、イタリアンらしい軽やかさで再編集しています。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <span class="eyebrow">Lunch / Light</span>
+          <h3>やさしく整うプレート</h3>
+          <p>サラダ、スープ、フォカッチャ、季節野菜の小さな副菜を組み合わせた、軽めだけど満足感のある昼の定番です。</p>
+          <div class="feature-bar">
+            <span class="feature">Minestrone</span>
+            <span class="feature">Focaccia</span>
+            <span class="feature">Herb Chicken</span>
+          </div>
+        </div>
+        <div class="card">
+          <span class="eyebrow">Cafe / Balance</span>
+          <h3>午後をゆるめる甘い時間</h3>
+          <p>バスク風チーズケーキ、ティラミス、カフェラテ。砂糖は控えめ、香りはしっかり。ひと息つくためのメニューを中心に。</p>
+          <div class="feature-bar">
+            <span class="feature">Tiramisu</span>
+            <span class="feature">Latte</span>
+            <span class="feature">Gelato</span>
+          </div>
+        </div>
+        <div class="card">
+          <span class="eyebrow">Dinner / Feast</span>
+          <h3>夜は少しだけ特別に</h3>
+          <p>魚介のアクアパッツァ、季節のパスタ、自然派ワイン。会話が続くように、重すぎず軽すぎない夜のバランスで。</p>
+          <div class="feature-bar">
+            <span class="feature">Aperitivo</span>
+            <span class="feature">Seasonal Pasta</span>
+            <span class="feature">Natural Wine</span>
+          </div>
+        </div>
+      </div>
+      <ul class="menu-list" style="margin-top: 16px;">
+        <li><strong>Lunch Set</strong><span>1,420円 / 2,180円</span></li>
+        <li><strong>Cafe Plate</strong><span>1,180円</span></li>
+        <li><strong>Dinner Course</strong><span>3,800円</span></li>
+        <li><strong>Seasonal Pasta</strong><span>1,500円〜</span></li>
+      </ul>
+    </section>
+
+    <section id="space" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Space</span>
+          <h2>自然光とハーブの気配がある、ちょうどいい広さ。</h2>
+        </div>
+        <p>テラス、窓際、カウンター、ボックス席。写真が映えるだけでなく、ひとり時間にも数人の集まりにも使いやすい構成を想定しています。</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Terrace / Window</h3>
+          <p>夕方の光が入るテラス席は、ペット連れや軽い待ち合わせにぴったり。写真もきれいに撮れます。</p>
+        </div>
+        <div class="card">
+          <h3>Counter / Table</h3>
+          <p>一人でも入りやすいカウンターと、2〜4人で使いやすいテーブル席をバランスよく配置します。</p>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top: 16px;">
+        <div class="card">
+          <h3>Seats</h3>
+          <p>店内24席 + テラス6席。小さすぎず、でもうるさくなりすぎないサイズ感。</p>
+        </div>
+        <div class="card">
+          <h3>Comfort</h3>
+          <p>Wi-Fi / 電源 / ベビーカーOK / ペット可。都会の中で使いやすい設計です。</p>
+        </div>
+        <div class="card">
+          <h3>Style</h3>
+          <p>白壁、オーク、セージグリーン。気取らないのに、きちんとおしゃれな空気感。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">FAQ</span>
+          <h2>よくある質問を、先に見せる。</h2>
+        </div>
+        <p>参考サイトと同じく、利用前の不安を先に解消するのが大事です。予約導線の前に、短く読みやすいFAQを置きます。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>予約は必要ですか？</summary>
+          <p>ランチは予約なしでも入りやすい想定ですが、ディナーや土日の利用は予約優先にしています。</p>
+        </details>
+        <details>
+          <summary>子ども連れでも大丈夫？</summary>
+          <p>ベビーカーでの入店がしやすい導線を想定し、テーブル幅もゆったりめにしています。</p>
+        </details>
+        <details>
+          <summary>支払い方法は？</summary>
+          <p>キャッシュレスのみ。クレジットカード、交通系IC、QR決済に対応する設定です。</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="access" class="cta fade-up">
+      <div>
+        <span class="eyebrow">Access / Hours</span>
+        <h2>名古屋駅前で、ふらっと寄れるイタリアン。</h2>
+        <p>架空の店舗設定として、名古屋駅西口から徒歩5分の立地に。ランチ、カフェ、ディナーの時間帯を分けて、自然に使い分けられる導線にしています。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#top">ページ上部へ</a>
+          <a class="button button-ghost" href="#menu">メニュー再表示</a>
+        </div>
+      </div>
+      <div class="cta-panel">
+        <strong style="font-family:'Noto Serif JP',serif;font-size:1.2rem;">RIVA CAFE / TRATTORIA</strong>
+        <div class="meta">
+          <div><span>住所</span><span>名古屋市中村区名駅4-17-18</span></div>
+          <div><span>営業時間</span><span>11:00-22:30</span></div>
+          <div><span>定休日</span><span>月曜</span></div>
+          <div><span>支払方法</span><span>Cashless Only</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Copyright © RIVA CAFE / TRATTORIA Concept Site</footer>
+  </div>
+
+  <script>
+    const revealTargets = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.15 });
+
+    revealTargets.forEach((el, index) => {
+      el.style.transitionDelay = `${Math.min(index * 70, 260)}ms`;
+      observer.observe(el);
+    });
+
+    const animateCount = (el, target) => {
+      const duration = 1200;
+      const start = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(target * eased);
+        el.textContent = value.toLocaleString('ja-JP');
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    const statObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const el = entry.target;
+        const target = Number(el.dataset.count || '0');
+        animateCount(el, target);
+        statObserver.unobserve(el);
+      }
+    }, { threshold: 0.4 });
+
+    document.querySelectorAll('[data-count]').forEach((el) => statObserver.observe(el));
+
+    const hero = document.getElementById('heroArt');
+    const visual = document.getElementById('heroVisual');
+    if (hero && visual) {
+      visual.addEventListener('pointermove', (event) => {
+        const rect = visual.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+        hero.style.setProperty('--px', `${x * 10}px`);
+        hero.style.setProperty('--py', `${y * 8}px`);
+        hero.style.setProperty('--rx', `${(-y * 4).toFixed(2)}deg`);
+        hero.style.setProperty('--ry', `${(x * 5).toFixed(2)}deg`);
+      });
+      visual.addEventListener('pointerleave', () => {
+        hero.style.setProperty('--px', '0px');
+        hero.style.setProperty('--py', '0px');
+        hero.style.setProperty('--rx', '0deg');
+        hero.style.setProperty('--ry', '0deg');
+      });
+    }
+  </script>
+</body>
+</html>
