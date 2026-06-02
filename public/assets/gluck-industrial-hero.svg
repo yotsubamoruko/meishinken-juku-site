@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="工場夜景と太陽光を表現したヒーロー画像">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07101f"/>
+      <stop offset="60%" stop-color="#0d162a"/>
+      <stop offset="100%" stop-color="#151d31"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c35a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f0c35a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c35a"/>
+      <stop offset="100%" stop-color="#d8a53d"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="280" cy="190" rx="360" ry="130" fill="url(#glow)" filter="url(#soft)" opacity="0.56"/>
+
+  <g opacity="0.9">
+    <rect x="70" y="110" width="660" height="620" rx="24" fill="#091224" stroke="#5f6f90" stroke-width="1.5"/>
+    <rect x="750" y="110" width="380" height="620" rx="24" fill="#0b1222" stroke="#5f6f90" stroke-width="1.5"/>
+  </g>
+
+  <g opacity="0.75">
+    <rect x="110" y="170" width="60" height="360" rx="8" fill="#222d43"/>
+    <rect x="190" y="150" width="88" height="380" rx="8" fill="#27324a"/>
+    <rect x="300" y="130" width="96" height="400" rx="8" fill="#1d2740"/>
+    <rect x="420" y="170" width="74" height="360" rx="8" fill="#2d3851"/>
+    <rect x="516" y="142" width="110" height="388" rx="8" fill="#26314a"/>
+  </g>
+
+  <g opacity="0.34">
+    <path d="M110 520h580" stroke="#6c7e9d" stroke-width="4"/>
+    <path d="M110 560h560" stroke="#6c7e9d" stroke-width="3" stroke-dasharray="8 12"/>
+    <path d="M110 600h560" stroke="#6c7e9d" stroke-width="3" stroke-dasharray="8 12"/>
+  </g>
+
+  <g transform="translate(500 610)">
+    <rect x="0" y="0" width="220" height="120" rx="16" fill="#10192d" stroke="#f0c35a" stroke-width="1.5"/>
+    <text x="18" y="42" font-family="Inter, sans-serif" font-size="20" fill="#f0c35a" font-weight="700">SCALE</text>
+    <text x="18" y="88" font-family="Inter, sans-serif" font-size="34" fill="#fff" font-weight="800">1.5万〜2万人</text>
+  </g>
+
+  <g transform="translate(780 145)">
+    <rect width="320" height="170" rx="18" fill="#14213b"/>
+    <rect x="18" y="18" width="118" height="134" rx="14" fill="#1b2943"/>
+    <circle cx="77" cy="85" r="28" fill="#cfd6e6"/>
+    <rect x="160" y="26" width="130" height="12" rx="6" fill="#f0c35a"/>
+    <rect x="160" y="52" width="104" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="160" y="72" width="118" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="160" y="92" width="88" height="8" rx="4" fill="#8d98ae"/>
+  </g>
+
+  <g transform="translate(780 335)">
+    <rect width="320" height="170" rx="18" fill="#1b2943"/>
+    <rect x="18" y="18" width="132" height="134" rx="14" fill="#0f1729"/>
+    <path d="M50 130h74M60 108h54M72 86h30" stroke="#f0c35a" stroke-width="8" stroke-linecap="round"/>
+    <rect x="170" y="24" width="118" height="12" rx="6" fill="#f0c35a"/>
+    <rect x="170" y="50" width="94" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="170" y="70" width="108" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="170" y="90" width="80" height="8" rx="4" fill="#8d98ae"/>
+  </g>
+
+  <g transform="translate(780 525)">
+    <rect width="320" height="170" rx="18" fill="#14213b"/>
+    <rect x="18" y="18" width="132" height="134" rx="14" fill="#1b2943"/>
+    <rect x="32" y="34" width="104" height="94" rx="12" fill="#0c1426" stroke="#5f6f90"/>
+    <circle cx="84" cy="80" r="22" fill="#d8a53d"/>
+    <rect x="170" y="24" width="112" height="12" rx="6" fill="#f0c35a"/>
+    <rect x="170" y="50" width="92" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="170" y="70" width="106" height="8" rx="4" fill="#8d98ae"/>
+    <rect x="170" y="90" width="76" height="8" rx="4" fill="#8d98ae"/>
+  </g>
+</svg>

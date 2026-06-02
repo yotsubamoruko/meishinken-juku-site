@@ -8,29 +8,28 @@
   <meta property="og:title" content="Gluck | グリュック合同会社">
   <meta property="og:description" content="稼働力で、現場を止めない。電気工事・施工管理・人材供給の総合サイト。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/gluck-blueprint-hero.svg">
-  <meta name="theme-color" content="#0B2A5B">
+  <meta property="og:image" content="./assets/gluck-industrial-hero.svg">
+  <meta name="theme-color" content="#081123">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #0b2a5b;
-      --secondary: #1d4ed8;
-      --tertiary: #f97316;
-      --accent: #eaf2ff;
-      --sky: #f7faff;
-      --surface: #ffffff;
-      --soft: #f2f6fc;
-      --line: #d9e4f1;
-      --text: #102033;
-      --muted: #5b6c84;
-      --shadow: 0 16px 34px rgba(16, 32, 51, 0.08);
-      --shadow-strong: 0 24px 50px rgba(29, 78, 216, 0.12);
+      --bg: #081123;
+      --bg-2: #0d162b;
+      --bg-3: #111b31;
+      --panel: #131e36;
+      --panel-2: #18253a;
+      --line: #3a4b6b;
+      --gold: #f0c35a;
+      --gold-2: #d8a53d;
+      --text: #f6f7fb;
+      --muted: #b8c1d9;
+      --shadow: 0 18px 38px rgba(0,0,0,0.28);
       --radius-xl: 30px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --max: 1400px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --max: 1420px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -40,19 +39,19 @@
       color: var(--text);
       font-family: 'Noto Sans JP', system-ui, sans-serif;
       background:
-        radial-gradient(circle at 14% 0%, rgba(29,78,216,0.08), transparent 18%),
-        radial-gradient(circle at 100% 12%, rgba(249,115,22,0.08), transparent 16%),
-        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        radial-gradient(circle at 20% 0%, rgba(240,195,90,0.12), transparent 24%),
+        radial-gradient(circle at 100% 12%, rgba(240,195,90,0.08), transparent 18%),
+        linear-gradient(180deg, #070f1f 0%, #0c1528 100%);
     }
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: radial-gradient(rgba(29,78,216,0.05) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(240,195,90,0.06) 1px, transparent 1px);
       background-size: 20px 20px;
-      opacity: 0.28;
-      mask-image: linear-gradient(180deg, rgba(0,0,0,0.15), transparent 82%);
+      opacity: 0.22;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.2), transparent 82%);
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
@@ -80,7 +79,7 @@
       font-size: 1.8rem;
       font-weight: 900;
       letter-spacing: -0.04em;
-      color: var(--primary);
+      color: #fff;
       position: relative;
     }
     .brand-mark::before {
@@ -91,7 +90,7 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--tertiary), #ffd7b2);
+      background: linear-gradient(135deg, var(--gold), #fff0b8);
       transform: rotate(20deg);
     }
     .brand-copy strong { display: block; font-size: 0.98rem; }
@@ -107,7 +106,7 @@
       font-weight: 700;
     }
     .header-links a { padding: 5px 0; border-bottom: 2px solid transparent; }
-    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(29,78,216,0.45); }
+    .header-links a:hover { color: #fff; border-bottom-color: rgba(240,195,90,0.5); }
 
     .button {
       display: inline-flex;
@@ -123,32 +122,31 @@
     }
     .button:hover { transform: translateY(-1px); }
     .button-primary {
-      color: #fff;
-      background: linear-gradient(135deg, var(--secondary), #2563eb);
-      box-shadow: 0 14px 24px rgba(29,78,216,0.18);
+      color: #111;
+      background: linear-gradient(135deg, var(--gold), #f7d67d);
+      box-shadow: 0 14px 24px rgba(240,195,90,0.2);
     }
     .button-ghost {
-      color: var(--primary);
-      background: #fff;
-      border-color: var(--line);
+      color: #fff;
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.12);
     }
 
     .hero {
       margin-top: 8px;
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 16px;
+      grid-template-columns: 1.2fr 0.55fr 0.55fr;
+      gap: 12px;
       align-items: stretch;
     }
-
     .hero-main {
       position: relative;
-      min-height: 760px;
-      border-radius: 34px;
+      min-height: 820px;
+      border-radius: 28px;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,248,255,0.98));
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow-strong);
+      border: 1px solid rgba(240,195,90,0.22);
+      background: #081123;
+      box-shadow: var(--shadow);
     }
     .hero-main img {
       position: absolute;
@@ -157,7 +155,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      filter: brightness(1.02) contrast(1.04);
+      filter: saturate(0.95) contrast(1.08) brightness(0.76);
       transform: scale(1.02);
       transition: transform 0.25s ease;
     }
@@ -165,35 +163,35 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.86) 42%, rgba(255,255,255,0.28) 100%);
+      background: linear-gradient(90deg, rgba(7,15,31,0.9) 0%, rgba(7,15,31,0.58) 46%, rgba(7,15,31,0.12) 100%);
     }
     .hero-copy {
       position: relative;
       z-index: 2;
-      padding: 34px 32px 28px;
+      padding: 26px 26px 22px;
       display: grid;
       grid-template-rows: auto 1fr auto;
       min-height: 100%;
     }
-    .hero-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
     .hero-title {
-      max-width: 620px;
-      margin-top: 90px;
+      max-width: 540px;
+      margin-top: 100px;
     }
     .hero-title h1 {
-      font-size: clamp(3rem, 5vw, 5.8rem);
+      font-size: clamp(3rem, 6vw, 5.7rem);
       line-height: 0.96;
-      letter-spacing: -0.07em;
-      color: var(--primary);
+      letter-spacing: -0.06em;
+      text-shadow: 0 6px 18px rgba(0,0,0,0.28);
     }
     .hero-title .lead {
       margin-top: 18px;
-      max-width: 35rem;
-      color: var(--muted);
-      font-size: 0.98rem;
-      line-height: 1.95;
+      max-width: 34rem;
+      color: #ecf1ff;
+      font-size: 0.96rem;
+      line-height: 1.92;
+      opacity: 0.95;
     }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
     .hero-bottom {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -201,81 +199,86 @@
       align-self: end;
     }
     .mini-panel {
-      padding: 16px 16px 14px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.9);
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 24px rgba(16,32,51,0.05);
+      padding: 14px 14px 12px;
+      border-radius: 16px;
+      background: rgba(15,23,42,0.82);
+      border: 1px solid rgba(240,195,90,0.18);
+      backdrop-filter: blur(6px);
     }
     .mini-panel strong {
       display: block;
-      color: var(--primary);
-      font-size: 0.86rem;
+      color: var(--gold);
+      font-size: 0.84rem;
       margin-bottom: 6px;
       letter-spacing: 0.06em;
     }
-    .mini-panel span { color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
+    .mini-panel span { color: #fff; font-size: 0.84rem; line-height: 1.65; }
 
-    .hero-aside {
+    .hero-stats {
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, minmax(0, 1fr));
       gap: 12px;
     }
-    .score-card {
-      border-radius: 28px;
-      background: linear-gradient(180deg, #fff, #f8fbff);
-      border: 1px solid var(--line);
+    .stat-card {
+      border-radius: 26px;
+      background: linear-gradient(180deg, #10192e, #0b1224);
+      border: 1px solid rgba(240,195,90,0.24);
       box-shadow: var(--shadow);
-      padding: 20px 22px;
+      padding: 18px 18px 16px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .score-card small {
-      color: var(--secondary);
+    .stat-card small {
+      color: var(--gold);
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       font-size: 0.74rem;
     }
-    .score-card strong {
+    .stat-card strong {
       display: block;
-      margin-top: 8px;
-      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      margin-top: 6px;
+      font-size: clamp(1.6rem, 3.2vw, 2.8rem);
       line-height: 1.02;
-      color: var(--primary);
+      color: #fff;
       letter-spacing: -0.04em;
     }
-    .score-card p { margin-top: 10px; color: var(--muted); font-size: 0.85rem; line-height: 1.7; }
-    .shot {
+    .stat-card p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.65;
+    }
+    .hero-shot {
       position: relative;
       overflow: hidden;
-      border-radius: 28px;
-      border: 1px solid var(--line);
+      border-radius: 26px;
+      border: 1px solid rgba(240,195,90,0.14);
       box-shadow: var(--shadow);
-      background: #fff;
+      background: #111827;
       min-height: 0;
     }
-    .shot img { width: 100%; height: 100%; object-fit: cover; }
-    .shot .caption {
+    .hero-shot img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8) contrast(1.08) saturate(0.9); }
+    .hero-shot .caption {
       position: absolute;
       left: 12px;
       bottom: 12px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.94);
-      border: 1px solid var(--line);
-      color: var(--primary);
+      background: rgba(7,15,31,0.82);
+      border: 1px solid rgba(240,195,90,0.16);
+      color: #fff;
       font-size: 0.78rem;
       letter-spacing: 0.04em;
     }
 
     .ticker {
       overflow: hidden;
-      margin-top: 14px;
+      margin-top: 12px;
       border-radius: 18px;
-      border: 1px solid var(--line);
-      background: #fff;
+      border: 1px solid rgba(240,195,90,0.18);
+      background: linear-gradient(90deg, rgba(13,22,43,0.9), rgba(11,17,34,0.95));
       box-shadow: var(--shadow);
     }
     .ticker-track {
@@ -284,7 +287,7 @@
       width: max-content;
       padding: 13px 0;
       animation: marquee 24s linear infinite;
-      color: var(--primary);
+      color: var(--gold);
       font-weight: 900;
       font-size: 0.82rem;
       letter-spacing: 0.12em;
@@ -295,10 +298,15 @@
       margin-top: 18px;
       padding: 24px;
       border-radius: var(--radius-xl);
-      background: #fff;
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(19,30,54,0.98), rgba(14,23,40,0.98));
+      border: 1px solid rgba(255,255,255,0.08);
       box-shadow: var(--shadow);
       overflow: hidden;
+    }
+    .section.light {
+      background: linear-gradient(180deg, #f7f7f9, #ffffff);
+      color: var(--text);
+      border-color: rgba(16,32,51,0.08);
     }
     .section-head {
       display: flex;
@@ -307,8 +315,9 @@
       gap: 18px;
       padding-bottom: 16px;
       margin-bottom: 16px;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
+    .section.light .section-head { border-bottom-color: var(--line); }
     .section-head p {
       max-width: 42rem;
       color: var(--muted);
@@ -327,9 +336,9 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(29,78,216,0.08);
-      border: 1px solid rgba(29,78,216,0.14);
-      color: var(--secondary);
+      background: rgba(240,195,90,0.08);
+      border: 1px solid rgba(240,195,90,0.14);
+      color: var(--gold);
       font-size: 0.78rem;
       font-weight: 800;
       letter-spacing: 0.08em;
@@ -347,25 +356,25 @@
     .metric {
       padding: 18px 18px 16px;
       border-radius: 22px;
-      background: #fff;
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
+      background: rgba(16,27,54,0.86);
+      border: 1px solid rgba(240,195,90,0.16);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.16);
     }
-    .metric small { display: block; color: var(--secondary); letter-spacing: 0.08em; font-size: 0.76rem; font-weight: 800; }
-    .metric strong { display: block; margin-top: 8px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1; color: var(--primary); }
+    .metric small { display: block; color: var(--gold); letter-spacing: 0.08em; font-size: 0.76rem; font-weight: 800; }
+    .metric strong { display: block; margin-top: 8px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1; color: #fff; }
     .metric span { display: block; margin-top: 10px; color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
 
     .card {
       position: relative;
       padding: 22px;
       border-radius: 24px;
-      background: #fff;
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
+      background: rgba(12,20,38,0.96);
+      border: 1px solid rgba(240,195,90,0.12);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.16);
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(29,78,216,0.1); }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(0,0,0,0.22); }
     .card::before {
       content: '';
       position: absolute;
@@ -373,7 +382,7 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--secondary), var(--tertiary));
+      background: linear-gradient(90deg, var(--gold), #fff1be);
     }
     .card h3 { font-size: 1.06rem; }
     .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
@@ -383,9 +392,9 @@
       align-items: center;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(29,78,216,0.06);
-      border: 1px solid rgba(29,78,216,0.14);
-      color: var(--primary);
+      background: rgba(240,195,90,0.08);
+      border: 1px solid rgba(240,195,90,0.14);
+      color: #fff;
       font-size: 0.76rem;
       font-weight: 800;
     }
@@ -399,42 +408,42 @@
       min-height: 330px;
       border-radius: 26px;
       overflow: hidden;
-      background: #fff;
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(12,20,38,0.98), rgba(8,15,31,0.98));
+      border: 1px solid rgba(240,195,90,0.14);
       position: relative;
       box-shadow: var(--shadow);
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
     .business-copy { padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
-    .business-copy strong { display: block; color: var(--primary); font-size: 1.25rem; }
+    .business-copy strong { display: block; color: #fff; font-size: 1.25rem; }
     .business-copy span { display: block; color: var(--muted); margin-top: 10px; line-height: 1.8; }
     .business-copy ul { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-    .business-copy li { color: var(--text); font-size: 0.84rem; line-height: 1.6; position: relative; padding-left: 18px; }
-    .business-copy li::before { content: '✓'; position: absolute; left: 0; color: var(--tertiary); font-weight: 900; }
-    .business-visual { position: relative; overflow: hidden; background: #fff; }
-    .business-visual img { width: 100%; height: 100%; object-fit: cover; }
+    .business-copy li { color: #f5f7fb; font-size: 0.84rem; line-height: 1.6; position: relative; padding-left: 18px; }
+    .business-copy li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 900; }
+    .business-visual { position: relative; overflow: hidden; background: #111827; }
+    .business-visual img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.82) contrast(1.05) saturate(0.9); }
 
     .icon-row { grid-template-columns: repeat(10, minmax(0, 1fr)); }
     .icon {
       padding: 16px 10px;
       border-radius: 18px;
-      background: #fff;
-      border: 1px solid var(--line);
+      background: rgba(12,20,38,0.9);
+      border: 1px solid rgba(255,255,255,0.06);
       text-align: center;
-      color: var(--primary);
-      box-shadow: 0 10px 20px rgba(16,32,51,0.04);
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     }
     .icon .glyph {
       width: 34px;
       height: 34px;
       margin: 0 auto 8px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(29,78,216,0.08), rgba(249,115,22,0.08));
-      border: 1px solid rgba(29,78,216,0.14);
+      background: linear-gradient(135deg, rgba(240,195,90,0.18), rgba(240,195,90,0.06));
+      border: 1px solid rgba(240,195,90,0.16);
       display: grid;
       place-items: center;
-      color: var(--secondary);
+      color: var(--gold);
       font-weight: 900;
       font-size: 0.82rem;
     }
@@ -446,11 +455,11 @@
       overflow: hidden;
       border-radius: 18px;
       min-height: 152px;
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
-      background: #fff;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+      background: #0d1427;
     }
-    .shot-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s ease; }
+    .shot-tile img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.84) contrast(1.08) saturate(0.9); transition: transform 0.25s ease; }
     .shot-tile:hover img { transform: scale(1.04); }
     .shot-tile .label {
       position: absolute;
@@ -459,9 +468,9 @@
       right: 10px;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.94);
-      border: 1px solid var(--line);
-      color: var(--primary);
+      background: rgba(7,15,31,0.82);
+      border: 1px solid rgba(240,195,90,0.16);
+      color: #fff;
       text-align: center;
       font-size: 0.74rem;
       font-weight: 800;
@@ -474,23 +483,23 @@
     .map-card, .reason-box, .contact-box {
       padding: 22px;
       border-radius: 26px;
-      background: #fff;
-      border: 1px solid var(--line);
+      background: rgba(12,20,38,0.94);
+      border: 1px solid rgba(240,195,90,0.12);
       box-shadow: var(--shadow);
     }
     .map-card img { width: 100%; height: auto; }
     .map-meta { display: grid; gap: 12px; margin-top: 16px; }
-    .map-meta div { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+    .map-meta div { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.92rem; }
     .map-meta div:last-child { border-bottom: 0; padding-bottom: 0; }
 
     .reason-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .reason {
       padding: 18px;
       border-radius: 18px;
-      background: #f8fbff;
-      border: 1px solid var(--line);
+      background: rgba(16,27,54,0.9);
+      border: 1px solid rgba(240,195,90,0.12);
     }
-    .reason strong { display: block; color: var(--secondary); margin-bottom: 8px; }
+    .reason strong { display: block; color: var(--gold); margin-bottom: 8px; }
     .reason p { color: var(--muted); line-height: 1.75; font-size: 0.9rem; }
 
     .contact { grid-template-columns: 1.04fr 0.96fr; }
@@ -501,7 +510,7 @@
       font-size: clamp(2rem, 4vw, 3.5rem);
       font-weight: 800;
       letter-spacing: -0.04em;
-      color: var(--primary);
+      color: #fff;
     }
     .contact-box .hours { color: var(--muted); margin-top: 8px; font-size: 0.9rem; }
 
@@ -528,7 +537,7 @@
     @media (max-width: 1200px) {
       .hero { grid-template-columns: 1fr; }
       .hero-main { min-height: 720px; }
-      .hero-aside { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+      .hero-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
       .stats-grid, .grid-4, .gallery, .icon-row, .network, .contact, .business, .reason-grid, .card-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .business-card { grid-template-columns: 1fr; min-height: 0; }
       .hero-bottom { grid-template-columns: 1fr; }
@@ -537,11 +546,11 @@
     }
     @media (max-width: 760px) {
       .page { width: min(calc(100% - 16px), var(--max)); }
-      .hero-main { min-height: 840px; }
+      .hero-main { min-height: 860px; }
       .hero-copy { padding: 24px 18px 18px; }
       .hero-title { margin-top: 110px; }
       .hero-title h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
-      .hero-aside { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: 1fr; }
       .stats-grid, .grid-4, .grid-3, .gallery, .icon-row, .network, .contact, .business, .reason-grid, .card-row { grid-template-columns: 1fr; }
       .hero-actions, .header-links { width: 100%; }
       .button { width: 100%; }
@@ -579,11 +588,11 @@
 
     <section class="hero">
       <div class="hero-main fade-up">
-        <img src="./assets/gluck-blueprint-hero.svg" alt="ブループリント調の電気工事ヒーローアート">
+        <img src="./assets/gluck-industrial-hero.svg" alt="工場夜景と電気工事を表現したヒーロー画像">
         <div class="hero-copy">
           <div class="hero-top">
             <div>
-              <span class="eyebrow">Blueprint / Systems / Works</span>
+              <span class="eyebrow">Electric Works / Management / Network</span>
               <div class="hero-title">
                 <h1>稼働力で、<br>現場を止めない。</h1>
                 <p class="lead">人材 × 技術 × 管理力で、全国の施工を支えるパートナー。独自のネットワークと管理システムで、人材供給から自社請負工事までワンストップで対応します。</p>
@@ -595,7 +604,6 @@
               </div>
             </div>
           </div>
-
           <div class="hero-bottom">
             <div class="mini-panel"><strong>人材人数（1日あたり）</strong><span>60〜100名の現場に対応できる稼働力。</span></div>
             <div class="mini-panel"><strong>全国対応</strong><span>協力会社ネットワークで広域案件も支える。</span></div>
@@ -604,12 +612,17 @@
         </div>
       </div>
 
-      <aside class="hero-aside fade-up">
-        <div class="score-card"><small>年間稼働人数</small><strong>1.5万〜2万人!</strong><p>稼働人数の厚みで、現場を止めない体制を構築。</p></div>
-        <div class="shot float-slow"><img src="./assets/gluck-blueprint-hero.svg" alt="施工管理イメージ"><div class="caption">management</div></div>
-        <div class="shot float"><img src="./assets/gluck-blueprint-hero.svg" alt="太陽光・設備イメージ"><div class="caption">systems</div></div>
-        <div class="score-card"><small>協力会社ネットワーク</small><strong>全国350名!</strong><p>信頼できるパートナーと共に、全国の現場をカバー。</p></div>
-      </aside>
+      <div class="hero-stats fade-up">
+        <div class="stat-card"><small>年間稼働人数</small><strong>1.5万〜2万人!</strong><p>稼働人数の厚みで、現場を止めない体制を構築。</p></div>
+        <div class="stat-card"><small>稼働人数（1日あたり）</small><strong>60〜100名!</strong><p>安定した人員体制で、あらゆる現場に対応。</p></div>
+        <div class="stat-card"><small>協力会社ネットワーク</small><strong>全国350名!</strong><p>信頼できるパートナーと共に、全国の現場をカバー。</p></div>
+      </div>
+
+      <div class="hero-stats fade-up">
+        <div class="hero-shot"><img src="./assets/gluck-industrial-panel.svg" alt="夜景の設備点検イメージ"><div class="caption">夜景・設備点検</div></div>
+        <div class="hero-shot"><img src="./assets/gluck-industrial-panel.svg" alt="太陽光発電設備イメージ"><div class="caption">太陽光・受変電</div></div>
+        <div class="hero-shot"><img src="./assets/gluck-industrial-panel.svg" alt="作業員の施工イメージ"><div class="caption">現場管理・施工</div></div>
+      </div>
     </section>
 
     <section class="ticker fade-up" aria-label="キーワードの流れ">
@@ -625,7 +638,7 @@
           <span class="eyebrow">数字で見る強み</span>
           <h2>現場を止めないための、稼働力と管理力。</h2>
         </div>
-        <p>スクリーンショットの密度を保ちながら、白ベースで読みやすく再構成します。</p>
+        <p>スクショの第一印象に合わせて、上部で「どれくらい動けるか」を明快に見せます。</p>
       </div>
       <div class="stats-grid">
         <div class="metric"><small>事業内容</small><strong>3本柱</strong><span>人材供給・現場管理・自社施工を一体で運用。</span></div>
@@ -635,7 +648,7 @@
       </div>
     </section>
 
-    <section id="business" class="section fade-up">
+    <section id="business" class="section fade-up light">
       <div class="section-head">
         <div>
           <span class="eyebrow">事業内容</span>
@@ -658,7 +671,7 @@
               <li>安全・教育体制も万全</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="人材供給イメージ"></div>
+          <div class="business-visual"><img src="./assets/gluck-industrial-panel.svg" alt="人材供給イメージ"></div>
         </article>
         <article class="business-card">
           <div class="business-copy">
@@ -674,7 +687,7 @@
               <li>報告・提出もサポート</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="現場管理イメージ"></div>
+          <div class="business-visual"><img src="./assets/gluck-industrial-panel.svg" alt="現場管理イメージ"></div>
         </article>
         <article class="business-card">
           <div class="business-copy">
@@ -690,12 +703,12 @@
               <li>商業施設・店舗・病院・倉庫など</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="自社請負工事イメージ"></div>
+          <div class="business-visual"><img src="./assets/gluck-industrial-panel.svg" alt="自社請負工事イメージ"></div>
         </article>
       </div>
     </section>
 
-    <section class="section fade-up">
+    <section class="section fade-up light">
       <div class="section-head">
         <div>
           <span class="eyebrow">対応工事</span>
@@ -717,7 +730,7 @@
       </div>
     </section>
 
-    <section id="works" class="section fade-up">
+    <section id="works" class="section fade-up light">
       <div class="section-head">
         <div>
           <span class="eyebrow">施工実績</span>
@@ -726,14 +739,14 @@
         <p>スクリーンショット同様、写真タイルの連続で“施工の厚み”を見せます。</p>
       </div>
       <div class="gallery">
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="プラント電気工事"><div class="label">プラント電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="商業施設電気工事"><div class="label">商業施設電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="病院電気工事"><div class="label">病院電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="倉庫電気工事"><div class="label">倉庫電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="店舗電気工事"><div class="label">店舗電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="マンション工事"><div class="label">マンション・ビル工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="太陽光工事"><div class="label">太陽光工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="電設設備工事"><div class="label">電気設備工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-hero.svg" alt="プラント電気工事"><div class="label">プラント電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-panel.svg" alt="商業施設電気工事"><div class="label">商業施設電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-panel.svg" alt="病院電気工事"><div class="label">病院電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-hero.svg" alt="倉庫電気工事"><div class="label">倉庫電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-panel.svg" alt="店舗電気工事"><div class="label">店舗電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-panel.svg" alt="マンション工事"><div class="label">マンション・ビル工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-hero.svg" alt="太陽光工事"><div class="label">太陽光工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-industrial-panel.svg" alt="電設設備工事"><div class="label">電気設備工事</div></div>
       </div>
     </section>
 
@@ -747,7 +760,7 @@
       </div>
       <div class="network">
         <div class="map-card">
-          <img src="./assets/gluck-blueprint-map.svg" alt="日本全国のネットワークを表現した地図アート">
+          <img src="./assets/gluck-industrial-map.svg" alt="日本全国のネットワークを表現した地図アート">
           <div class="map-meta">
             <div><span>北海道・東北</span><span>即応対応</span></div>
             <div><span>関東・中部</span><span>常時稼働</span></div>
@@ -768,7 +781,7 @@
       </div>
     </section>
 
-    <section id="reasons" class="section fade-up">
+    <section id="reasons" class="section fade-up light">
       <div class="section-head">
         <div>
           <span class="eyebrow">Why Gluck</span>
@@ -803,7 +816,7 @@
           </div>
         </div>
         <div class="contact-box">
-          <strong style="display:block;color:var(--primary);font-size:1.2rem;">お問い合わせフォームはこちら</strong>
+          <strong style="display:block;color:#fff;font-size:1.2rem;">お問い合わせフォームはこちら</strong>
           <p style="margin-top:10px;color:var(--muted);line-height:1.8;">24時間受付中。人材供給、自社施工、協力会社連携のご相談をまとめて受け付けます。</p>
           <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
             <span class="pill">問い合わせ</span>
