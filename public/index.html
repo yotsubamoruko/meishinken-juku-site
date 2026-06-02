@@ -8,28 +8,29 @@
   <meta property="og:title" content="Gluck | グリュック合同会社">
   <meta property="og:description" content="稼働力で、現場を止めない。電気工事・施工管理・人材供給の総合サイト。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/gluck-hero.svg">
-  <meta name="theme-color" content="#081123">
+  <meta property="og:image" content="./assets/gluck-blueprint-hero.svg">
+  <meta name="theme-color" content="#0B2A5B">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #081123;
-      --bg-2: #0d162b;
-      --bg-3: #111b31;
-      --panel: #131e36;
-      --panel-2: #18253a;
-      --line: #3a4b6b;
-      --gold: #f0c35a;
-      --gold-2: #d8a53d;
-      --text: #f6f7fb;
-      --muted: #b8c1d9;
-      --shadow: 0 18px 38px rgba(0,0,0,0.28);
+      --primary: #0b2a5b;
+      --secondary: #1d4ed8;
+      --tertiary: #f97316;
+      --accent: #eaf2ff;
+      --sky: #f7faff;
+      --surface: #ffffff;
+      --soft: #f2f6fc;
+      --line: #d9e4f1;
+      --text: #102033;
+      --muted: #5b6c84;
+      --shadow: 0 16px 34px rgba(16, 32, 51, 0.08);
+      --shadow-strong: 0 24px 50px rgba(29, 78, 216, 0.12);
       --radius-xl: 30px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
-      --max: 1420px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --max: 1400px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -39,19 +40,19 @@
       color: var(--text);
       font-family: 'Noto Sans JP', system-ui, sans-serif;
       background:
-        radial-gradient(circle at 20% 0%, rgba(240,195,90,0.12), transparent 24%),
-        radial-gradient(circle at 100% 12%, rgba(240,195,90,0.08), transparent 18%),
-        linear-gradient(180deg, #070f1f 0%, #0c1528 100%);
+        radial-gradient(circle at 14% 0%, rgba(29,78,216,0.08), transparent 18%),
+        radial-gradient(circle at 100% 12%, rgba(249,115,22,0.08), transparent 16%),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
     }
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: radial-gradient(rgba(240,195,90,0.06) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(29,78,216,0.05) 1px, transparent 1px);
       background-size: 20px 20px;
-      opacity: 0.22;
-      mask-image: linear-gradient(180deg, rgba(0,0,0,0.2), transparent 82%);
+      opacity: 0.28;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.15), transparent 82%);
     }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
@@ -73,17 +74,13 @@
       align-items: center;
       padding: 10px 0 14px;
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .brand { display: flex; align-items: center; gap: 12px; }
     .brand-mark {
       font-family: 'Inter', sans-serif;
       font-size: 1.8rem;
       font-weight: 900;
       letter-spacing: -0.04em;
-      color: #fff;
+      color: var(--primary);
       position: relative;
     }
     .brand-mark::before {
@@ -94,7 +91,7 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), #fff0b8);
+      background: linear-gradient(135deg, var(--tertiary), #ffd7b2);
       transform: rotate(20deg);
     }
     .brand-copy strong { display: block; font-size: 0.98rem; }
@@ -110,7 +107,7 @@
       font-weight: 700;
     }
     .header-links a { padding: 5px 0; border-bottom: 2px solid transparent; }
-    .header-links a:hover { color: #fff; border-bottom-color: rgba(240,195,90,0.5); }
+    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(29,78,216,0.45); }
 
     .button {
       display: inline-flex;
@@ -126,32 +123,32 @@
     }
     .button:hover { transform: translateY(-1px); }
     .button-primary {
-      color: #111;
-      background: linear-gradient(135deg, var(--gold), #f7d67d);
-      box-shadow: 0 14px 24px rgba(240,195,90,0.2);
+      color: #fff;
+      background: linear-gradient(135deg, var(--secondary), #2563eb);
+      box-shadow: 0 14px 24px rgba(29,78,216,0.18);
     }
     .button-ghost {
-      color: #fff;
-      background: rgba(255,255,255,0.06);
-      border-color: rgba(255,255,255,0.12);
+      color: var(--primary);
+      background: #fff;
+      border-color: var(--line);
     }
 
     .hero {
       margin-top: 8px;
       display: grid;
-      grid-template-columns: 1.06fr 0.94fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 16px;
       align-items: stretch;
     }
 
     .hero-main {
       position: relative;
-      min-height: 770px;
+      min-height: 760px;
       border-radius: 34px;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(7,15,31,0.4), rgba(7,15,31,0.9));
-      border: 1px solid rgba(240,195,90,0.22);
-      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,248,255,0.98));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-strong);
     }
     .hero-main img {
       position: absolute;
@@ -160,7 +157,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      filter: saturate(0.95) contrast(1.08) brightness(0.72);
+      filter: brightness(1.02) contrast(1.04);
       transform: scale(1.02);
       transition: transform 0.25s ease;
     }
@@ -168,7 +165,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(7,15,31,0.9) 0%, rgba(7,15,31,0.58) 44%, rgba(7,15,31,0.14) 100%);
+      background: linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.86) 42%, rgba(255,255,255,0.28) 100%);
     }
     .hero-copy {
       position: relative;
@@ -178,29 +175,23 @@
       grid-template-rows: auto 1fr auto;
       min-height: 100%;
     }
-    .hero-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 20px;
-    }
+    .hero-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
     .hero-title {
       max-width: 620px;
       margin-top: 90px;
     }
     .hero-title h1 {
-      font-size: clamp(3rem, 5vw, 5.7rem);
-      line-height: 0.98;
-      letter-spacing: -0.06em;
-      text-shadow: 0 6px 20px rgba(0,0,0,0.35);
+      font-size: clamp(3rem, 5vw, 5.8rem);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
+      color: var(--primary);
     }
     .hero-title .lead {
       margin-top: 18px;
-      max-width: 34rem;
-      color: #ecf1ff;
+      max-width: 35rem;
+      color: var(--muted);
       font-size: 0.98rem;
       line-height: 1.95;
-      opacity: 0.94;
     }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
     .hero-bottom {
@@ -212,18 +203,18 @@
     .mini-panel {
       padding: 16px 16px 14px;
       border-radius: 18px;
-      background: rgba(15,23,42,0.82);
-      border: 1px solid rgba(240,195,90,0.18);
-      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(16,32,51,0.05);
     }
     .mini-panel strong {
       display: block;
-      color: var(--gold);
+      color: var(--primary);
       font-size: 0.86rem;
       margin-bottom: 6px;
       letter-spacing: 0.06em;
     }
-    .mini-panel span { color: #fff; font-size: 0.86rem; line-height: 1.7; }
+    .mini-panel span { color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
 
     .hero-aside {
       display: grid;
@@ -232,8 +223,8 @@
     }
     .score-card {
       border-radius: 28px;
-      background: linear-gradient(180deg, rgba(17,27,49,0.98), rgba(11,17,34,0.98));
-      border: 1px solid rgba(240,195,90,0.24);
+      background: linear-gradient(180deg, #fff, #f8fbff);
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
       padding: 20px 22px;
       display: flex;
@@ -241,7 +232,7 @@
       justify-content: center;
     }
     .score-card small {
-      color: var(--gold);
+      color: var(--secondary);
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -252,39 +243,29 @@
       margin-top: 8px;
       font-size: clamp(1.8rem, 3.5vw, 3rem);
       line-height: 1.02;
-      color: #fff;
+      color: var(--primary);
       letter-spacing: -0.04em;
     }
-    .score-card p {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.85rem;
-      line-height: 1.7;
-    }
+    .score-card p { margin-top: 10px; color: var(--muted); font-size: 0.85rem; line-height: 1.7; }
     .shot {
       position: relative;
       overflow: hidden;
       border-radius: 28px;
-      border: 1px solid rgba(240,195,90,0.14);
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
-      background: #111827;
+      background: #fff;
       min-height: 0;
     }
-    .shot img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: saturate(0.95) contrast(1.08) brightness(0.76);
-    }
+    .shot img { width: 100%; height: 100%; object-fit: cover; }
     .shot .caption {
       position: absolute;
       left: 12px;
       bottom: 12px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(7,15,31,0.78);
-      border: 1px solid rgba(240,195,90,0.18);
-      color: #fff;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid var(--line);
+      color: var(--primary);
       font-size: 0.78rem;
       letter-spacing: 0.04em;
     }
@@ -293,8 +274,8 @@
       overflow: hidden;
       margin-top: 14px;
       border-radius: 18px;
-      border: 1px solid rgba(240,195,90,0.18);
-      background: linear-gradient(90deg, rgba(13,22,43,0.9), rgba(11,17,34,0.95));
+      border: 1px solid var(--line);
+      background: #fff;
       box-shadow: var(--shadow);
     }
     .ticker-track {
@@ -303,7 +284,7 @@
       width: max-content;
       padding: 13px 0;
       animation: marquee 24s linear infinite;
-      color: var(--gold);
+      color: var(--primary);
       font-weight: 900;
       font-size: 0.82rem;
       letter-spacing: 0.12em;
@@ -314,8 +295,8 @@
       margin-top: 18px;
       padding: 24px;
       border-radius: var(--radius-xl);
-      background: linear-gradient(180deg, rgba(19,30,54,0.98), rgba(14,23,40,0.98));
-      border: 1px solid rgba(255,255,255,0.08);
+      background: #fff;
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
       overflow: hidden;
     }
@@ -326,7 +307,7 @@
       gap: 18px;
       padding-bottom: 16px;
       margin-bottom: 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid var(--line);
     }
     .section-head p {
       max-width: 42rem;
@@ -346,15 +327,15 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: rgba(240,195,90,0.08);
-      border: 1px solid rgba(240,195,90,0.14);
-      color: var(--gold);
+      background: rgba(29,78,216,0.08);
+      border: 1px solid rgba(29,78,216,0.14);
+      color: var(--secondary);
       font-size: 0.78rem;
       font-weight: 800;
       letter-spacing: 0.08em;
     }
 
-    .stats-grid, .grid-3, .grid-4, .card-row, .icon-row, .gallery, .network, .reason-grid {
+    .stats-grid, .grid-3, .grid-4, .card-row, .icon-row, .gallery, .network, .reason-grid, .contact {
       display: grid;
       gap: 14px;
     }
@@ -366,25 +347,25 @@
     .metric {
       padding: 18px 18px 16px;
       border-radius: 22px;
-      background: rgba(16,27,54,0.86);
-      border: 1px solid rgba(240,195,90,0.16);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.16);
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
     }
-    .metric small { display: block; color: var(--gold); letter-spacing: 0.08em; font-size: 0.76rem; font-weight: 800; }
-    .metric strong { display: block; margin-top: 8px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1; color: #fff; }
+    .metric small { display: block; color: var(--secondary); letter-spacing: 0.08em; font-size: 0.76rem; font-weight: 800; }
+    .metric strong { display: block; margin-top: 8px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1; color: var(--primary); }
     .metric span { display: block; margin-top: 10px; color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
 
     .card {
       position: relative;
       padding: 22px;
       border-radius: 24px;
-      background: rgba(12,20,38,0.96);
-      border: 1px solid rgba(240,195,90,0.12);
-      box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(0,0,0,0.22); }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(29,78,216,0.1); }
     .card::before {
       content: '';
       position: absolute;
@@ -392,7 +373,7 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--gold), #fff1be);
+      background: linear-gradient(90deg, var(--secondary), var(--tertiary));
     }
     .card h3 { font-size: 1.06rem; }
     .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
@@ -402,93 +383,74 @@
       align-items: center;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(240,195,90,0.08);
-      border: 1px solid rgba(240,195,90,0.14);
-      color: #fff;
+      background: rgba(29,78,216,0.06);
+      border: 1px solid rgba(29,78,216,0.14);
+      color: var(--primary);
       font-size: 0.76rem;
       font-weight: 800;
     }
 
     .business {
       display: grid;
-      grid-template-columns: 0.9fr 1fr 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
     .business-card {
       min-height: 330px;
       border-radius: 26px;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(12,20,38,0.98), rgba(8,15,31,0.98));
-      border: 1px solid rgba(240,195,90,0.14);
+      background: #fff;
+      border: 1px solid var(--line);
       position: relative;
       box-shadow: var(--shadow);
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
     .business-copy { padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
-    .business-copy strong { display: block; color: #fff; font-size: 1.25rem; }
+    .business-copy strong { display: block; color: var(--primary); font-size: 1.25rem; }
     .business-copy span { display: block; color: var(--muted); margin-top: 10px; line-height: 1.8; }
     .business-copy ul { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-    .business-copy li { color: #f5f7fb; font-size: 0.84rem; line-height: 1.6; position: relative; padding-left: 18px; }
-    .business-copy li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 900; }
-    .business-visual {
-      position: relative;
-      overflow: hidden;
-      background: #111827;
-    }
-    .business-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.78) contrast(1.08) saturate(0.9);
-    }
+    .business-copy li { color: var(--text); font-size: 0.84rem; line-height: 1.6; position: relative; padding-left: 18px; }
+    .business-copy li::before { content: '✓'; position: absolute; left: 0; color: var(--tertiary); font-weight: 900; }
+    .business-visual { position: relative; overflow: hidden; background: #fff; }
+    .business-visual img { width: 100%; height: 100%; object-fit: cover; }
 
-    .icon-row {
-      grid-template-columns: repeat(10, minmax(0, 1fr));
-    }
+    .icon-row { grid-template-columns: repeat(10, minmax(0, 1fr)); }
     .icon {
       padding: 16px 10px;
       border-radius: 18px;
-      background: rgba(12,20,38,0.9);
-      border: 1px solid rgba(255,255,255,0.06);
+      background: #fff;
+      border: 1px solid var(--line);
       text-align: center;
-      color: #fff;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+      color: var(--primary);
+      box-shadow: 0 10px 20px rgba(16,32,51,0.04);
     }
     .icon .glyph {
       width: 34px;
       height: 34px;
       margin: 0 auto 8px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(240,195,90,0.18), rgba(240,195,90,0.06));
-      border: 1px solid rgba(240,195,90,0.16);
+      background: linear-gradient(135deg, rgba(29,78,216,0.08), rgba(249,115,22,0.08));
+      border: 1px solid rgba(29,78,216,0.14);
       display: grid;
       place-items: center;
-      color: var(--gold);
+      color: var(--secondary);
       font-weight: 900;
       font-size: 0.82rem;
     }
     .icon span { display: block; font-size: 0.72rem; line-height: 1.35; color: var(--muted); }
 
-    .gallery {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
+    .gallery { grid-template-columns: repeat(8, minmax(0, 1fr)); }
     .shot-tile {
       position: relative;
       overflow: hidden;
       border-radius: 18px;
       min-height: 152px;
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-      background: #0d1427;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 24px rgba(16,32,51,0.04);
+      background: #fff;
     }
-    .shot-tile img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.78) contrast(1.08) saturate(0.9);
-      transition: transform 0.25s ease;
-    }
+    .shot-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.25s ease; }
     .shot-tile:hover img { transform: scale(1.04); }
     .shot-tile .label {
       position: absolute;
@@ -497,9 +459,9 @@
       right: 10px;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(7,15,31,0.82);
-      border: 1px solid rgba(240,195,90,0.16);
-      color: #fff;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid var(--line);
+      color: var(--primary);
       text-align: center;
       font-size: 0.74rem;
       font-weight: 800;
@@ -512,32 +474,26 @@
     .map-card, .reason-box, .contact-box {
       padding: 22px;
       border-radius: 26px;
-      background: rgba(12,20,38,0.94);
-      border: 1px solid rgba(240,195,90,0.12);
+      background: #fff;
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
     .map-card img { width: 100%; height: auto; }
     .map-meta { display: grid; gap: 12px; margin-top: 16px; }
-    .map-meta div { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.92rem; }
+    .map-meta div { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
     .map-meta div:last-child { border-bottom: 0; padding-bottom: 0; }
 
-    .reason-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    .reason-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .reason {
       padding: 18px;
       border-radius: 18px;
-      background: rgba(16,27,54,0.9);
-      border: 1px solid rgba(240,195,90,0.12);
+      background: #f8fbff;
+      border: 1px solid var(--line);
     }
-    .reason strong { display: block; color: var(--gold); margin-bottom: 8px; }
+    .reason strong { display: block; color: var(--secondary); margin-bottom: 8px; }
     .reason p { color: var(--muted); line-height: 1.75; font-size: 0.9rem; }
 
-    .contact {
-      display: grid;
-      grid-template-columns: 1.04fr 0.96fr;
-      gap: 14px;
-    }
+    .contact { grid-template-columns: 1.04fr 0.96fr; }
     .contact-box .phone {
       display: block;
       margin-top: 12px;
@@ -545,7 +501,7 @@
       font-size: clamp(2rem, 4vw, 3.5rem);
       font-weight: 800;
       letter-spacing: -0.04em;
-      color: #fff;
+      color: var(--primary);
     }
     .contact-box .hours { color: var(--muted); margin-top: 8px; font-size: 0.9rem; }
 
@@ -566,10 +522,7 @@
 
     .float { animation: float 8s ease-in-out infinite; }
     .float-slow { animation: float 11s ease-in-out infinite reverse; }
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     @media (max-width: 1200px) {
@@ -584,7 +537,7 @@
     }
     @media (max-width: 760px) {
       .page { width: min(calc(100% - 16px), var(--max)); }
-      .hero-main { min-height: 820px; }
+      .hero-main { min-height: 840px; }
       .hero-copy { padding: 24px 18px 18px; }
       .hero-title { margin-top: 110px; }
       .hero-title h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
@@ -626,11 +579,11 @@
 
     <section class="hero">
       <div class="hero-main fade-up">
-        <img src="./assets/gluck-hero.svg" alt="電気工事の現場とインフラを表現したヒーローアート">
+        <img src="./assets/gluck-blueprint-hero.svg" alt="ブループリント調の電気工事ヒーローアート">
         <div class="hero-copy">
           <div class="hero-top">
             <div>
-              <span class="eyebrow">Electric Works / Management / Network</span>
+              <span class="eyebrow">Blueprint / Systems / Works</span>
               <div class="hero-title">
                 <h1>稼働力で、<br>現場を止めない。</h1>
                 <p class="lead">人材 × 技術 × 管理力で、全国の施工を支えるパートナー。独自のネットワークと管理システムで、人材供給から自社請負工事までワンストップで対応します。</p>
@@ -653,8 +606,8 @@
 
       <aside class="hero-aside fade-up">
         <div class="score-card"><small>年間稼働人数</small><strong>1.5万〜2万人!</strong><p>稼働人数の厚みで、現場を止めない体制を構築。</p></div>
-        <div class="shot float-slow"><img src="./assets/gluck-hero.svg" alt="夜景を背景にした電気工事イメージ"><div class="caption">夜景・施工・安全管理</div></div>
-        <div class="shot float"><img src="./assets/gluck-hero.svg" alt="太陽光と設備の施工イメージ"><div class="caption">太陽光・受変電・設備</div></div>
+        <div class="shot float-slow"><img src="./assets/gluck-blueprint-hero.svg" alt="施工管理イメージ"><div class="caption">management</div></div>
+        <div class="shot float"><img src="./assets/gluck-blueprint-hero.svg" alt="太陽光・設備イメージ"><div class="caption">systems</div></div>
         <div class="score-card"><small>協力会社ネットワーク</small><strong>全国350名!</strong><p>信頼できるパートナーと共に、全国の現場をカバー。</p></div>
       </aside>
     </section>
@@ -672,7 +625,7 @@
           <span class="eyebrow">数字で見る強み</span>
           <h2>現場を止めないための、稼働力と管理力。</h2>
         </div>
-        <p>スクショの第一印象に合わせて、上部で「どれくらい動けるか」を明快に見せます。</p>
+        <p>スクリーンショットの密度を保ちながら、白ベースで読みやすく再構成します。</p>
       </div>
       <div class="stats-grid">
         <div class="metric"><small>事業内容</small><strong>3本柱</strong><span>人材供給・現場管理・自社施工を一体で運用。</span></div>
@@ -688,7 +641,7 @@
           <span class="eyebrow">事業内容</span>
           <h2>人材供給も、自社施工も。すべてグリュックにお任せください。</h2>
         </div>
-        <p>スクリーンショットの3カラム構成をそのまま踏襲し、各事業の役割を大きく見せます。</p>
+        <p>3カラムの役割を明確にし、それぞれが独立して見えるように整理します。</p>
       </div>
       <div class="business">
         <article class="business-card">
@@ -705,7 +658,7 @@
               <li>安全・教育体制も万全</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="人材供給イメージ"><div class="caption">staffing</div></div>
+          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="人材供給イメージ"></div>
         </article>
         <article class="business-card">
           <div class="business-copy">
@@ -721,7 +674,7 @@
               <li>報告・提出もサポート</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="現場管理イメージ"><div class="caption">management</div></div>
+          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="現場管理イメージ"></div>
         </article>
         <article class="business-card">
           <div class="business-copy">
@@ -737,7 +690,7 @@
               <li>商業施設・店舗・病院・倉庫など</li>
             </ul>
           </div>
-          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="自社請負工事イメージ"><div class="caption">contracting</div></div>
+          <div class="business-visual"><img src="./assets/gluck-blueprint-hero.svg" alt="自社請負工事イメージ"></div>
         </article>
       </div>
     </section>
@@ -773,14 +726,14 @@
         <p>スクリーンショット同様、写真タイルの連続で“施工の厚み”を見せます。</p>
       </div>
       <div class="gallery">
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="プラント電気工事"><div class="label">プラント電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="商業施設電気工事"><div class="label">商業施設電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="病院電気工事"><div class="label">病院電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="倉庫電気工事"><div class="label">倉庫電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="店舗電気工事"><div class="label">店舗電気工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="マンション工事"><div class="label">マンション・ビル工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="太陽光工事"><div class="label">太陽光工事</div></div>
-        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="電設設備工事"><div class="label">電気設備工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="プラント電気工事"><div class="label">プラント電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="商業施設電気工事"><div class="label">商業施設電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="病院電気工事"><div class="label">病院電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="倉庫電気工事"><div class="label">倉庫電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="店舗電気工事"><div class="label">店舗電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="マンション工事"><div class="label">マンション・ビル工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="太陽光工事"><div class="label">太陽光工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-blueprint-hero.svg" alt="電設設備工事"><div class="label">電気設備工事</div></div>
       </div>
     </section>
 
@@ -794,7 +747,7 @@
       </div>
       <div class="network">
         <div class="map-card">
-          <img src="./assets/gluck-map.svg" alt="日本全国のネットワークを表現した地図アート">
+          <img src="./assets/gluck-blueprint-map.svg" alt="日本全国のネットワークを表現した地図アート">
           <div class="map-meta">
             <div><span>北海道・東北</span><span>即応対応</span></div>
             <div><span>関東・中部</span><span>常時稼働</span></div>
@@ -850,7 +803,7 @@
           </div>
         </div>
         <div class="contact-box">
-          <strong style="display:block;color:#fff;font-size:1.2rem;">お問い合わせフォームはこちら</strong>
+          <strong style="display:block;color:var(--primary);font-size:1.2rem;">お問い合わせフォームはこちら</strong>
           <p style="margin-top:10px;color:var(--muted);line-height:1.8;">24時間受付中。人材供給、自社施工、協力会社連携のご相談をまとめて受け付けます。</p>
           <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
             <span class="pill">問い合わせ</span>
@@ -879,27 +832,6 @@
       el.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
       observer.observe(el);
     });
-
-    const counters = document.querySelectorAll('[data-count]');
-    const animateCount = (el, target) => {
-      const duration = 1200;
-      const start = performance.now();
-      const tick = (now) => {
-        const progress = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(target * eased).toLocaleString('ja-JP');
-        if (progress < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    };
-    const countObserver = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        animateCount(entry.target, Number(entry.target.dataset.count || '0'));
-        countObserver.unobserve(entry.target);
-      }
-    }, { threshold: 0.5 });
-    counters.forEach((el) => countObserver.observe(el));
 
     const heroImage = document.querySelector('.hero-main img');
     const heroMain = document.querySelector('.hero-main');

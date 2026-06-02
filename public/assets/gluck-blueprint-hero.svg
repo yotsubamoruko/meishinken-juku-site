@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="ブループリント調の電気工事ヒーローアート">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9fbff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B2A5B"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FDBA74"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity="0.5">
+    <path d="M90 150h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M90 280h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M90 410h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M90 540h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M90 670h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M90 800h1420" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M160 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M320 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M480 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M640 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M800 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M960 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M1120 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M1280 90v860" stroke="#d9e4f1" stroke-width="2"/>
+    <path d="M1440 90v860" stroke="#d9e4f1" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(120 110)">
+    <rect width="760" height="540" rx="30" fill="#fff" stroke="#cbd8ea"/>
+    <rect x="22" y="22" width="716" height="496" rx="24" fill="#f7fbff" stroke="#dfe8f3"/>
+    <rect x="54" y="58" width="220" height="16" rx="8" fill="#0B2A5B"/>
+    <rect x="54" y="92" width="340" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="54" y="120" width="280" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="54" y="170" width="650" height="280" rx="22" fill="#eef4ff" stroke="#d9e4f1"/>
+    <g stroke="url(#blue)" stroke-width="4" fill="none" opacity="0.92">
+      <path d="M100 390h560"/>
+      <path d="M140 360h480"/>
+      <path d="M190 330h380"/>
+      <path d="M240 300h290"/>
+      <path d="M300 250h160"/>
+    </g>
+    <g fill="url(#blue)">
+      <circle cx="150" cy="370" r="18"/>
+      <circle cx="305" cy="300" r="18"/>
+      <circle cx="470" cy="275" r="18"/>
+    </g>
+    <g fill="#ffffff" opacity="0.92">
+      <circle cx="150" cy="370" r="7"/>
+      <circle cx="305" cy="300" r="7"/>
+      <circle cx="470" cy="275" r="7"/>
+    </g>
+  </g>
+
+  <g transform="translate(930 110)">
+    <rect width="560" height="260" rx="28" fill="#ffffff" stroke="#cbd8ea"/>
+    <rect x="22" y="22" width="516" height="216" rx="22" fill="#f8fbff" stroke="#dfe8f3"/>
+    <rect x="44" y="46" width="160" height="14" rx="7" fill="#0B2A5B"/>
+    <rect x="44" y="78" width="310" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="44" y="108" width="260" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="44" y="148" width="220" height="70" rx="16" fill="#eef4ff" stroke="#d9e4f1"/>
+    <rect x="290" y="148" width="220" height="70" rx="16" fill="#fff3e8" stroke="#ffd4b0"/>
+    <path d="M330 184h140" stroke="url(#orange)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M330 164h90" stroke="#c8d6ea" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="110" cy="182" r="22" fill="url(#blue)"/>
+    <circle cx="110" cy="182" r="8" fill="#fff"/>
+  </g>
+
+  <g transform="translate(930 400)">
+    <rect width="560" height="250" rx="28" fill="#ffffff" stroke="#cbd8ea"/>
+    <rect x="22" y="22" width="516" height="206" rx="22" fill="#f7fbff" stroke="#dfe8f3"/>
+    <rect x="44" y="44" width="140" height="14" rx="7" fill="url(#blue)"/>
+    <rect x="44" y="78" width="420" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="44" y="106" width="380" height="10" rx="5" fill="#c8d6ea"/>
+    <rect x="44" y="148" width="460" height="50" rx="14" fill="#eef4ff" stroke="#d9e4f1"/>
+    <text x="64" y="180" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#0B2A5B">60〜100名 / day</text>
+    <text x="320" y="180" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#F97316">全国350名</text>
+  </g>
+
+  <g transform="translate(120 700)">
+    <rect width="1370" height="180" rx="28" fill="#ffffff" stroke="#cbd8ea"/>
+    <rect x="28" y="28" width="1314" height="124" rx="22" fill="#f8fbff" stroke="#dfe8f3"/>
+    <g stroke="#1d4ed8" stroke-width="3" fill="none" opacity="0.85">
+      <path d="M80 92h120"/>
+      <path d="M240 92h120"/>
+      <path d="M400 92h120"/>
+      <path d="M560 92h120"/>
+      <path d="M720 92h120"/>
+      <path d="M880 92h120"/>
+      <path d="M1040 92h120"/>
+      <path d="M1200 92h120"/>
+    </g>
+    <g fill="#f97316">
+      <circle cx="144" cy="92" r="10"/>
+      <circle cx="304" cy="92" r="10"/>
+      <circle cx="464" cy="92" r="10"/>
+      <circle cx="624" cy="92" r="10"/>
+      <circle cx="784" cy="92" r="10"/>
+      <circle cx="944" cy="92" r="10"/>
+      <circle cx="1104" cy="92" r="10"/>
+      <circle cx="1264" cy="92" r="10"/>
+    </g>
+  </g>
+</svg>
