@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>名進研 | 名古屋の中学受験塾</title>
-  <meta name="description" content="名古屋で中学受験を考えるご家庭へ。名進研の合格実績、学年別コース、名駅校の通いやすさをわかりやすく案内します。">
-  <meta property="og:title" content="名進研 | 名古屋の中学受験塾">
-  <meta property="og:description" content="東海地区で40年。中学受験を、ひとりにしない。">
+  <title>名進研 | 東海地区の中学受験塾</title>
+  <meta name="description" content="名進研の中学受験ホームページ。合格実績、学年別コース、名駅校の通いやすさ、説明会・体験授業の案内をまとめています。">
+  <meta property="og:title" content="名進研 | 東海地区の中学受験塾">
+  <meta property="og:description" content="名古屋で中学受験を考えるご家庭へ。実績・校舎・コースを一目で。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/nagoya-juku-hero.png">
   <meta name="theme-color" content="#184E9E">
@@ -16,21 +16,21 @@
   <style>
     :root {
       --primary: #184E9E;
-      --secondary: #3E6FB6;
-      --tertiary: #E94E3D;
-      --accent: #F6C445;
+      --primary-soft: #3E6FB6;
+      --accent: #E94E3D;
+      --gold: #F6C445;
       --sky: #EAF3FF;
       --surface: #FFFFFF;
       --soft: #F6F8FC;
       --line: #D9E4F2;
       --text: #24303D;
       --muted: #5E6B78;
-      --shadow: 0 18px 44px rgba(24, 78, 158, 0.08);
-      --shadow-strong: 0 24px 60px rgba(24, 78, 158, 0.14);
+      --shadow: 0 16px 36px rgba(24, 78, 158, 0.08);
+      --shadow-strong: 0 24px 54px rgba(24, 78, 158, 0.14);
       --radius-xl: 34px;
       --radius-lg: 24px;
       --radius-md: 18px;
-      --max: 1220px;
+      --max: 1240px;
     }
 
     * { box-sizing: border-box; }
@@ -41,20 +41,19 @@
       color: var(--text);
       font-family: 'Noto Sans JP', system-ui, sans-serif;
       background:
-        radial-gradient(circle at 0% 0%, rgba(234, 243, 255, 1), transparent 22%),
-        radial-gradient(circle at 100% 8%, rgba(246, 196, 69, 0.16), transparent 20%),
+        radial-gradient(circle at 8% 0%, rgba(234,243,255,0.9), transparent 22%),
+        radial-gradient(circle at 100% 4%, rgba(246,196,69,0.16), transparent 18%),
         linear-gradient(180deg, #fff 0%, #fbfdff 100%);
     }
-
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: radial-gradient(rgba(24, 78, 158, 0.05) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(24,78,158,0.05) 1px, transparent 1px);
       background-size: 22px 22px;
       opacity: 0.28;
-      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 85%);
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.22), transparent 85%);
     }
 
     a { color: inherit; text-decoration: none; }
@@ -65,45 +64,60 @@
     .page {
       width: min(calc(100% - 28px), var(--max));
       margin: 0 auto;
-      padding: 16px 0 44px;
+      padding: 16px 0 46px;
       position: relative;
       z-index: 1;
     }
 
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
+    .notice {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 14px 18px;
-      margin-top: 6px;
-      border-radius: 999px;
-      border: 1px solid rgba(24, 78, 158, 0.12);
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(16px);
-      box-shadow: var(--shadow);
+      padding: 10px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(233,78,61,0.16);
+      background: rgba(255,246,244,0.96);
+      color: #a5382f;
+      font-size: 0.88rem;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(233,78,61,0.06);
+    }
+    .notice strong {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
     }
 
-    .brand { display: flex; align-items: center; gap: 12px; }
+    .masthead {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 0 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
     .brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
       display: grid;
       place-items: center;
       color: #fff;
       font-family: 'M PLUS Rounded 1c', sans-serif;
       font-weight: 900;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     }
-    .brand-copy strong { display: block; font-size: 1rem; }
-    .brand-copy span { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 2px; }
+    .brand-copy strong { display: block; font-size: 1rem; letter-spacing: 0.03em; }
+    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.78rem; }
 
-    .nav {
+    .header-links {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
@@ -112,201 +126,222 @@
       font-size: 0.92rem;
       font-weight: 700;
     }
-    .nav a { padding: 6px 0; border-bottom: 2px solid transparent; }
-    .nav a:hover { color: var(--primary); border-bottom-color: rgba(24,78,158,0.28); }
+    .header-links a { padding: 6px 0; border-bottom: 2px solid transparent; }
+    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(24,78,158,0.24); }
 
-    .actions {
+    .header-cta {
       display: flex;
-      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
+      justify-content: flex-end;
     }
+
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
+      min-height: 46px;
       padding: 0 18px;
       border-radius: 999px;
       border: 1px solid transparent;
       font-weight: 800;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       white-space: nowrap;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
     .button:hover { transform: translateY(-1px); }
     .button-primary {
       color: #fff;
-      background: linear-gradient(135deg, var(--tertiary), #d43d30);
-      box-shadow: 0 14px 24px rgba(233, 78, 61, 0.2);
+      background: linear-gradient(135deg, var(--accent), #d43d30);
+      box-shadow: 0 14px 24px rgba(233,78,61,0.2);
     }
     .button-blue {
       color: #fff;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      box-shadow: 0 14px 24px rgba(24,78,158,0.18);
     }
     .button-ghost {
       color: var(--primary);
-      border-color: rgba(24, 78, 158, 0.14);
-      background: rgba(24, 78, 158, 0.04);
+      border-color: rgba(24,78,158,0.14);
+      background: rgba(24,78,158,0.04);
     }
 
     .hero {
       display: grid;
-      grid-template-columns: 1.06fr 0.94fr;
-      gap: 28px;
-      align-items: center;
-      padding: 28px 0 22px;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 26px;
+      align-items: stretch;
+      padding: 18px 0 24px;
     }
 
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      padding: 10px 0;
+    }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      width: fit-content;
       padding: 9px 14px;
       border-radius: 999px;
       color: var(--primary);
-      background: rgba(24, 78, 158, 0.08);
-      border: 1px solid rgba(24, 78, 158, 0.12);
+      background: rgba(24,78,158,0.08);
+      border: 1px solid rgba(24,78,158,0.12);
       font-size: 0.82rem;
       font-weight: 800;
       letter-spacing: 0.08em;
     }
-
-    .hero h1 {
-      margin-top: 14px;
-      font-size: clamp(2.8rem, 5.9vw, 5.8rem);
-      line-height: 1.02;
+    .hero-copy h1 {
+      font-size: clamp(2.9rem, 6vw, 5.8rem);
+      line-height: 1.03;
       letter-spacing: 0.01em;
     }
-    .lead {
-      margin-top: 18px;
-      max-width: 44rem;
+    .hero-copy .lead {
+      max-width: 42rem;
       color: var(--muted);
       font-size: 1.03rem;
-      line-height: 1.9;
+      line-height: 1.92;
     }
-
-    .hero-meta {
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .hero-badges {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 20px;
+      margin-top: 4px;
     }
-    .pill {
+    .chip {
       display: inline-flex;
       align-items: center;
       min-height: 38px;
       padding: 0 14px;
       border-radius: 999px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.88);
-      color: var(--text);
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
       font-size: 0.86rem;
       font-weight: 800;
+      color: var(--text);
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
+    .hero-panel {
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 12px;
-      margin-top: 26px;
-    }
-
-    .hero-visual {
-      position: relative;
-      min-height: 660px;
+      align-content: start;
     }
     .hero-card {
-      position: absolute;
-      inset: 0;
+      position: relative;
+      min-height: 600px;
       border-radius: 34px;
-      padding: 18px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(234,243,255,0.92));
-      border: 1px solid rgba(24, 78, 158, 0.12);
-      box-shadow: var(--shadow-strong);
       overflow: hidden;
-    }
-    .hero-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(255,255,255,0.28), transparent 40%);
-      pointer-events: none;
+      border: 1px solid rgba(24,78,158,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(234,243,255,0.9));
+      box-shadow: var(--shadow-strong);
     }
     .hero-image {
       position: absolute;
-      inset: 18px 18px 84px 18px;
+      inset: 18px;
       border-radius: 28px;
       overflow: hidden;
       background: #fff;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
       transition: transform 0.25s ease;
     }
     .hero-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 40%;
+      object-position: center 38%;
     }
-
-    .hero-badge,
-    .hero-note,
-    .hero-chip {
+    .hero-caption,
+    .hero-stat,
+    .hero-tag {
       position: absolute;
-      border-radius: 20px;
-      border: 1px solid rgba(24, 78, 158, 0.12);
-      background: rgba(255,255,255,0.92);
-      box-shadow: 0 14px 28px rgba(24, 78, 158, 0.1);
+      border-radius: 18px;
+      border: 1px solid rgba(24,78,158,0.12);
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 14px 28px rgba(24,78,158,0.1);
     }
-    .hero-badge {
-      top: 30px;
-      right: 22px;
-      padding: 14px 16px;
-      width: 184px;
-      transform: rotate(5deg);
-    }
-    .hero-badge strong { display: block; color: var(--primary); font-family: 'M PLUS Rounded 1c', sans-serif; line-height: 1.4; }
-    .hero-badge span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.84rem; line-height: 1.7; }
-
-    .hero-note {
+    .hero-caption {
       left: 18px;
-      bottom: 22px;
-      width: 258px;
+      bottom: 18px;
+      width: 250px;
       padding: 16px 18px;
     }
-    .hero-note strong { display: block; color: var(--primary); font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 1rem; }
-    .hero-note span { display: block; margin-top: 8px; color: var(--muted); line-height: 1.75; font-size: 0.88rem; }
-
-    .hero-chip {
-      right: 22px;
-      bottom: 18px;
-      width: 156px;
+    .hero-caption strong {
+      display: block;
+      color: var(--primary);
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      margin-bottom: 6px;
+    }
+    .hero-caption span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .hero-stat {
+      right: 18px;
+      top: 18px;
+      width: 170px;
       padding: 14px 16px;
       text-align: right;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
       color: #fff;
-      border-color: rgba(255,255,255,0.18);
-      transform: rotate(-4deg);
+      transform: rotate(4deg);
+      border-color: rgba(255,255,255,0.14);
     }
-    .hero-chip small {
+    .hero-stat small {
       display: block;
-      text-transform: uppercase;
       letter-spacing: 0.12em;
-      opacity: 0.7;
+      text-transform: uppercase;
+      opacity: 0.72;
       font-size: 0.66rem;
     }
-    .hero-chip strong {
+    .hero-stat strong {
       display: block;
       margin-top: 4px;
       font-family: 'M PLUS Rounded 1c', sans-serif;
       font-size: 1rem;
     }
+    .hero-tag {
+      right: 28px;
+      bottom: 26px;
+      width: 144px;
+      padding: 14px 16px;
+      transform: rotate(-5deg);
+      background: linear-gradient(135deg, #fff, #f6f8fc);
+    }
+    .hero-tag strong { display: block; color: var(--text); font-family: 'M PLUS Rounded 1c', sans-serif; line-height: 1.35; }
+
+    .hero-rail {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .rail-card {
+      padding: 16px 18px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
+    }
+    .rail-card strong { display: block; color: var(--primary); font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 1rem; }
+    .rail-card span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.88rem; line-height: 1.72; }
 
     .ticker {
-      margin: 18px 0 0;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      background: rgba(255,255,255,0.8);
       overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: var(--shadow);
+      margin-top: 18px;
     }
     .ticker-track {
       display: flex;
@@ -324,10 +359,9 @@
       margin-top: 26px;
       padding: 26px;
       border-radius: var(--radius-xl);
-      background: rgba(255,255,255,0.84);
+      background: #fff;
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
-      position: relative;
       overflow: hidden;
     }
     .section-head {
@@ -357,10 +391,10 @@
     }
     .metric {
       padding: 18px;
-      border-radius: 24px;
-      border: 1px solid rgba(24, 78, 158, 0.1);
-      background: linear-gradient(180deg, #fff, #f9fbff);
-      box-shadow: 0 12px 30px rgba(24,78,158,0.06);
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff, #fafcff);
+      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
     }
     .metric strong {
       display: block;
@@ -385,26 +419,26 @@
       border-radius: 24px;
       border: 1px solid var(--line);
       background: #fff;
-      box-shadow: 0 12px 28px rgba(24, 78, 158, 0.06);
-      position: relative;
+      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
     }
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 18px 42px rgba(24, 78, 158, 0.11);
+      box-shadow: 0 18px 42px rgba(24,78,158,0.11);
     }
     .card::before {
       content: '';
       position: absolute;
-      inset: 0 auto auto 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--primary), var(--accent));
-      opacity: 0.95;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
     }
     .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
-    .card .tag-row, .feature-row, .school-row {
+    .feature-row, .tag-row, .school-row, .result-list, .cta-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -413,30 +447,29 @@
     .mini-tag {
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(24, 78, 158, 0.06);
+      background: rgba(24,78,158,0.06);
+      border: 1px solid rgba(24,78,158,0.1);
       color: var(--primary);
-      border: 1px solid rgba(24, 78, 158, 0.1);
       font-size: 0.76rem;
       font-weight: 800;
     }
-    .feature-row .feature {
+    .feature {
       padding: 10px 14px;
       border-radius: 999px;
-      background: rgba(24, 78, 158, 0.06);
+      background: rgba(24,78,158,0.06);
       color: var(--primary);
       font-size: 0.84rem;
       font-weight: 800;
     }
 
     .course-grid .course {
-      min-height: 178px;
+      min-height: 182px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
     .course .grade {
       display: inline-flex;
-      align-items: center;
       width: fit-content;
       padding: 7px 12px;
       border-radius: 999px;
@@ -446,7 +479,6 @@
       font-size: 0.76rem;
       letter-spacing: 0.08em;
     }
-    .course h3 { margin-top: 12px; }
     .course .meta {
       display: flex;
       flex-wrap: wrap;
@@ -459,44 +491,45 @@
       padding: 8px 10px;
       border-radius: 999px;
       background: var(--soft);
+      border: 1px solid var(--line);
     }
 
-    .step-list {
+    .flow {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 14px;
     }
-    .step {
+    .flow-step {
       padding: 18px;
-      border-radius: 24px;
-      background: linear-gradient(180deg, #fff, #fbfdff);
+      border-radius: 22px;
       border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff, #fbfdff);
       box-shadow: 0 12px 28px rgba(24,78,158,0.06);
       position: relative;
     }
-    .step::after {
+    .flow-step::after {
       content: '';
       position: absolute;
-      top: 16px;
-      right: 16px;
-      width: 34px;
-      height: 34px;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
       border-radius: 999px;
-      background: rgba(246, 196, 69, 0.18);
-      border: 1px solid rgba(246, 196, 69, 0.28);
+      background: rgba(246,196,69,0.18);
+      border: 1px solid rgba(246,196,69,0.28);
     }
-    .step strong {
+    .flow-step strong {
       display: block;
+      margin-bottom: 8px;
       color: var(--primary);
       font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-size: 1.05rem;
-      margin-bottom: 8px;
+      font-size: 1.02rem;
     }
-    .step p { color: var(--muted); line-height: 1.75; }
+    .flow-step p { color: var(--muted); line-height: 1.75; }
 
     .photo-card {
       position: relative;
-      min-height: 362px;
+      min-height: 352px;
       border-radius: 28px;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -511,8 +544,8 @@
     }
     .photo-card .badge {
       position: absolute;
-      left: 16px;
-      bottom: 16px;
+      left: 14px;
+      bottom: 14px;
       padding: 10px 14px;
       border-radius: 999px;
       background: rgba(255,255,255,0.94);
@@ -525,24 +558,17 @@
 
     .ranking {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.02fr 0.98fr;
       gap: 16px;
-      align-items: stretch;
-    }
-    .result-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 14px;
     }
     .result-list span {
       padding: 10px 12px;
       border-radius: 999px;
       background: rgba(24,78,158,0.06);
       border: 1px solid rgba(24,78,158,0.1);
-      font-size: 0.84rem;
-      font-weight: 800;
       color: var(--primary);
+      font-weight: 800;
+      font-size: 0.84rem;
     }
 
     .access {
@@ -551,19 +577,19 @@
       gap: 16px;
       align-items: start;
     }
-    .access-map {
+    .map-card {
       padding: 22px;
       border-radius: 28px;
-      background: linear-gradient(180deg, rgba(234,243,255,0.9), rgba(255,255,255,1));
+      background: linear-gradient(180deg, #eaf3ff, #fff);
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
-    .access-map .meta {
+    .map-card .meta {
       display: grid;
       gap: 12px;
       margin-top: 16px;
     }
-    .access-map .meta div {
+    .map-card .meta div {
       display: flex;
       justify-content: space-between;
       gap: 16px;
@@ -572,7 +598,7 @@
       color: var(--muted);
       font-size: 0.94rem;
     }
-    .access-map .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
+    .map-card .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
 
     .voices {
       display: grid;
@@ -601,47 +627,47 @@
 
     .cta {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 16px;
       align-items: center;
       padding: 24px;
       border-radius: var(--radius-xl);
-      border: 1px solid rgba(24,78,158,0.12);
-      background: linear-gradient(135deg, rgba(24,78,158,0.98), rgba(62,111,182,0.95));
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
       color: #fff;
+      border: 1px solid rgba(24,78,158,0.14);
       box-shadow: var(--shadow-strong);
       margin-top: 28px;
     }
     .cta p {
       margin-top: 12px;
       color: rgba(255,255,255,0.84);
-      line-height: 1.85;
+      line-height: 1.84;
     }
     .cta .button-ghost {
       color: #fff;
-      border-color: rgba(255,255,255,0.22);
+      border-color: rgba(255,255,255,0.18);
       background: rgba(255,255,255,0.08);
     }
-    .cta-panel {
-      border-radius: 24px;
+    .cta-card {
       padding: 18px;
+      border-radius: 24px;
       border: 1px solid rgba(255,255,255,0.12);
       background: rgba(255,255,255,0.08);
     }
-    .cta-panel .meta {
+    .cta-card .meta {
       display: grid;
       gap: 10px;
       margin-top: 14px;
       font-size: 0.92rem;
     }
-    .cta-panel .meta div {
+    .cta-card .meta div {
       display: flex;
       justify-content: space-between;
-      gap: 14px;
+      gap: 16px;
       padding-bottom: 10px;
       border-bottom: 1px solid rgba(255,255,255,0.14);
     }
-    .cta-panel .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
+    .cta-card .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
 
     .footer {
       margin-top: 28px;
@@ -662,7 +688,7 @@
     }
 
     .float { animation: float 7.5s ease-in-out infinite; }
-    .float-slow { animation: float 10s ease-in-out infinite reverse; }
+    .float-slow { animation: float 10.5s ease-in-out infinite reverse; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0) rotate(var(--rotate, 0deg)); }
@@ -673,101 +699,124 @@
       to { transform: translateX(-50%); }
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1100px) {
+      .masthead { grid-template-columns: 1fr; justify-items: start; }
+      .header-cta { justify-content: flex-start; }
       .hero, .ranking, .access, .cta { grid-template-columns: 1fr; }
-      .voices, .grid-3, .step-list, .metrics, .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .hero-visual { min-height: 600px; }
+      .hero-panel { grid-template-columns: 1fr 1fr; }
+      .voices, .grid-3, .flow, .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .section-head { flex-direction: column; align-items: start; }
     }
 
     @media (max-width: 720px) {
       .page { width: min(calc(100% - 18px), var(--max)); padding-top: 10px; }
-      .topbar { border-radius: 28px; align-items: flex-start; flex-direction: column; }
-      .nav { justify-content: flex-start; gap: 10px; }
-      .actions, .hero-actions { width: 100%; }
-      .button { width: 100%; }
-      .hero { padding-top: 20px; }
-      .hero h1 { font-size: clamp(2.3rem, 14vw, 4rem); }
-      .hero-visual { min-height: 520px; }
-      .hero-card { padding: 12px; }
-      .hero-image { inset: 12px 12px 78px 12px; }
-      .hero-note { width: 210px; left: 12px; bottom: 16px; }
-      .hero-badge { width: 150px; top: 16px; right: 14px; }
-      .hero-chip { right: 14px; bottom: 14px; width: 128px; }
+      .notice { flex-direction: column; align-items: flex-start; }
+      .hero-panel { grid-template-columns: 1fr; }
+      .hero h1 { font-size: clamp(2.4rem, 13vw, 4rem); }
+      .hero-card { min-height: 520px; }
+      .hero-image { inset: 12px; }
+      .hero-caption { width: 210px; }
+      .hero-stat { width: 146px; }
+      .hero-tag { width: 126px; }
       .section, .cta { padding: 18px; }
-      .grid-3, .metrics, .grid-2, .step-list, .voices { grid-template-columns: 1fr; }
-      .photo-card { min-height: 280px; }
+      .grid-3, .flow, .metrics, .voices, .grid-2 { grid-template-columns: 1fr; }
+      .header-cta, .hero-actions, .feature-row, .tag-row, .school-row, .result-list, .cta-stack { width: 100%; }
+      .button { width: 100%; }
+      .ticker-track { animation-duration: 18s; }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <header class="topbar fade-up" id="top">
+    <div class="notice fade-up">
+      <strong>緊急のお知らせ</strong>
+      <span>6月2日（火）に予定されている授業・テスト・イベント等については、地域ごとの案内をご確認ください。</span>
+    </div>
+
+    <header class="masthead fade-up" id="top">
       <div class="brand">
         <div class="brand-mark">名</div>
         <div class="brand-copy">
           <strong>名進研</strong>
-          <span>名古屋の中学受験塾</span>
+          <span>名古屋・愛知・岐阜の中学受験塾</span>
         </div>
       </div>
-      <nav class="nav" aria-label="ページ内ナビゲーション">
-        <a href="#features">特長</a>
+
+      <nav class="header-links" aria-label="ページ内ナビゲーション">
+        <a href="#results">合格実績</a>
         <a href="#courses">コース</a>
-        <a href="#flow">流れ</a>
-        <a href="#school">校舎</a>
+        <a href="#flow">学習の流れ</a>
+        <a href="#school">名駅校</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <div class="actions">
+
+      <div class="header-cta">
         <a class="button button-ghost" href="#school">校舎案内</a>
-        <a class="button button-primary" href="#cta">資料請求</a>
+        <a class="button button-blue" href="#cta">資料請求</a>
       </div>
     </header>
 
     <section class="hero">
-      <div class="fade-up">
+      <div class="hero-copy fade-up">
         <span class="eyebrow">東海地区で40年</span>
-        <h1>中学受験を、<br>ひとりにしない。</h1>
-        <p class="lead">名進研は、名古屋を中心に東海地区の中学受験を支える進学塾です。合格実績、学年別のコース設計、名駅校の通いやすさを、保護者の方にわかりやすくお伝えします。</p>
+        <h1>合格へ、<br>ひとりにしない伴走を。</h1>
+        <p class="lead">名進研は、名古屋を中心に東海地区の中学受験を支える進学塾です。学年別コース、プレ中学入試、名駅校の通いやすさを、保護者の方がひと目で把握できるようにまとめました。</p>
 
         <div class="hero-meta">
-          <span class="pill">1クラス原則24名</span>
-          <span class="pill">教師常駐・質問しやすい</span>
-          <span class="pill">名駅駅徒歩圏の名駅校</span>
-          <span class="pill">自習室 21:30まで</span>
+          <span class="chip">1クラス原則24名</span>
+          <span class="chip">教師常駐</span>
+          <span class="chip">自習室 21:30まで</span>
+          <span class="chip">名駅校は駅近</span>
         </div>
 
         <div class="hero-actions">
           <a class="button button-primary" href="#courses">学年別コース</a>
-          <a class="button button-blue" href="#school">名駅校を見る</a>
+          <a class="button button-blue" href="#results">合格実績</a>
           <a class="button button-ghost" href="#cta">無料体験</a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="chip">私立中学受験</span>
+          <span class="chip">公立中高一貫校受検</span>
+          <span class="chip">名駅校</span>
         </div>
       </div>
 
-      <div class="hero-visual fade-up" id="heroVisual">
+      <div class="hero-panel fade-up" id="heroVisual">
         <div class="hero-card">
           <div class="hero-image" id="heroImage">
             <img src="./assets/nagoya-juku-hero.png" alt="名進研の明るい教室で先生と生徒が学ぶ様子">
           </div>
-          <div class="hero-badge float-slow" style="--rotate:4deg;">
-            <strong>東海圏の受験を<br>しっかり伴走</strong>
-            <span>名古屋のご家庭が安心して選びやすい、定番の中学受験塾。</span>
+          <div class="hero-caption float-slow" style="--rotate:-2deg;">
+            <strong>東海圏の受験を、<br>見える形で支える。</strong>
+            <span>合格実績、学習の流れ、校舎案内をひとつのページにまとめています。</span>
           </div>
-          <div class="hero-note float-slow" style="--rotate:-3deg;">
-            <strong>校舎数も、情報量も。</strong>
-            <span>校舎案内、模試、説明会、保護者サポートをひとつに整理しています。</span>
+          <div class="hero-stat float-slow" style="--rotate:4deg;">
+            <small>data</small>
+            <strong>39+ 校舎</strong>
           </div>
-          <div class="hero-chip float" style="--rotate:-4deg;">
-            <small>focus</small>
-            <strong>Results & Support</strong>
+          <div class="hero-tag float" style="--rotate:5deg;">
+            <strong>Results<br>& Support</strong>
+          </div>
+        </div>
+
+        <div class="hero-rail">
+          <div class="rail-card">
+            <strong>夏期講習 受付中</strong>
+            <span>小3〜小6の保護者に、学習のきっかけをわかりやすく案内。</span>
+          </div>
+          <div class="rail-card">
+            <strong>プレ中学入試</strong>
+            <span>志望校対策の前に、現在地をつかむための定番イベント。</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ticker fade-up" aria-label="お知らせの流れ">
+    <section class="ticker fade-up" aria-label="キーワードの流れ">
       <div class="ticker-track">
-        <span>夏期講習 受付中</span><span>プレ中学入試 受付中</span><span>入会説明会 開催中</span><span>無料体験授業 受付中</span><span>校舎案内</span><span>合格実績</span>
-        <span>夏期講習 受付中</span><span>プレ中学入試 受付中</span><span>入会説明会 開催中</span><span>無料体験授業 受付中</span><span>校舎案内</span><span>合格実績</span>
+        <span>夏期講習 受付中</span><span>プレ中学入試</span><span>入会説明会</span><span>無料体験授業</span><span>名駅校</span><span>合格実績</span>
+        <span>夏期講習 受付中</span><span>プレ中学入試</span><span>入会説明会</span><span>無料体験授業</span><span>名駅校</span><span>合格実績</span>
       </div>
     </section>
 
@@ -775,41 +824,37 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">データで見る名進研</span>
-          <h2>安心の理由が、すぐ見える。</h2>
+          <h2>まずは、信頼の根拠を見せる。</h2>
         </div>
-        <p>まずは、保護者が気にする数字を明快に。複雑に見せず、信頼感のある情報を短く並べます。</p>
+        <p>ページの最初に、保護者が気にする数字を並べます。派手さよりも、判断しやすさを優先します。</p>
       </div>
       <div class="metrics">
-        <div class="metric"><strong data-count="40">0</strong><span>東海地区で積み上げてきた長い指導の実績。</span></div>
-        <div class="metric"><strong data-count="37">0</strong><span>愛知・岐阜で広がる校舎ネットワーク。</span></div>
-        <div class="metric"><strong data-count="24">0</strong><span>1クラス原則24名で、見守りやすいサイズ感。</span></div>
-        <div class="metric"><strong data-count="21">0</strong><span>名駅校は自習室を夜まで開放し、学習を支えます。</span></div>
+        <div class="metric"><strong data-count="40">0</strong><span>東海地区で積み上げてきた指導の年数。</span></div>
+        <div class="metric"><strong data-count="37">0</strong><span>愛知・岐阜に広がる校舎ネットワーク。</span></div>
+        <div class="metric"><strong data-count="24">0</strong><span>1クラス原則24名で、見守りやすい設計。</span></div>
+        <div class="metric"><strong data-count="21">0</strong><span>名駅校の自習室は夜まで利用可能。</span></div>
       </div>
     </section>
 
-    <section id="features" class="section fade-up">
+    <section id="results" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">名進研の特長</span>
-          <h2>受験に必要なことを、ひとまとめに。</h2>
+          <span class="eyebrow">合格実績</span>
+          <h2>東海圏の志望校に、強い。</h2>
         </div>
-        <p>進研ゼミのわかりやすさと、四谷大塚のテスト導線を意識して、情報を整理したシンプルな構成にしています。</p>
+        <p>東海中学、南山中学女子部、滝中学など、保護者が知りたい学校名をしっかり見せます。</p>
       </div>
-      <div class="grid-3">
+      <div class="ranking">
         <div class="card">
-          <h3>合格実績で選ばれる</h3>
-          <p>東海中学、南山中学女子部、滝中学など、東海圏の志望校に強い安心感。</p>
-          <div class="feature-row"><span class="feature">東海圏</span><span class="feature">難関校対応</span></div>
+          <h3>主な合格先</h3>
+          <p>東海中学、南山中学女子部、滝中学、愛知淑徳中学、南山中学男子部、名古屋中学、愛知中学、金城学院中学、椙山女学園中学、鶯谷中学。</p>
+          <div class="result-list">
+            <span>東海中学</span><span>南山女子部</span><span>滝中学</span><span>愛知淑徳</span><span>金城学院</span><span>名古屋中学</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>質問しやすい環境</h3>
-          <p>教師常駐で、授業前後や質問カードなど、わからないところを残しにくい仕組み。</p>
-          <div class="feature-row"><span class="feature">質問カード</span><span class="feature">個別フォロー</span></div>
-        </div>
-        <div class="card">
-          <h3>保護者との連携</h3>
-          <p>保護者会や個別面談で、学習の進み方や家庭学習の相談をしやすくしています。</p>
-          <div class="feature-row"><span class="feature">面談</span><span class="feature">保護者会</span></div>
+        <div class="photo-card">
+          <img src="./assets/nagoya-juku-school.png" alt="名駅近くの名進研校舎のイメージ" style="object-position:center 44%;">
+          <div class="badge">名駅校 / school view</div>
         </div>
       </div>
     </section>
@@ -818,20 +863,19 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">学年別コース</span>
-          <h2>小学1年生から、受験までの道筋がある。</h2>
+          <h2>今の学年で、何を選べばいいかがすぐわかる。</h2>
         </div>
-        <p>学年ごとに見せると、保護者が今どこを見ればいいかすぐわかります。コースの選択肢も見せつつ、ページはシンプルに保ちます。</p>
+        <p>低学年から高学年まで、コースの違いを短く整理。どの家庭も迷わない見せ方にしています。</p>
       </div>
       <div class="grid-3">
-        <div class="card course"><div><span class="grade">小1-2</span><h3>ピグマクラス</h3><p>楽しみながら思考力と記述力の芽を育てる、低学年向けの入口です。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
-        <div class="card course"><div><span class="grade">小3</span><h3>Jクラス</h3><p>基礎を固めながら、受験に向けた学習習慣をつくるスタート学年。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
-        <div class="card course"><div><span class="grade">小4-6</span><h3>Dクラス / αクラス</h3><p>習い事との両立や最難関志望まで、目的に合わせた選択ができます。</p></div><div class="meta"><span>算国理社</span><span>週1〜4</span></div></div>
+        <div class="card course"><div><span class="grade">小1-2</span><h3>ピグマクラス</h3><p>楽しく学びながら、考える力と記述の芽を育てる低学年の入口です。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
+        <div class="card course"><div><span class="grade">小3</span><h3>Jクラス</h3><p>受験の土台をつくる学年。学習習慣と基礎の定着を重視します。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
+        <div class="card course"><div><span class="grade">小4-6</span><h3>Dクラス / αクラス</h3><p>習い事との両立から最難関志望まで。目的に合わせて選べます。</p></div><div class="meta"><span>算国理社</span><span>週1〜4</span></div></div>
       </div>
-
       <div class="grid-2" style="margin-top:16px;">
         <div class="card">
-          <h3>主要コース</h3>
-          <p>私立中学受験、公立中高一貫校受検、愛教大附属中学受験クラスなど、名古屋の受験事情に合わせた導線を整理しています。</p>
+          <h3>受検・個別の選択肢</h3>
+          <p>公立中高一貫校受検、愛教大附属中学受験、個別指導など、名古屋の受験事情に合わせた選択ができます。</p>
           <div class="tag-row">
             <span class="mini-tag">私立中学受験</span>
             <span class="mini-tag">公立中高一貫校受検</span>
@@ -839,8 +883,8 @@
           </div>
         </div>
         <div class="card">
-          <h3>テスト・イベント</h3>
-          <p>プレ中学入試、志望校別プレ入試、夏期講習、入会説明会など、申込のきっかけをわかりやすくまとめます。</p>
+          <h3>イベントとテスト</h3>
+          <p>プレ中学入試、志望校別プレ入試、説明会、夏期講習など、申込のきっかけを一画面にまとめます。</p>
           <div class="tag-row">
             <span class="mini-tag">プレ中学入試</span>
             <span class="mini-tag">夏期講習</span>
@@ -854,38 +898,15 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">学習の流れ</span>
-          <h2>入塾後のイメージも、見えるように。</h2>
+          <h2>入塾後の道筋を、4段階で見せる。</h2>
         </div>
-        <p>授業だけではなく、テスト、復習、自習、保護者連携までを一つの流れとして見せます。</p>
+        <p>授業だけではなく、復習・テスト・面談までをまとめて見せることで、保護者の不安を減らします。</p>
       </div>
-      <div class="step-list">
-        <div class="step"><strong>1. 入会説明会</strong><p>学習の考え方やクラス分け、通塾の流れを保護者にわかりやすく案内。</p></div>
-        <div class="step"><strong>2. 授業と復習</strong><p>授業で理解し、テストと復習で定着。学習のリズムをつくります。</p></div>
-        <div class="step"><strong>3. テストで確認</strong><p>プレ入試や模試で現在地を把握し、志望校に向けて軌道修正。</p></div>
-        <div class="step"><strong>4. 面談と伴走</strong><p>保護者会や個別面談で、家庭と塾が同じ目線で進めます。</p></div>
-      </div>
-    </section>
-
-    <section id="result" class="section fade-up">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">合格実績</span>
-          <h2>東海圏の志望校に、強い。</h2>
-        </div>
-        <p>実績の見せ方は派手にしすぎず、学校名をしっかり見せる。保護者が知りたいのはそこです。</p>
-      </div>
-      <div class="ranking">
-        <div class="card">
-          <h3>東海圏の主な志望校</h3>
-          <p>東海中学、南山中学女子部、滝中学、愛知淑徳中学、南山中学男子部、名古屋中学、愛知中学、金城学院中学、椙山女学園中学、鶯谷中学など。</p>
-          <div class="result-list">
-            <span>東海中学</span><span>南山女子部</span><span>滝中学</span><span>愛知淑徳</span><span>名古屋中学</span><span>金城学院</span>
-          </div>
-        </div>
-        <div class="photo-card">
-          <img src="./assets/nagoya-juku-school.png" alt="名駅近くの名進研校舎のイメージ" style="object-position:center 40%;">
-          <div class="badge">名駅校 / school view</div>
-        </div>
+      <div class="flow">
+        <div class="flow-step"><strong>1. 説明会</strong><p>入会前に、学習方針とクラス設計を確認します。</p></div>
+        <div class="flow-step"><strong>2. 授業</strong><p>授業で理解し、先生と一緒に疑問をその場で解消。</p></div>
+        <div class="flow-step"><strong>3. テスト</strong><p>プレ中学入試や模試で、現在地と課題を把握。</p></div>
+        <div class="flow-step"><strong>4. 伴走</strong><p>保護者会や面談で、家庭と塾が同じ目線で進めます。</p></div>
       </div>
     </section>
 
@@ -893,21 +914,21 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">名駅校</span>
-          <h2>名古屋駅から通いやすい、安心の校舎。</h2>
+          <h2>駅から通いやすく、夜まで学べる。</h2>
         </div>
-        <p>通いやすさは大きな価値です。駅近、引率、自習室、教師常駐という安心材料を一画面でまとめます。</p>
+        <p>校舎の案内は、場所・電話・受付時間を短く整理。通わせる側の判断材料を優先します。</p>
       </div>
       <div class="access">
         <div class="card">
           <h3>名駅校のポイント</h3>
-          <p>名古屋駅から徒歩圏。授業後の引率、自習室の夜間開放、質問しやすい空気感など、通わせやすさが見える校舎です。</p>
+          <p>名古屋駅から徒歩圏。引率、自習室、教師常駐で、夜の通塾にも安心感があります。</p>
           <div class="tag-row">
             <span class="mini-tag">駅近</span>
-            <span class="mini-tag">自習室 21:30</span>
+            <span class="mini-tag">自習室 21:30まで</span>
             <span class="mini-tag">教師常駐</span>
           </div>
         </div>
-        <div class="access-map">
+        <div class="map-card">
           <strong style="font-family:'M PLUS Rounded 1c',sans-serif;font-size:1.15rem;color:var(--primary);">名進研 名駅校</strong>
           <div class="meta">
             <div><span>住所</span><span>名古屋市西区名駅2丁目34-19</span></div>
@@ -923,14 +944,14 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">保護者の声</span>
-          <h2>「わかりやすい」「話しやすい」が、選ばれる理由。</h2>
+          <h2>「わかりやすい」「相談しやすい」が選ばれる理由。</h2>
         </div>
-        <p>口コミ風のカードを軽く添えて、サポート体制の雰囲気が伝わるようにします。</p>
+        <p>保護者の安心感は、塾選びの決め手になりやすいので、短い声で見せます。</p>
       </div>
       <div class="voices">
-        <div class="card voice"><strong>質問しやすい</strong><p>授業前後に先生へ相談できるのが安心。子どもが前向きになりました。</p></div>
-        <div class="card voice"><strong>通いやすい</strong><p>駅から近く、引率もあるので、夜でも通塾の不安が少ないです。</p></div>
-        <div class="card voice"><strong>見通しが立つ</strong><p>模試や説明会の情報がまとまっていて、何をすればよいか迷いません。</p></div>
+        <div class="card voice"><strong>質問しやすい</strong><p>授業前後に先生へ相談でき、子どもも前向きに通えています。</p></div>
+        <div class="card voice"><strong>通いやすい</strong><p>駅近で引率もあるので、夜の通塾不安が少ないです。</p></div>
+        <div class="card voice"><strong>見通しが立つ</strong><p>模試や説明会の案内がまとまっていて、次に何をすればよいか分かりやすいです。</p></div>
       </div>
     </section>
 
@@ -940,39 +961,39 @@
           <span class="eyebrow">FAQ</span>
           <h2>よくある質問を、先に解消する。</h2>
         </div>
-        <p>中学受験の不安は、情報不足から生まれます。必要なところだけ、短く答えます。</p>
+        <p>受験開始時期、クラス、講習、保護者連携。よくある問いに短く答えます。</p>
       </div>
       <div class="faq">
         <details open>
-          <summary>受験学習はいつ始めるのがよいですか？</summary>
-          <p>3・4年生での開始が、カリキュラムと両立を考えたときの目安です。</p>
+          <summary>受験学習は何年生から始めるのがよいですか？</summary>
+          <p>3・4年生での開始が、カリキュラムと両立を考えた目安です。</p>
         </details>
         <details>
           <summary>集団指導についていけるか心配です。</summary>
-          <p>クラス分けや質問対応、面談でフォローしやすい形を整えています。</p>
+          <p>質問対応、面談、クラス設計でフォローしながら進めます。</p>
         </details>
         <details>
-          <summary>講習は必ず受ける必要がありますか？</summary>
-          <p>復習の重要な機会として、春・夏・冬の講習を学習の軸にしています。</p>
+          <summary>講習は受ける必要がありますか？</summary>
+          <p>春・夏・冬の講習は、復習と定着の大切な機会として位置づけています。</p>
         </details>
         <details>
-          <summary>保護者との連絡はどうなりますか？</summary>
-          <p>保護者会、個別面談、電話連絡を通じて、家庭と塾で同じ認識を持てるようにします。</p>
+          <summary>家庭との連絡はどうなりますか？</summary>
+          <p>保護者会、個別面談、電話連絡を通じて、家庭と塾が同じ認識を持てるようにします。</p>
         </details>
       </div>
     </section>
 
     <section id="cta" class="cta fade-up">
       <div>
-        <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.16);">資料請求 / 体験授業</span>
-        <h2 style="margin-top:12px;">まずは、校舎と授業の空気を見てください。</h2>
-        <p>名進研の学び方、校舎の雰囲気、保護者サポートを一度に確認できる導線を、シンプルにまとめました。</p>
+        <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.18);">資料請求 / 体験授業</span>
+        <h2 style="margin-top:12px;">まずは、教室の空気を見てください。</h2>
+        <p>名進研の学び方、校舎の雰囲気、保護者サポートを一度に確認できる導線を、わかりやすくまとめました。</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#top">ページ上部へ</a>
           <a class="button button-ghost" href="#school">名駅校を見る</a>
         </div>
       </div>
-      <div class="cta-panel">
+      <div class="cta-card">
         <strong style="font-family:'M PLUS Rounded 1c',sans-serif;font-size:1.15rem;">名進研 中学受験</strong>
         <div class="meta">
           <div><span>対応</span><span>私立中学受験 / 公立中高一貫校受検</span></div>
@@ -997,11 +1018,11 @@
     }, { threshold: 0.14 });
 
     revealTargets.forEach((el, index) => {
-      el.style.transitionDelay = `${Math.min(index * 70, 260)}ms`;
+      el.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
       observer.observe(el);
     });
 
-    const counts = document.querySelectorAll('[data-count]');
+    const counters = document.querySelectorAll('[data-count]');
     const animateCount = (el, target) => {
       const duration = 1100;
       const start = performance.now();
@@ -1013,16 +1034,14 @@
       };
       requestAnimationFrame(tick);
     };
-
     const countObserver = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;
-        const el = entry.target;
-        animateCount(el, Number(el.dataset.count || '0'));
-        countObserver.unobserve(el);
+        animateCount(entry.target, Number(entry.target.dataset.count || '0'));
+        countObserver.unobserve(entry.target);
       }
     }, { threshold: 0.5 });
-    counts.forEach((el) => countObserver.observe(el));
+    counters.forEach((el) => countObserver.observe(el));
 
     const heroImage = document.getElementById('heroImage');
     const heroVisual = document.getElementById('heroVisual');
