@@ -3,36 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDCドローンスクール名古屋 | 国家資格と実務活用をつなぐ</title>
-  <meta name="description" content="PDCドローンスクール名古屋のホームページ。国家資格、空撮、点検、測量、法人研修まで、実務につながる学びを名古屋で。">
-  <meta property="og:title" content="PDCドローンスクール名古屋 | 国家資格と実務活用をつなぐ">
-  <meta property="og:description" content="資格で終わらない。現場で使えるドローン学習を、名古屋で。">
+  <title>Gluck | グリュック合同会社</title>
+  <meta name="description" content="グリュック合同会社の電気工事サイト。人材供給、現場管理、自社請負工事、協力会社ネットワークまで、現場を止めない体制を紹介します。">
+  <meta property="og:title" content="Gluck | グリュック合同会社">
+  <meta property="og:description" content="稼働力で、現場を止めない。電気工事・施工管理・人材供給の総合サイト。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/pdc-hero.svg">
-  <meta name="theme-color" content="#0F5EFF">
+  <meta property="og:image" content="./assets/gluck-hero.svg">
+  <meta name="theme-color" content="#081123">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #0f5eff;
-      --secondary: #5c7cfa;
-      --tertiary: #15c3ff;
-      --accent: #ddebff;
-      --sky: #f4f8ff;
-      --surface: #ffffff;
-      --soft: #f7f9fc;
-      --line: #d8e0ed;
-      --text: #101828;
-      --muted: #667085;
-      --shadow: 0 16px 36px rgba(16, 24, 40, 0.08);
-      --shadow-strong: 0 24px 56px rgba(15, 94, 255, 0.12);
+      --bg: #081123;
+      --bg-2: #0d162b;
+      --bg-3: #111b31;
+      --panel: #131e36;
+      --panel-2: #18253a;
+      --line: #3a4b6b;
+      --gold: #f0c35a;
+      --gold-2: #d8a53d;
+      --text: #f6f7fb;
+      --muted: #b8c1d9;
+      --shadow: 0 18px 38px rgba(0,0,0,0.28);
       --radius-xl: 30px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --max: 1240px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --max: 1420px;
     }
-
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -41,72 +39,66 @@
       color: var(--text);
       font-family: 'Noto Sans JP', system-ui, sans-serif;
       background:
-        radial-gradient(circle at 12% 0%, rgba(221,235,255,0.95), transparent 24%),
-        radial-gradient(circle at 100% 8%, rgba(21,195,255,0.11), transparent 18%),
-        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        radial-gradient(circle at 20% 0%, rgba(240,195,90,0.12), transparent 24%),
+        radial-gradient(circle at 100% 12%, rgba(240,195,90,0.08), transparent 18%),
+        linear-gradient(180deg, #070f1f 0%, #0c1528 100%);
     }
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: radial-gradient(rgba(15,94,255,0.05) 1px, transparent 1px);
-      background-size: 22px 22px;
-      opacity: 0.26;
-      mask-image: linear-gradient(180deg, rgba(0,0,0,0.18), transparent 82%);
+      background-image: radial-gradient(rgba(240,195,90,0.06) 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.22;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.2), transparent 82%);
     }
-
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
     h1, h2, h3, p { margin: 0; }
     h1, h2, h3 { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
 
     .page {
-      width: min(calc(100% - 28px), var(--max));
+      width: min(calc(100% - 24px), var(--max));
       margin: 0 auto;
-      padding: 16px 0 44px;
+      padding: 14px 0 44px;
       position: relative;
       z-index: 1;
     }
-
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 12px 16px;
-      border-radius: 18px;
-      border: 1px solid rgba(15,94,255,0.12);
-      background: rgba(255,255,255,0.88);
-      box-shadow: 0 12px 26px rgba(16,24,40,0.05);
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-    .topbar strong { color: var(--primary); }
 
     .masthead {
       display: grid;
       grid-template-columns: auto 1fr auto;
       gap: 18px;
       align-items: center;
-      padding: 18px 0 14px;
+      padding: 10px 0 14px;
     }
-    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
     .brand-mark {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
       color: #fff;
-      background: linear-gradient(135deg, var(--primary), var(--tertiary));
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-      font-weight: 800;
-      letter-spacing: 0.04em;
+      position: relative;
     }
-    .brand-copy strong { display: block; font-size: 1rem; }
-    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.8rem; }
+    .brand-mark::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: -2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #fff0b8);
+      transform: rotate(20deg);
+    }
+    .brand-copy strong { display: block; font-size: 0.98rem; }
+    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.78rem; }
 
     .header-links {
       display: flex;
@@ -117,15 +109,8 @@
       font-size: 0.92rem;
       font-weight: 700;
     }
-    .header-links a { padding: 6px 0; border-bottom: 2px solid transparent; }
-    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(15,94,255,0.24); }
-
-    .header-cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: flex-end;
-    }
+    .header-links a { padding: 5px 0; border-bottom: 2px solid transparent; }
+    .header-links a:hover { color: #fff; border-bottom-color: rgba(240,195,90,0.5); }
 
     .button {
       display: inline-flex;
@@ -141,216 +126,196 @@
     }
     .button:hover { transform: translateY(-1px); }
     .button-primary {
-      color: #fff;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      box-shadow: 0 14px 24px rgba(15,94,255,0.2);
-    }
-    .button-blue {
-      color: #fff;
-      background: linear-gradient(135deg, #1b74ff, var(--tertiary));
-      box-shadow: 0 14px 24px rgba(21,195,255,0.18);
+      color: #111;
+      background: linear-gradient(135deg, var(--gold), #f7d67d);
+      box-shadow: 0 14px 24px rgba(240,195,90,0.2);
     }
     .button-ghost {
-      color: var(--primary);
-      border-color: rgba(15,94,255,0.14);
-      background: rgba(15,94,255,0.04);
+      color: #fff;
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.12);
     }
 
     .hero {
+      margin-top: 8px;
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 24px;
-      align-items: center;
-      padding: 18px 0 22px;
-    }
-    .hero-copy {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1.06fr 0.94fr;
       gap: 16px;
-      padding: 10px 0;
+      align-items: stretch;
     }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      width: fit-content;
-      padding: 9px 14px;
-      border-radius: 999px;
-      color: var(--primary);
-      background: rgba(15,94,255,0.08);
-      border: 1px solid rgba(15,94,255,0.12);
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-    }
-    .hero-copy h1 {
-      font-size: clamp(2.9rem, 6vw, 5.5rem);
-      line-height: 1.02;
-      letter-spacing: -0.03em;
-      max-width: 11ch;
-    }
-    .hero-copy .lead {
-      max-width: 44rem;
-      color: var(--muted);
-      font-size: 1.03rem;
-      line-height: 1.9;
-    }
-    .hero-actions, .chip-row, .tag-row, .use-case-row, .cta-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      min-height: 38px;
-      padding: 0 14px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(16,24,40,0.04);
-      font-size: 0.86rem;
-      font-weight: 800;
-      color: var(--text);
-    }
-    .hero-panel {
+
+    .hero-main {
       position: relative;
-      display: grid;
-      gap: 12px;
-    }
-    .hero-card {
-      position: relative;
-      min-height: 620px;
+      min-height: 770px;
       border-radius: 34px;
       overflow: hidden;
-      border: 1px solid rgba(15,94,255,0.12);
-      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(244,248,255,0.95));
-      box-shadow: var(--shadow-strong);
+      background: linear-gradient(180deg, rgba(7,15,31,0.4), rgba(7,15,31,0.9));
+      border: 1px solid rgba(240,195,90,0.22);
+      box-shadow: var(--shadow);
     }
-    .hero-image {
+    .hero-main img {
       position: absolute;
-      inset: 18px;
-      border-radius: 28px;
-      overflow: hidden;
-      transition: transform 0.25s ease;
-    }
-    .hero-image img {
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
+      filter: saturate(0.95) contrast(1.08) brightness(0.72);
+      transform: scale(1.02);
+      transition: transform 0.25s ease;
     }
-    .hero-badge, .hero-caption, .hero-stat {
+    .hero-main::after {
+      content: '';
       position: absolute;
-      border-radius: 18px;
-      border: 1px solid rgba(15,94,255,0.12);
-      background: rgba(255,255,255,0.94);
-      box-shadow: 0 14px 28px rgba(16,24,40,0.08);
+      inset: 0;
+      background: linear-gradient(90deg, rgba(7,15,31,0.9) 0%, rgba(7,15,31,0.58) 44%, rgba(7,15,31,0.14) 100%);
     }
-    .hero-badge {
-      right: 20px;
-      top: 20px;
-      padding: 14px 16px;
-      min-width: 180px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: #fff;
-      transform: rotate(4deg);
-      border-color: rgba(255,255,255,0.14);
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      padding: 34px 32px 28px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100%;
     }
-    .hero-badge small {
-      display: block;
-      opacity: 0.72;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-size: 0.66rem;
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
     }
-    .hero-badge strong {
-      display: block;
-      margin-top: 4px;
-      font-size: 1rem;
-      line-height: 1.35;
+    .hero-title {
+      max-width: 620px;
+      margin-top: 90px;
     }
-    .hero-caption {
-      left: 18px;
-      bottom: 18px;
-      width: 250px;
-      padding: 16px 18px;
+    .hero-title h1 {
+      font-size: clamp(3rem, 5vw, 5.7rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      text-shadow: 0 6px 20px rgba(0,0,0,0.35);
     }
-    .hero-caption strong {
-      display: block;
-      color: var(--primary);
-      font-size: 1rem;
-      margin-bottom: 6px;
+    .hero-title .lead {
+      margin-top: 18px;
+      max-width: 34rem;
+      color: #ecf1ff;
+      font-size: 0.98rem;
+      line-height: 1.95;
+      opacity: 0.94;
     }
-    .hero-caption span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.74;
-    }
-    .hero-stat {
-      right: 28px;
-      bottom: 28px;
-      width: 148px;
-      padding: 14px 16px;
-      transform: rotate(-5deg);
-      background: linear-gradient(180deg, #fff, #f8fbff);
-    }
-    .hero-stat strong {
-      display: block;
-      color: var(--text);
-      font-size: 1rem;
-      line-height: 1.3;
-    }
-    .hero-stat span {
-      display: block;
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 0.82rem;
-      line-height: 1.5;
-    }
-    .hero-rail {
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .hero-bottom {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      align-self: end;
+    }
+    .mini-panel {
+      padding: 16px 16px 14px;
+      border-radius: 18px;
+      background: rgba(15,23,42,0.82);
+      border: 1px solid rgba(240,195,90,0.18);
+      backdrop-filter: blur(6px);
+    }
+    .mini-panel strong {
+      display: block;
+      color: var(--gold);
+      font-size: 0.86rem;
+      margin-bottom: 6px;
+      letter-spacing: 0.06em;
+    }
+    .mini-panel span { color: #fff; font-size: 0.86rem; line-height: 1.7; }
+
+    .hero-aside {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 12px;
     }
-    .rail-card {
-      padding: 16px 18px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
+    .score-card {
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(17,27,49,0.98), rgba(11,17,34,0.98));
+      border: 1px solid rgba(240,195,90,0.24);
+      box-shadow: var(--shadow);
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .rail-card strong { display: block; color: var(--primary); font-size: 0.98rem; }
-    .rail-card span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
+    .score-card small {
+      color: var(--gold);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.74rem;
+    }
+    .score-card strong {
+      display: block;
+      margin-top: 8px;
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      line-height: 1.02;
+      color: #fff;
+      letter-spacing: -0.04em;
+    }
+    .score-card p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+    .shot {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      border: 1px solid rgba(240,195,90,0.14);
+      box-shadow: var(--shadow);
+      background: #111827;
+      min-height: 0;
+    }
+    .shot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.95) contrast(1.08) brightness(0.76);
+    }
+    .shot .caption {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(7,15,31,0.78);
+      border: 1px solid rgba(240,195,90,0.18);
+      color: #fff;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
 
     .ticker {
       overflow: hidden;
-      border-radius: 20px;
-      border: 1px solid var(--line);
-      background: #fff;
+      margin-top: 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(240,195,90,0.18);
+      background: linear-gradient(90deg, rgba(13,22,43,0.9), rgba(11,17,34,0.95));
       box-shadow: var(--shadow);
-      margin-top: 18px;
     }
     .ticker-track {
       display: flex;
-      gap: 22px;
+      gap: 24px;
       width: max-content;
-      padding: 12px 0;
-      animation: marquee 22s linear infinite;
-      color: var(--primary);
-      font-weight: 800;
+      padding: 13px 0;
+      animation: marquee 24s linear infinite;
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 0.82rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      font-size: 0.82rem;
     }
 
     .section {
-      margin-top: 26px;
-      padding: 26px;
+      margin-top: 18px;
+      padding: 24px;
       border-radius: var(--radius-xl);
-      background: #fff;
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(19,30,54,0.98), rgba(14,23,40,0.98));
+      border: 1px solid rgba(255,255,255,0.08);
       box-shadow: var(--shadow);
       overflow: hidden;
     }
@@ -358,45 +323,68 @@
       display: flex;
       justify-content: space-between;
       align-items: end;
-      gap: 16px;
-      margin-bottom: 18px;
+      gap: 18px;
       padding-bottom: 16px;
-      border-bottom: 1px solid var(--line);
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .section-head p {
       max-width: 42rem;
       color: var(--muted);
-      line-height: 1.8;
       font-size: 0.95rem;
+      line-height: 1.82;
     }
     .section h2 {
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
       line-height: 1.08;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
     }
 
-    .grid-2, .grid-3, .grid-4 {
-      display: grid;
-      gap: 16px;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(240,195,90,0.08);
+      border: 1px solid rgba(240,195,90,0.14);
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
     }
-    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .stats-grid, .grid-3, .grid-4, .card-row, .icon-row, .gallery, .network, .reason-grid {
+      display: grid;
+      gap: 14px;
+    }
+    .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .card-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .metric {
+      padding: 18px 18px 16px;
+      border-radius: 22px;
+      background: rgba(16,27,54,0.86);
+      border: 1px solid rgba(240,195,90,0.16);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.16);
+    }
+    .metric small { display: block; color: var(--gold); letter-spacing: 0.08em; font-size: 0.76rem; font-weight: 800; }
+    .metric strong { display: block; margin-top: 8px; font-size: clamp(1.5rem, 2.6vw, 2.4rem); line-height: 1; color: #fff; }
+    .metric span { display: block; margin-top: 10px; color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
 
     .card {
+      position: relative;
       padding: 22px;
       border-radius: 24px;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
+      background: rgba(12,20,38,0.96);
+      border: 1px solid rgba(240,195,90,0.12);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.16);
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
-      position: relative;
     }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 18px 42px rgba(15,94,255,0.11);
-    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(0,0,0,0.22); }
     .card::before {
       content: '';
       position: absolute;
@@ -404,494 +392,476 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--primary), var(--tertiary));
+      background: linear-gradient(90deg, var(--gold), #fff1be);
     }
-    .card p { margin-top: 10px; color: var(--muted); line-height: 1.82; }
-
-    .mini-tag {
+    .card h3 { font-size: 1.06rem; }
+    .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
+    .card .tag-row, .card .bullet-row, .meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .pill {
       display: inline-flex;
+      align-items: center;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(15,94,255,0.06);
-      border: 1px solid rgba(15,94,255,0.1);
-      color: var(--primary);
+      background: rgba(240,195,90,0.08);
+      border: 1px solid rgba(240,195,90,0.14);
+      color: #fff;
       font-size: 0.76rem;
       font-weight: 800;
     }
-    .feature {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(15,94,255,0.06);
-      color: var(--primary);
-      font-size: 0.84rem;
-      font-weight: 800;
-    }
 
-    .photo-card {
-      position: relative;
-      min-height: 352px;
-      border-radius: 28px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: var(--shadow);
+    .business {
+      display: grid;
+      grid-template-columns: 0.9fr 1fr 1fr;
+      gap: 14px;
     }
-    .photo-card img {
+    .business-card {
+      min-height: 330px;
+      border-radius: 26px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(12,20,38,0.98), rgba(8,15,31,0.98));
+      border: 1px solid rgba(240,195,90,0.14);
+      position: relative;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .business-copy { padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }
+    .business-copy strong { display: block; color: #fff; font-size: 1.25rem; }
+    .business-copy span { display: block; color: var(--muted); margin-top: 10px; line-height: 1.8; }
+    .business-copy ul { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+    .business-copy li { color: #f5f7fb; font-size: 0.84rem; line-height: 1.6; position: relative; padding-left: 18px; }
+    .business-copy li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); font-weight: 900; }
+    .business-visual {
+      position: relative;
+      overflow: hidden;
+      background: #111827;
+    }
+    .business-visual img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-    }
-    .photo-card .badge {
-      position: absolute;
-      left: 14px;
-      bottom: 14px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.94);
-      border: 1px solid rgba(15,94,255,0.1);
-      color: var(--primary);
-      font-weight: 900;
-      letter-spacing: 0.04em;
-      font-size: 0.8rem;
+      filter: brightness(0.78) contrast(1.08) saturate(0.9);
     }
 
-    .flow {
+    .icon-row {
+      grid-template-columns: repeat(10, minmax(0, 1fr));
+    }
+    .icon {
+      padding: 16px 10px;
+      border-radius: 18px;
+      background: rgba(12,20,38,0.9);
+      border: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    .icon .glyph {
+      width: 34px;
+      height: 34px;
+      margin: 0 auto 8px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(240,195,90,0.18), rgba(240,195,90,0.06));
+      border: 1px solid rgba(240,195,90,0.16);
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      place-items: center;
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+    .icon span { display: block; font-size: 0.72rem; line-height: 1.35; color: var(--muted); }
+
+    .gallery {
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+    .shot-tile {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      min-height: 152px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+      background: #0d1427;
+    }
+    .shot-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.78) contrast(1.08) saturate(0.9);
+      transition: transform 0.25s ease;
+    }
+    .shot-tile:hover img { transform: scale(1.04); }
+    .shot-tile .label {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(7,15,31,0.82);
+      border: 1px solid rgba(240,195,90,0.16);
+      color: #fff;
+      text-align: center;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .network {
+      grid-template-columns: 0.94fr 1.06fr;
+      align-items: stretch;
+    }
+    .map-card, .reason-box, .contact-box {
+      padding: 22px;
+      border-radius: 26px;
+      background: rgba(12,20,38,0.94);
+      border: 1px solid rgba(240,195,90,0.12);
+      box-shadow: var(--shadow);
+    }
+    .map-card img { width: 100%; height: auto; }
+    .map-meta { display: grid; gap: 12px; margin-top: 16px; }
+    .map-meta div { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.92rem; }
+    .map-meta div:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .reason-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .reason {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(16,27,54,0.9);
+      border: 1px solid rgba(240,195,90,0.12);
+    }
+    .reason strong { display: block; color: var(--gold); margin-bottom: 8px; }
+    .reason p { color: var(--muted); line-height: 1.75; font-size: 0.9rem; }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.04fr 0.96fr;
       gap: 14px;
     }
-    .flow-step {
-      padding: 18px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, #fff, #f9fbff);
-      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
-      position: relative;
-    }
-    .flow-step::after {
-      content: '';
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background: rgba(21,195,255,0.14);
-      border: 1px solid rgba(21,195,255,0.24);
-    }
-    .flow-step strong {
+    .contact-box .phone {
       display: block;
-      margin-bottom: 8px;
-      color: var(--primary);
-      font-size: 1rem;
-      font-weight: 800;
-    }
-    .flow-step p { color: var(--muted); line-height: 1.75; }
-
-    .faq { display: grid; gap: 12px; }
-    .faq details {
-      padding: 18px 20px;
-      border-radius: 20px;
-      border: 1px solid var(--line);
-      background: #fff;
-      box-shadow: 0 12px 28px rgba(16,24,40,0.04);
-    }
-    .faq summary {
-      cursor: pointer;
-      list-style: none;
-      font-weight: 800;
-      color: var(--text);
-    }
-    .faq summary::-webkit-details-marker { display: none; }
-    .faq p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
-
-    .cta {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 16px;
-      align-items: center;
-      padding: 24px;
-      border-radius: var(--radius-xl);
-      background: linear-gradient(135deg, #0f5eff, #16b8ff);
-      color: #fff;
-      border: 1px solid rgba(15,94,255,0.14);
-      box-shadow: var(--shadow-strong);
-      margin-top: 28px;
-    }
-    .cta p {
       margin-top: 12px;
-      color: rgba(255,255,255,0.86);
-      line-height: 1.84;
-    }
-    .cta .button-ghost {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
       color: #fff;
-      border-color: rgba(255,255,255,0.18);
-      background: rgba(255,255,255,0.08);
     }
-    .cta-card {
-      padding: 18px;
-      border-radius: 24px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
-    }
-    .cta-card .meta {
-      display: grid;
-      gap: 10px;
-      margin-top: 14px;
-      font-size: 0.92rem;
-    }
-    .cta-card .meta div {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.16);
-    }
-    .cta-card .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
+    .contact-box .hours { color: var(--muted); margin-top: 8px; font-size: 0.9rem; }
 
     .footer {
-      margin-top: 28px;
-      padding: 22px 0 0;
+      margin-top: 18px;
+      padding: 20px 0 0;
       color: var(--muted);
       text-align: center;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
     }
 
     .fade-up {
       opacity: 0;
-      transform: translateY(18px);
+      transform: translateY(16px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
-    .fade-up.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .fade-up.is-visible { opacity: 1; transform: translateY(0); }
 
-    .float { animation: float 8.5s ease-in-out infinite; }
-    .float-slow { animation: float 11.5s ease-in-out infinite reverse; }
-
+    .float { animation: float 8s ease-in-out infinite; }
+    .float-slow { animation: float 11s ease-in-out infinite reverse; }
     @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(var(--rotate, 0deg)); }
-      50% { transform: translateY(-10px) rotate(var(--rotate, 0deg)); }
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-main { min-height: 720px; }
+      .hero-aside { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+      .stats-grid, .grid-4, .gallery, .icon-row, .network, .contact, .business, .reason-grid, .card-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .business-card { grid-template-columns: 1fr; min-height: 0; }
+      .hero-bottom { grid-template-columns: 1fr; }
+      .header-links { justify-content: flex-start; }
       .masthead { grid-template-columns: 1fr; justify-items: start; }
-      .header-cta { justify-content: flex-start; }
-      .hero, .cta { grid-template-columns: 1fr; }
-      .hero-panel { grid-template-columns: 1fr 1fr; }
-      .hero-rail, .grid-3, .grid-4, .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .section-head { flex-direction: column; align-items: start; }
     }
-
-    @media (max-width: 720px) {
-      .page { width: min(calc(100% - 18px), var(--max)); padding-top: 10px; }
-      .topbar { flex-direction: column; align-items: flex-start; }
-      .notice { flex-direction: column; align-items: flex-start; }
-      .hero-panel { grid-template-columns: 1fr; }
-      .hero-card { min-height: 520px; }
-      .hero-image { inset: 12px; }
-      .hero-copy h1 { font-size: clamp(2.3rem, 12vw, 4rem); }
-      .hero-caption { width: 210px; }
-      .hero-badge { min-width: 150px; }
-      .hero-stat { width: 138px; }
-      .section, .cta { padding: 18px; }
-      .grid-2, .grid-3, .grid-4, .hero-rail, .flow { grid-template-columns: 1fr; }
-      .header-cta, .hero-actions, .chip-row, .tag-row, .use-case-row, .cta-stack { width: 100%; }
+    @media (max-width: 760px) {
+      .page { width: min(calc(100% - 16px), var(--max)); }
+      .hero-main { min-height: 820px; }
+      .hero-copy { padding: 24px 18px 18px; }
+      .hero-title { margin-top: 110px; }
+      .hero-title h1 { font-size: clamp(2.5rem, 12vw, 4rem); }
+      .hero-aside { grid-template-columns: 1fr; }
+      .stats-grid, .grid-4, .grid-3, .gallery, .icon-row, .network, .contact, .business, .reason-grid, .card-row { grid-template-columns: 1fr; }
+      .hero-actions, .header-links { width: 100%; }
       .button { width: 100%; }
-      .ticker-track { animation-duration: 18s; }
+      .section { padding: 18px; }
+      .section-head { flex-direction: column; align-items: start; }
+      .gallery { gap: 10px; }
+      .shot-tile { min-height: 130px; }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="topbar fade-up">
-      <span><strong>PDC名古屋</strong> の新しいホームページ案</span>
-      <span>国家資格・実務活用・法人研修を一画面で伝える構成</span>
-    </div>
-
     <header class="masthead fade-up" id="top">
       <div class="brand">
-        <div class="brand-mark">PDC</div>
+        <div class="brand-mark">Gluck</div>
         <div class="brand-copy">
-          <strong>PDCドローンスクール名古屋</strong>
-          <span>資格で終わらない、現場につながる学び</span>
+          <strong>グリュック合同会社</strong>
+          <span>電気工事・施工管理・人材供給</span>
         </div>
       </div>
 
       <nav class="header-links" aria-label="ページ内ナビゲーション">
-        <a href="#strengths">強み</a>
-        <a href="#courses">コース</a>
-        <a href="#flow">流れ</a>
-        <a href="#uses">活用シーン</a>
-        <a href="#faq">FAQ</a>
+        <a href="#business">事業内容</a>
+        <a href="#works">施工実績</a>
+        <a href="#network">協力会社</a>
+        <a href="#reasons">選ばれる理由</a>
+        <a href="#contact">お問い合わせ</a>
       </nav>
 
-      <div class="header-cta">
-        <a class="button button-ghost" href="#uses">法人相談</a>
-        <a class="button button-blue" href="#cta">無料説明会</a>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;">
+        <a class="button button-ghost" href="#contact">電話相談</a>
+        <a class="button button-primary" href="#contact">お問い合わせ</a>
       </div>
     </header>
 
     <section class="hero">
-      <div class="hero-copy fade-up">
-        <span class="eyebrow">Nagoya Drone School</span>
-        <h1>飛ばすだけで終わらせない。</h1>
-        <p class="lead">PDC名古屋は、国家資格、空撮、点検、測量、法人研修までをひと続きで考えるドローンスクールです。名古屋で学び、現場で使うところまでを、シンプルに案内します。</p>
+      <div class="hero-main fade-up">
+        <img src="./assets/gluck-hero.svg" alt="電気工事の現場とインフラを表現したヒーローアート">
+        <div class="hero-copy">
+          <div class="hero-top">
+            <div>
+              <span class="eyebrow">Electric Works / Management / Network</span>
+              <div class="hero-title">
+                <h1>稼働力で、<br>現場を止めない。</h1>
+                <p class="lead">人材 × 技術 × 管理力で、全国の施工を支えるパートナー。独自のネットワークと管理システムで、人材供給から自社請負工事までワンストップで対応します。</p>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#business">事業内容</a>
+                  <a class="button button-ghost" href="#works">施工実績</a>
+                  <a class="button button-ghost" href="#contact">採用情報</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="chip-row">
-          <span class="chip">一等・二等を見据えた講習</span>
-          <span class="chip">実務につながる訓練</span>
-          <span class="chip">法人研修の相談窓口</span>
-          <span class="chip">名古屋エリアで通いやすい</span>
-        </div>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="#courses">コースを見る</a>
-          <a class="button button-blue" href="#cta">無料説明会</a>
-          <a class="button button-ghost" href="#flow">受講の流れ</a>
-        </div>
-      </div>
-
-      <div class="hero-panel fade-up" id="heroVisual">
-        <div class="hero-card">
-          <div class="hero-image" id="heroImage">
-            <img src="./assets/pdc-hero.svg" alt="ドローン訓練を表現したヒーローアート">
-          </div>
-          <div class="hero-badge float-slow" style="--rotate:4deg;">
-            <small>focus</small>
-            <strong>資格・実務・法人研修を一体化</strong>
-          </div>
-          <div class="hero-caption float" style="--rotate:-2deg;">
-            <strong>現場で使える判断力を、<br>名古屋で育てる。</strong>
-            <span>競合調査で強かった「通いやすさ」「屋内環境」「卒業後の相談」を、PDCの導線に落とし込みます。</span>
-          </div>
-          <div class="hero-stat float-slow" style="--rotate:5deg;">
-            <strong>相談しやすい入口</strong>
-            <span>個人も法人も、最初の一歩を迷わせません。</span>
-          </div>
-        </div>
-
-        <div class="hero-rail">
-          <div class="rail-card">
-            <strong>国家資格</strong>
-            <span>一等・二等を見据えた、わかりやすいコース案内。</span>
-          </div>
-          <div class="rail-card">
-            <strong>実務活用</strong>
-            <span>空撮、点検、測量、教育用途まで視野に入れる設計。</span>
-          </div>
-          <div class="rail-card">
-            <strong>法人相談</strong>
-            <span>社員研修や導入検討の相談先を、ひとつにまとめる。</span>
+          <div class="hero-bottom">
+            <div class="mini-panel"><strong>人材人数（1日あたり）</strong><span>60〜100名の現場に対応できる稼働力。</span></div>
+            <div class="mini-panel"><strong>全国対応</strong><span>協力会社ネットワークで広域案件も支える。</span></div>
+            <div class="mini-panel"><strong>自社施工</strong><span>電気工事一式を請け負う現場対応力。</span></div>
           </div>
         </div>
       </div>
+
+      <aside class="hero-aside fade-up">
+        <div class="score-card"><small>年間稼働人数</small><strong>1.5万〜2万人!</strong><p>稼働人数の厚みで、現場を止めない体制を構築。</p></div>
+        <div class="shot float-slow"><img src="./assets/gluck-hero.svg" alt="夜景を背景にした電気工事イメージ"><div class="caption">夜景・施工・安全管理</div></div>
+        <div class="shot float"><img src="./assets/gluck-hero.svg" alt="太陽光と設備の施工イメージ"><div class="caption">太陽光・受変電・設備</div></div>
+        <div class="score-card"><small>協力会社ネットワーク</small><strong>全国350名!</strong><p>信頼できるパートナーと共に、全国の現場をカバー。</p></div>
+      </aside>
     </section>
 
     <section class="ticker fade-up" aria-label="キーワードの流れ">
       <div class="ticker-track">
-        <span>国家資格</span><span>空撮</span><span>点検</span><span>測量</span><span>法人研修</span><span>名古屋</span>
-        <span>国家資格</span><span>空撮</span><span>点検</span><span>測量</span><span>法人研修</span><span>名古屋</span>
+        <span>人材供給</span><span>現場管理</span><span>自社請負工事</span><span>全国対応</span><span>協力会社ネットワーク</span><span>施工実績</span>
+        <span>人材供給</span><span>現場管理</span><span>自社請負工事</span><span>全国対応</span><span>協力会社ネットワーク</span><span>施工実績</span>
       </div>
     </section>
 
     <section class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">調査から見えたこと</span>
-          <h2>名古屋で強いスクールが共通して持っていた要素。</h2>
+          <span class="eyebrow">数字で見る強み</span>
+          <h2>現場を止めないための、稼働力と管理力。</h2>
         </div>
-        <p>競合調査では、国家資格だけでなく、屋内訓練、駅近、卒業後サポート、法人相談が選ばれる要因でした。PDC名古屋は、その期待値をすっきり整理して見せます。</p>
+        <p>スクショの第一印象に合わせて、上部で「どれくらい動けるか」を明快に見せます。</p>
       </div>
-      <div class="grid-3">
-        <div class="card">
-          <span class="mini-tag">通いやすさ</span>
-          <p>名古屋圏のスクールは、駅近やアクセスの良さを前面に出していました。PDCでも最初に「通いやすい」を見せます。</p>
-        </div>
-        <div class="card">
-          <span class="mini-tag">屋内練習</span>
-          <p>天候に左右されない練習環境は、大きな安心材料でした。PDCでは安定して訓練できる印象を強めます。</p>
-        </div>
-        <div class="card">
-          <span class="mini-tag">卒業後</span>
-          <p>資格取得後の相談導線、法改正情報、業務活用まで見せると、信頼感が一段上がります。</p>
-        </div>
+      <div class="stats-grid">
+        <div class="metric"><small>事業内容</small><strong>3本柱</strong><span>人材供給・現場管理・自社施工を一体で運用。</span></div>
+        <div class="metric"><small>稼働人数</small><strong>1.5万〜2万人</strong><span>年間の現場稼働でスケールを示す。</span></div>
+        <div class="metric"><small>協力会社</small><strong>350名</strong><span>全国の現場を支えるネットワーク。</span></div>
+        <div class="metric"><small>拠点</small><strong>全国4拠点</strong><span>広域対応を見せるための要素。</span></div>
       </div>
     </section>
 
-    <section id="strengths" class="section fade-up">
+    <section id="business" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">PDCの強み</span>
-          <h2>シンプルに、強く。迷わせない導線設計。</h2>
+          <span class="eyebrow">事業内容</span>
+          <h2>人材供給も、自社施工も。すべてグリュックにお任せください。</h2>
         </div>
-        <p>ヒーローで結論を出し、カードで具体化する。情報は多くても、見る順番が散らからない構成にします。</p>
+        <p>スクリーンショットの3カラム構成をそのまま踏襲し、各事業の役割を大きく見せます。</p>
       </div>
-      <div class="grid-4">
-        <div class="card"><h3>国家資格導線</h3><p>一等・二等を見据えた案内を短く整理し、入口をわかりやすく。</p></div>
-        <div class="card"><h3>実務活用</h3><p>空撮、点検、測量、教育用途まで、受講後の活用イメージを提示。</p></div>
-        <div class="card"><h3>法人向け</h3><p>研修・導入相談を、個人向けと分けて分かりやすく案内。</p></div>
-        <div class="card"><h3>名古屋発信</h3><p>都市部で学ぶメリットを、アクセスと訓練環境の両面から見せる。</p></div>
+      <div class="business">
+        <article class="business-card">
+          <div class="business-copy">
+            <div>
+              <span class="eyebrow">人材供給</span>
+              <strong>必要な人員を、必要なタイミングで。</strong>
+              <span>独自ネットワークから、現場へ即戦力をスピーディーに手配。急な増員にも対応します。</span>
+            </div>
+            <ul>
+              <li>急な人員増加にも対応</li>
+              <li>全国どこでも手配可能</li>
+              <li>経験豊富な職人を確保</li>
+              <li>安全・教育体制も万全</li>
+            </ul>
+          </div>
+          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="人材供給イメージ"><div class="caption">staffing</div></div>
+        </article>
+        <article class="business-card">
+          <div class="business-copy">
+            <div>
+              <span class="eyebrow">現場管理</span>
+              <strong>独自の管理システムで、工程を止めない。</strong>
+              <span>工程・安全・品質を一元管理し、現場が円滑に進むようトータルでサポートします。</span>
+            </div>
+            <ul>
+              <li>工程・進捗のリアルタイム管理</li>
+              <li>安全管理の徹底</li>
+              <li>品質チェックの標準化</li>
+              <li>報告・提出もサポート</li>
+            </ul>
+          </div>
+          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="現場管理イメージ"><div class="caption">management</div></div>
+        </article>
+        <article class="business-card">
+          <div class="business-copy">
+            <div>
+              <span class="eyebrow">自社請負工事</span>
+              <strong>電気工事一式を、自社で施工。</strong>
+              <span>高品質・安全・確実な施工で、元請様の信頼にお応えします。</span>
+            </div>
+            <ul>
+              <li>電気工事一式</li>
+              <li>幹線工事・LED工事</li>
+              <li>改修工事・プラント工事</li>
+              <li>商業施設・店舗・病院・倉庫など</li>
+            </ul>
+          </div>
+          <div class="business-visual"><img src="./assets/gluck-hero.svg" alt="自社請負工事イメージ"><div class="caption">contracting</div></div>
+        </article>
       </div>
-      <div class="grid-2" style="margin-top:16px;">
-        <div class="card">
-          <h3>受講者が最初に知りたいこと</h3>
-          <p>「資格は取れるのか」「現場で使えるのか」「法人でも相談できるのか」を、ページ冒頭で先に答えます。</p>
-          <div class="tag-row" style="margin-top:14px;">
-            <span class="feature">国家資格</span>
-            <span class="feature">空撮</span>
-            <span class="feature">点検</span>
-            <span class="feature">測量</span>
+    </section>
+
+    <section class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">対応工事</span>
+          <h2>幅広い現場に、ひとつの体制で対応。</h2>
+        </div>
+        <p>アイコン一覧で、対応領域の広さを一瞬で理解できるようにします。</p>
+      </div>
+      <div class="icon-row">
+        <div class="icon"><div class="glyph">1</div><span>電気工事一式</span></div>
+        <div class="icon"><div class="glyph">2</div><span>幹線工事</span></div>
+        <div class="icon"><div class="glyph">3</div><span>LED工事</span></div>
+        <div class="icon"><div class="glyph">4</div><span>改修工事</span></div>
+        <div class="icon"><div class="glyph">5</div><span>プラント工事</span></div>
+        <div class="icon"><div class="glyph">6</div><span>商業施設工事</span></div>
+        <div class="icon"><div class="glyph">7</div><span>店舗工事</span></div>
+        <div class="icon"><div class="glyph">8</div><span>病院電気工事</span></div>
+        <div class="icon"><div class="glyph">9</div><span>倉庫電気工事</span></div>
+        <div class="icon"><div class="glyph">10</div><span>太陽光工事</span></div>
+      </div>
+    </section>
+
+    <section id="works" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">施工実績</span>
+          <h2>全国で多くの実績を重ねています。</h2>
+        </div>
+        <p>スクリーンショット同様、写真タイルの連続で“施工の厚み”を見せます。</p>
+      </div>
+      <div class="gallery">
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="プラント電気工事"><div class="label">プラント電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="商業施設電気工事"><div class="label">商業施設電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="病院電気工事"><div class="label">病院電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="倉庫電気工事"><div class="label">倉庫電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="店舗電気工事"><div class="label">店舗電気工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="マンション工事"><div class="label">マンション・ビル工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="太陽光工事"><div class="label">太陽光工事</div></div>
+        <div class="shot-tile"><img src="./assets/gluck-hero.svg" alt="電設設備工事"><div class="label">電気設備工事</div></div>
+      </div>
+    </section>
+
+    <section id="network" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">協力会社ネットワーク</span>
+          <h2>全国をカバーする、協力会社ネットワーク。</h2>
+        </div>
+        <p>地図表現と拠点情報で、広域対応の安心感を強くします。</p>
+      </div>
+      <div class="network">
+        <div class="map-card">
+          <img src="./assets/gluck-map.svg" alt="日本全国のネットワークを表現した地図アート">
+          <div class="map-meta">
+            <div><span>北海道・東北</span><span>即応対応</span></div>
+            <div><span>関東・中部</span><span>常時稼働</span></div>
+            <div><span>関西・中国四国</span><span>協力網あり</span></div>
+            <div><span>九州・沖縄</span><span>広域案件対応</span></div>
           </div>
         </div>
-        <div class="photo-card">
-          <img src="./assets/pdc-training.svg" alt="ドローン訓練と活用シーンを表現した補助アート" style="object-position:center;">
-          <div class="badge">practice / support / business</div>
+        <div class="reason-box">
+          <span class="eyebrow">選ばれる理由</span>
+          <h2 style="margin-top:10px;">人と技術で、現場に価値を。</h2>
+          <div class="reason-grid" style="margin-top:16px;">
+            <div class="reason"><strong>圧倒的な稼働力</strong><p>事業人数・稼働人数の厚みで、急な現場にも対応します。</p></div>
+            <div class="reason"><strong>自社請負施工</strong><p>電気工事一式として、品質・安全・速度を一体で管理。</p></div>
+            <div class="reason"><strong>独自管理システム</strong><p>工程・進捗・提出物を見える化して、現場を止めません。</p></div>
+            <div class="reason"><strong>協力会社ネットワーク</strong><p>全国350名のパートナーと連携し、広域案件に強い。</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="courses" class="section fade-up">
+    <section id="reasons" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">コース</span>
-          <h2>学び方が、目的ごとにすぐわかる。</h2>
+          <span class="eyebrow">Why Gluck</span>
+          <h2>選ばれる理由が、ここにあります。</h2>
         </div>
-        <p>実務志向の受講者と法人担当者の両方が、次に選ぶべき入り口を迷わないようにします。</p>
+        <p>最後に、受注の決め手になる比較ポイントをまとめます。</p>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <h3>国家資格コース</h3>
-          <p>一等・二等を見据えた基本コース。まずは資格取得を軸に進めたい方向けです。</p>
-          <div class="tag-row"><span class="mini-tag">一等/二等</span><span class="mini-tag">資格取得</span><span class="mini-tag">安全運航</span></div>
-        </div>
-        <div class="card">
-          <h3>実務活用コース</h3>
-          <p>空撮、点検、測量など、仕事に転用しやすいテーマで学びたい方向けです。</p>
-          <div class="tag-row"><span class="mini-tag">空撮</span><span class="mini-tag">点検</span><span class="mini-tag">測量</span></div>
-        </div>
-        <div class="card">
-          <h3>法人研修</h3>
-          <p>社員教育、導入相談、業務活用の検討を進める企業向けの入口を用意します。</p>
-          <div class="tag-row"><span class="mini-tag">法人</span><span class="mini-tag">研修</span><span class="mini-tag">導入相談</span></div>
-        </div>
-        <div class="card">
-          <h3>体験・説明会</h3>
-          <p>まずは雰囲気を確かめたい人向け。ページ全体のCTAもここに集約します。</p>
-          <div class="tag-row"><span class="mini-tag">無料説明会</span><span class="mini-tag">体験</span><span class="mini-tag">相談</span></div>
-        </div>
+      <div class="grid-4">
+        <div class="card"><h3>稼働人数の厚み</h3><p>必要な人数を必要な時に。現場の穴を作りません。</p></div>
+        <div class="card"><h3>自社請負施工</h3><p>元請様の信頼に応える、丁寧な自社施工体制。</p></div>
+        <div class="card"><h3>協力会社ネットワーク</h3><p>全国350名のパートナーで、広いエリアに対応。</p></div>
+        <div class="card"><h3>現場管理システム</h3><p>工程・品質・安全を見える化し、円滑に進行。</p></div>
       </div>
     </section>
 
-    <section id="flow" class="section fade-up">
+    <section id="contact" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">受講の流れ</span>
-          <h2>申し込みから活用まで、4つに整理する。</h2>
+          <span class="eyebrow">会社案内 / お問い合わせ</span>
+          <h2>人と技術で、現場に価値を。</h2>
         </div>
-        <p>説明会、受講、修了、活用の流れを明確にして、最初の一歩の不安を減らします。</p>
+        <p>電話とフォームの2導線を、スクリーンショットの構成に合わせて強く置きます。</p>
       </div>
-      <div class="flow">
-        <div class="flow-step"><strong>1. 相談</strong><p>無料説明会や問い合わせで、目的に合うコースを確認します。</p></div>
-        <div class="flow-step"><strong>2. 訓練</strong><p>安全運航の考え方と、実践に必要な操作を段階的に学びます。</p></div>
-        <div class="flow-step"><strong>3. 修了</strong><p>国家資格や実務活用の入口として、次のステップを見通します。</p></div>
-        <div class="flow-step"><strong>4. 活用</strong><p>空撮・点検・測量・社内研修など、現場の使い道までつなげます。</p></div>
-      </div>
-    </section>
-
-    <section id="uses" class="section fade-up">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">活用シーン</span>
-          <h2>資格の先にある、仕事の使い道を見せる。</h2>
+      <div class="contact">
+        <div class="contact-box">
+          <span class="eyebrow">グリュック合同会社</span>
+          <div class="phone">072-609-5552</div>
+          <div class="hours">受付時間 9:00〜18:00（土日祝も対応）</div>
+          <div class="meta-row" style="margin-top:18px;">
+            <a class="button button-primary" href="#top">ページ上部へ</a>
+            <a class="button button-ghost" href="#works">施工実績を見る</a>
+          </div>
         </div>
-        <p>スクールの価値は、飛ばせるようになることだけではありません。どんな現場に繋がるのかを先に見せます。</p>
-      </div>
-      <div class="grid-3">
-        <div class="card"><h3>空撮</h3><p>映像制作や記録用途に。安全な飛行計画と安定した撮影を意識します。</p></div>
-        <div class="card"><h3>点検</h3><p>建物や設備の確認に。近接運航の考え方や、記録の見せ方が重要です。</p></div>
-        <div class="card"><h3>測量</h3><p>広い現場の把握に。再現性のある飛行と、データ活用の基礎を学びます。</p></div>
-        <div class="card"><h3>防災</h3><p>自治体・企業の備えとして、ドローン活用の可能性を理解します。</p></div>
-        <div class="card"><h3>教育</h3><p>社内教育や研修導入に。継続して学べる構造にします。</p></div>
-        <div class="card"><h3>相談導線</h3><p>導入前の相談窓口を明確にし、問い合わせのハードルを下げます。</p></div>
-      </div>
-    </section>
-
-    <section class="section fade-up">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">実感値</span>
-          <h2>受講後に残るのは、操作だけではない。</h2>
-        </div>
-        <p>体験談を盛りすぎず、受講者が得る変化を静かに言葉にします。</p>
-      </div>
-      <div class="grid-3">
-        <div class="card"><h3>判断が早くなる</h3><p>飛ばす前の確認ポイントが整理され、動きが安定します。</p></div>
-        <div class="card"><h3>目的が定まる</h3><p>資格・撮影・点検・研修のどこに進むか、見通しが立ちます。</p></div>
-        <div class="card"><h3>相談しやすい</h3><p>法人も個人も、次の一手を聞ける入口があるだけで安心感が変わります。</p></div>
-      </div>
-    </section>
-
-    <section id="faq" class="section fade-up">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">FAQ</span>
-          <h2>よくある不安を、先に解消する。</h2>
-        </div>
-        <p>申し込み前に迷いやすい点だけを短く並べます。</p>
-      </div>
-      <div class="faq">
-        <details open>
-          <summary>未経験でも大丈夫ですか？</summary>
-          <p>はい。基礎から段階的に進める前提で、最初の不安を減らす構成にします。</p>
-        </details>
-        <details>
-          <summary>法人での受講相談もできますか？</summary>
-          <p>できます。研修目的や導入目的に合わせて、別導線で案内する想定です。</p>
-        </details>
-        <details>
-          <summary>資格取得のあとに何ができますか？</summary>
-          <p>空撮、点検、測量、社内研修など、実務活用を見据えた案内に繋げます。</p>
-        </details>
-        <details>
-          <summary>まず何から見ればいいですか？</summary>
-          <p>「コースを見る」から目的別の入口を確認し、その後に無料説明会へ進むのが自然です。</p>
-        </details>
-      </div>
-    </section>
-
-    <section id="cta" class="cta fade-up">
-      <div>
-        <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.18);">資料請求 / 体験 / 相談</span>
-        <h2 style="margin-top:12px;">まずは、PDC名古屋の空気を見てください。</h2>
-        <p>PDC名古屋のページでは、国家資格、実務活用、法人相談をひとつの導線にまとめ、迷わず次へ進める構成にしています。</p>
-        <div class="cta-stack" style="margin-top:18px;">
-          <a class="button button-primary" href="#top">ページ上部へ</a>
-          <a class="button button-blue" href="#courses">コースを見る</a>
-          <a class="button button-ghost" href="#uses">法人相談を見る</a>
-        </div>
-      </div>
-      <div class="cta-card">
-        <strong style="font-family:'Inter',sans-serif;font-size:1.1rem;">PDC Drone School Nagoya</strong>
-        <div class="meta">
-          <div><span>重点</span><span>国家資格 / 実務活用 / 法人研修</span></div>
-          <div><span>印象</span><span>シンプル / スタイリッシュ / 都市型</span></div>
-          <div><span>導線</span><span>説明会 / 相談 / コース案内</span></div>
+        <div class="contact-box">
+          <strong style="display:block;color:#fff;font-size:1.2rem;">お問い合わせフォームはこちら</strong>
+          <p style="margin-top:10px;color:var(--muted);line-height:1.8;">24時間受付中。人材供給、自社施工、協力会社連携のご相談をまとめて受け付けます。</p>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+            <span class="pill">問い合わせ</span>
+            <span class="pill">採用相談</span>
+            <span class="pill">協力会社募集</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">Copyright © PDC Drone School Nagoya Concept Site</footer>
+    <footer class="footer">Copyright © Gluck / グリュック合同会社</footer>
   </div>
 
   <script>
@@ -910,17 +880,38 @@
       observer.observe(el);
     });
 
-    const heroImage = document.getElementById('heroImage');
-    const heroVisual = document.getElementById('heroVisual');
-    if (heroImage && heroVisual) {
-      heroVisual.addEventListener('pointermove', (event) => {
-        const rect = heroVisual.getBoundingClientRect();
+    const counters = document.querySelectorAll('[data-count]');
+    const animateCount = (el, target) => {
+      const duration = 1200;
+      const start = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('ja-JP');
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    const countObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        animateCount(entry.target, Number(entry.target.dataset.count || '0'));
+        countObserver.unobserve(entry.target);
+      }
+    }, { threshold: 0.5 });
+    counters.forEach((el) => countObserver.observe(el));
+
+    const heroImage = document.querySelector('.hero-main img');
+    const heroMain = document.querySelector('.hero-main');
+    if (heroImage && heroMain) {
+      heroMain.addEventListener('pointermove', (event) => {
+        const rect = heroMain.getBoundingClientRect();
         const x = (event.clientX - rect.left) / rect.width - 0.5;
         const y = (event.clientY - rect.top) / rect.height - 0.5;
-        heroImage.style.transform = `translate3d(${x * 10}px, ${y * 8}px, 0) scale(1.01)`;
+        heroImage.style.transform = `translate3d(${x * 10}px, ${y * 8}px, 0) scale(1.03)`;
       });
-      heroVisual.addEventListener('pointerleave', () => {
-        heroImage.style.transform = 'translate3d(0, 0, 0) scale(1)';
+      heroMain.addEventListener('pointerleave', () => {
+        heroImage.style.transform = 'translate3d(0, 0, 0) scale(1.02)';
       });
     }
   </script>

@@ -1,27 +1,27 @@
 ---
 version: gamma
-name: Linear Airframe
-description: Minimal tech homepage for a drone school with white space, graphite typography, and precise blue accents
+name: Industrial Night Grid
+description: Dark industrial corporate homepage with gold accents, dense information blocks, and a high-trust construction aesthetic
 colors:
-  primary: "#0F5EFF"
-  secondary: "#5C7CFA"
-  tertiary: "#15C3FF"
-  accent: "#DDEBFF"
-  sky: "#F4F8FF"
-  surface: "#FFFFFF"
-  soft: "#F7F9FC"
-  line: "#D8E0ED"
-  text: "#101828"
-  muted: "#667085"
+  primary: "#081123"
+  secondary: "#101B36"
+  tertiary: "#D8A53D"
+  accent: "#F0C35A"
+  sky: "#0F172A"
+  surface: "#10192E"
+  soft: "#131E36"
+  line: "#31405D"
+  text: "#F6F7FB"
+  muted: "#B8C1D9"
 typography:
   h1:
     fontFamily: "Inter"
-    fontSize: "5.2rem"
+    fontSize: "5.4rem"
     fontWeight: 800
     lineHeight: 1.0
   h2:
     fontFamily: "Inter"
-    fontSize: "2.6rem"
+    fontSize: "2.5rem"
     fontWeight: 800
     lineHeight: 1.08
   h3:
@@ -33,7 +33,7 @@ typography:
     fontFamily: "Noto Sans JP"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.8
+    lineHeight: 1.82
   label:
     fontFamily: "Noto Sans JP"
     fontSize: 0.82rem
@@ -43,7 +43,7 @@ rounded:
   sm: 12px
   md: 16px
   lg: 22px
-  xl: 30px
+  xl: 28px
 spacing:
   xs: 8px
   sm: 12px
@@ -52,13 +52,13 @@ spacing:
   xl: 32px
 components:
   button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.surface}"
+    backgroundColor: "{colors.tertiary}"
+    textColor: "#111111"
     rounded: "999px"
     padding: "0 22px"
   button-ghost:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.primary}"
+    backgroundColor: "rgba(255,255,255,0.06)"
+    textColor: "{colors.text}"
     rounded: "999px"
     padding: "0 22px"
   card:
@@ -67,22 +67,22 @@ components:
     rounded: "{rounded.lg}"
     padding: "22px"
   section-band:
-    backgroundColor: "{colors.sky}"
+    backgroundColor: "{colors.primary}"
     textColor: "{colors.text}"
     rounded: "{rounded.lg}"
     padding: "20px"
   badge-accent:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.text}"
+    backgroundColor: "{colors.tertiary}"
+    textColor: "#111111"
     rounded: "{rounded.xl}"
     padding: "8px 12px"
   divider-line:
     backgroundColor: "{colors.line}"
-    textColor: "{colors.primary}"
+    textColor: "{colors.text}"
     rounded: "{rounded.xl}"
     padding: "0"
   label-muted:
-    backgroundColor: "{colors.soft}"
+    backgroundColor: "rgba(255,255,255,0.06)"
     textColor: "{colors.muted}"
     rounded: "{rounded.xl}"
     padding: "8px 10px"
@@ -90,31 +90,31 @@ components:
 
 ## Overview
 
-PDC名古屋のホームページは、ドローン学校らしいテクニカルさと、法人にも個人にも通じる信頼感を両立させる。
-白基調に濃いブルーを効かせ、軽いモーションで静かに引き込む。
+Heavy industrial homepage for an electrical construction company.
+Use a dark navy base, gold accents, and high-density blocks to evoke trust, scale, and on-site control.
 
 ## Visual Direction
 
-- 画面全体は明るく、余白は広い
-- CTA は明確で短い
-- 写真やベクターは訓練、操縦、実務の3方向で使う
-- 装飾は最小限、グリッドとカードで整理する
+- Hero is cinematic and dense, with a major headline and metric boxes.
+- Use strong vertical rhythm and clear separators.
+- Keep photos sharp, nocturnal, and practical.
+- Avoid soft lifestyle visuals; this is infrastructure work.
 
 ## Motion
 
-- Hero の画像はごく弱いパララックス
-- セクションはフェードアップ
-- ティッカーとバッジはゆっくり流す
-- ホバーは軽く持ち上げる程度
+- Subtle parallax on the hero collage.
+- Section reveal on scroll.
+- Numbers animate once when visible.
+- Use slow map glow and card lift on hover.
 
 ## Do
 
-- 国家資格、実務活用、法人研修を早く見せる
-- 名古屋らしい通いやすさを伝える
-- 競合で強かった訴求を吸収する
+- Show scale, control, and nationwide reach.
+- Separate business pillars clearly.
+- Make contact actions obvious.
 
 ## Don't
 
-- 雑誌風、ラグジュアリー風には寄せない
-- 重い黒背景や強い発光を使いすぎない
-- 嘘っぽい実績数字を置かない
+- Don’t make it feel like a generic corporate template.
+- Don’t use bright pastel tones or playful illustration.
+- Don’t hide the heavy industrial character.
