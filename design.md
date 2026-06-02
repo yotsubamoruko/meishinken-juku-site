@@ -1,31 +1,33 @@
 ---
-version: alpha
-name: RIVA CAFE Editorial
-description: Casual stylish Italian cafe landing page with airy editorial motion
+version: gamma
+name: Junior Exam School Classic
+description: Simple, trustworthy education landing page inspired by major Japanese cram school homepages
 colors:
-  primary: "#2E241E"
-  secondary: "#6D5F54"
-  tertiary: "#C86B4A"
-  accent: "#94A58A"
-  warm: "#E9DCC8"
-  surface: "#FFF9F1"
-  mint: "#DDE8E0"
-  on-primary: "#FFFFFF"
+  primary: "#184E9E"
+  secondary: "#3E6FB6"
+  tertiary: "#E94E3D"
+  accent: "#F6C445"
+  sky: "#EAF3FF"
+  surface: "#FFFFFF"
+  soft: "#F6F8FC"
+  line: "#D9E4F2"
+  text: "#24303D"
+  muted: "#5E6B78"
 typography:
   h1:
-    fontFamily: "Noto Serif JP"
-    fontSize: "clamp(3rem, 5.8vw, 6rem)"
-    fontWeight: 700
+    fontFamily: "M PLUS Rounded 1c"
+    fontSize: "clamp(2.8rem, 6vw, 5.8rem)"
+    fontWeight: 800
     lineHeight: 1.03
   h2:
-    fontFamily: "Noto Serif JP"
-    fontSize: "clamp(1.8rem, 3vw, 2.6rem)"
-    fontWeight: 700
-    lineHeight: 1.15
+    fontFamily: "M PLUS Rounded 1c"
+    fontSize: "clamp(1.7rem, 3vw, 2.6rem)"
+    fontWeight: 800
+    lineHeight: 1.12
   h3:
-    fontFamily: "Noto Serif JP"
-    fontSize: "1.25rem"
-    fontWeight: 700
+    fontFamily: "M PLUS Rounded 1c"
+    fontSize: "1.1rem"
+    fontWeight: 800
     lineHeight: 1.3
   body:
     fontFamily: "Noto Sans JP"
@@ -36,12 +38,12 @@ typography:
     fontFamily: "Noto Sans JP"
     fontSize: 0.82rem
     fontWeight: 800
-    letterSpacing: "0.12em"
+    letterSpacing: "0.08em"
 rounded:
   sm: 14px
-  md: 20px
-  lg: 28px
-  xl: 40px
+  md: 18px
+  lg: 24px
+  xl: 34px
 spacing:
   xs: 8px
   sm: 12px
@@ -50,75 +52,79 @@ spacing:
   xl: 32px
 components:
   button-primary:
-    backgroundColor: "{colors.tertiary}"
-    textColor: "{colors.on-primary}"
-    rounded: "{rounded.lg}"
+    backgroundColor: "{colors.primary}"
+    textColor: "{colors.surface}"
+    rounded: "999px"
     padding: "0 22px"
   button-ghost:
-    backgroundColor: "rgba(255,255,255,0.75)"
+    backgroundColor: "rgba(24,78,158,0.06)"
     textColor: "{colors.primary}"
-    rounded: "{rounded.lg}"
+    rounded: "999px"
     padding: "0 22px"
   card:
     backgroundColor: "{colors.surface}"
-    textColor: "{colors.primary}"
+    textColor: "{colors.text}"
     rounded: "{rounded.lg}"
     padding: "22px"
 ---
 
 ## Overview
 
-Light, casual, Italian-inspired cafe landing page.
-The page should feel airy, editorial, and approachable: cream paper, olive accents, terracotta warmth, and lively motion.
+Clean, simple, trustworthy homepage for a Nagoya-based junior entrance exam cram school.
+The page should feel like a major education brand: bright white background, blue primary color, red accent CTA, calm but energetic rhythm, and clear information hierarchy.
 
 ## Research Notes
 
-- Reference page structure: hero, message, menu, space/scene, access, FAQ, reservation CTA.
-- Reference copy pattern: short headline, supportive paragraph, then scannable sections with 3-part menu framing.
-- Reference atmosphere: bright natural light, friendly premium tone, health-conscious but not clinical, urban cafe and restaurant hybrid.
+- Major school homepages in this category are information dense but visually simple.
+- Hero usually leads with a strong promise, then immediate CTA buttons for inquiry, trial, and briefing.
+- Test/event content is a core acquisition channel.
+- Grade/course cards and school access sections are expected.
+- Parents care most about results, support, safety, and convenience.
 
 ## Colors
 
-- **Primary (#2E241E):** espresso ink and key typography.
-- **Secondary (#6D5F54):** captions, meta text, and thin rules.
-- **Tertiary (#C86B4A):** tomato-terracotta highlight and CTA fill.
-- **Accent (#94A58A):** basil/olive accent for chips and status tags.
-- **Warm (#E9DCC8):** linen backdrop and section wash.
-- **Mint (#DDE8E0):** airy alternate surface for cards and tags.
-- **Surface (#FFF9F1):** paper-like panels and clean sections.
+- **Primary (#184E9E):** main blue, trust, headers, and links.
+- **Secondary (#3E6FB6):** lighter blue for supporting surfaces and highlights.
+- **Tertiary (#E94E3D):** red CTA, urgent notices, and key emphasis.
+- **Accent (#F6C445):** test/event highlights and badges.
+- **Sky (#EAF3FF):** soft background tint for section panels.
+- **Surface (#FFFFFF):** card and panel base.
+- **Soft (#F6F8FC):** muted background and band separators.
+- **Line (#D9E4F2):** borders and dividers.
 
 ## Typography
 
-- Headlines use `Noto Serif JP` for warmth and a slightly editorial cafe feel.
-- Body copy uses `Noto Sans JP` for clarity on mobile.
-- Labels should be compact, uppercase-like in spirit, and spaced out.
+- Use `M PLUS Rounded 1c` for headings to keep the page friendly and educational.
+- Use `Noto Sans JP` for readable body copy and labels.
+- Keep labels compact and high-contrast for mobile scanning.
 
 ## Layout
 
-- Hero: 2-column spread with punchy headline, short intro, CTA row, and large illustration.
-- Then a ticker / ribbon of keywords to create movement and brand energy.
-- Use 3-card sections for menu categories and 2-card sections for space and scene.
-- End with access, hours, and FAQ in a clean, reservation-oriented footer area.
+- Hero: bold left headline, right-side still image, CTA stack below.
+- Immediately show trust numbers and key features.
+- Use course cards by grade, followed by learning flow, results, school list, FAQ, and access.
+- Keep blocks separate and scannable.
 
 ## Motion
 
-- Use staggered fade-up reveals across sections.
-- Use floating art elements in the hero.
-- Add marquee-style motion for keywords or featured items.
-- Keep transitions soft and never abrupt.
+- Gentle fade-up reveals.
+- Staggered card entrance.
+- Small count-up animations for metrics.
+- Slow moving banners and soft floating badges.
+- Keep motion lively but safe.
 
 ## Shapes & Depth
 
-- Rounded corners should be present but not playful.
-- Use soft shadows, borders, and subtle gradients instead of heavy glassmorphism.
-- Use layered cards, not dense grids.
+- Rounded cards and pills, but not overly soft.
+- Blue-tinted surfaces, thin borders, and clean shadows.
+- Avoid dark, heavy, or glossy styles.
 
 ## Do's and Don'ts
 
-- Do keep the page bright and breathable.
-- Do use a few warm accents and olive greens, not many colors.
-- Do make the food feel fresh, handcrafted, and approachable.
-- Do keep the content scannable on mobile.
-- Don't make it feel like a generic corporate brochure.
-- Don't use harsh black backgrounds.
-- Don't overload the page with text blocks.
+- Do make the page feel simple, trustworthy, and fast to scan.
+- Do show results, classes, and school access early.
+- Do keep CTA buttons obvious.
+- Do use one or two strong still images.
+- Don't imitate a luxury brand or a magazine layout.
+- Don't use dense copy walls.
+- Don't make animations flashy or distracting.
