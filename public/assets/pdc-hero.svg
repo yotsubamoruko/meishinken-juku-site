@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="ドローン訓練を表現したヒーローアート">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="55%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#dfeaff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#dfe9ff" stop-opacity="0.92"/>
+    </linearGradient>
+    <linearGradient id="drone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101828"/>
+      <stop offset="100%" stop-color="#354564"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F5EFF"/>
+      <stop offset="100%" stop-color="#15C3FF"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="820" cy="240" rx="520" ry="160" fill="#ffffff" opacity="0.7" filter="url(#soft)"/>
+
+  <g opacity="0.88">
+    <rect x="90" y="120" width="1420" height="760" rx="42" fill="url(#glass)"/>
+    <rect x="150" y="180" width="1300" height="620" rx="30" fill="#ffffff" opacity="0.42"/>
+  </g>
+
+  <g opacity="0.4">
+    <path d="M210 640h1180" stroke="#9fb6de" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250 700h1100" stroke="#9fb6de" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/>
+    <path d="M250 760h1100" stroke="#9fb6de" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/>
+    <path d="M250 820h1100" stroke="#9fb6de" stroke-width="4" stroke-dasharray="10 12" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="210" y="230" width="230" height="420" rx="24" fill="#e8efff"/>
+    <rect x="470" y="200" width="310" height="470" rx="28" fill="#f7faff"/>
+    <rect x="820" y="220" width="280" height="440" rx="28" fill="#e9f5ff"/>
+    <rect x="1130" y="250" width="190" height="390" rx="22" fill="#eef3ff"/>
+    <rect x="242" y="258" width="166" height="12" rx="6" fill="#c9d7f2"/>
+    <rect x="502" y="232" width="220" height="12" rx="6" fill="#c9d7f2"/>
+    <rect x="852" y="250" width="180" height="12" rx="6" fill="#c9d7f2"/>
+    <rect x="1162" y="280" width="120" height="12" rx="6" fill="#c9d7f2"/>
+  </g>
+
+  <g transform="translate(820 500)">
+    <circle r="92" fill="#101828" opacity="0.1" filter="url(#soft)"/>
+    <circle r="58" fill="#111827"/>
+    <circle r="18" fill="#ffffff" opacity="0.92"/>
+    <g stroke="url(#drone)" stroke-width="20" stroke-linecap="round">
+      <path d="M-150 -74 L-56 -20"/>
+      <path d="M150 -74 L56 -20"/>
+      <path d="M-150 74 L-56 20"/>
+      <path d="M150 74 L56 20"/>
+    </g>
+    <g fill="url(#accent)">
+      <circle cx="-170" cy="-88" r="44"/>
+      <circle cx="170" cy="-88" r="44"/>
+      <circle cx="-170" cy="88" r="44"/>
+      <circle cx="170" cy="88" r="44"/>
+    </g>
+    <g fill="#ffffff" opacity="0.85">
+      <circle cx="-170" cy="-88" r="16"/>
+      <circle cx="170" cy="-88" r="16"/>
+      <circle cx="-170" cy="88" r="16"/>
+      <circle cx="170" cy="88" r="16"/>
+    </g>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="225" y="640" width="250" height="122" rx="26" fill="#ffffff" stroke="#d7e1f3"/>
+    <rect x="255" y="670" width="82" height="82" rx="22" fill="#eef4ff"/>
+    <circle cx="296" cy="711" r="18" fill="url(#accent)"/>
+    <path d="M296 681l7 24h25l-20 14 8 24-20-14-20 14 8-24-20-14h25z" fill="#ffffff" opacity="0.9"/>
+    <rect x="356" y="681" width="86" height="12" rx="6" fill="#cbd7ea"/>
+    <rect x="356" y="705" width="150" height="10" rx="5" fill="#dbe5f4"/>
+    <rect x="356" y="727" width="114" height="10" rx="5" fill="#dbe5f4"/>
+  </g>
+</svg>

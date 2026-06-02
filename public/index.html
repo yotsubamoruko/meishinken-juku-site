@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>名進研 | 東海地区の中学受験塾</title>
-  <meta name="description" content="名進研の中学受験ホームページ。合格実績、学年別コース、名駅校の通いやすさ、説明会・体験授業の案内をまとめています。">
-  <meta property="og:title" content="名進研 | 東海地区の中学受験塾">
-  <meta property="og:description" content="名古屋で中学受験を考えるご家庭へ。実績・校舎・コースを一目で。">
+  <title>PDCドローンスクール名古屋 | 国家資格と実務活用をつなぐ</title>
+  <meta name="description" content="PDCドローンスクール名古屋のホームページ。国家資格、空撮、点検、測量、法人研修まで、実務につながる学びを名古屋で。">
+  <meta property="og:title" content="PDCドローンスクール名古屋 | 国家資格と実務活用をつなぐ">
+  <meta property="og:description" content="資格で終わらない。現場で使えるドローン学習を、名古屋で。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/nagoya-juku-hero.png">
-  <meta name="theme-color" content="#184E9E">
+  <meta property="og:image" content="./assets/pdc-hero.svg">
+  <meta name="theme-color" content="#0F5EFF">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #184E9E;
-      --primary-soft: #3E6FB6;
-      --accent: #E94E3D;
-      --gold: #F6C445;
-      --sky: #EAF3FF;
-      --surface: #FFFFFF;
-      --soft: #F6F8FC;
-      --line: #D9E4F2;
-      --text: #24303D;
-      --muted: #5E6B78;
-      --shadow: 0 16px 36px rgba(24, 78, 158, 0.08);
-      --shadow-strong: 0 24px 54px rgba(24, 78, 158, 0.14);
-      --radius-xl: 34px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
+      --primary: #0f5eff;
+      --secondary: #5c7cfa;
+      --tertiary: #15c3ff;
+      --accent: #ddebff;
+      --sky: #f4f8ff;
+      --surface: #ffffff;
+      --soft: #f7f9fc;
+      --line: #d8e0ed;
+      --text: #101828;
+      --muted: #667085;
+      --shadow: 0 16px 36px rgba(16, 24, 40, 0.08);
+      --shadow-strong: 0 24px 56px rgba(15, 94, 255, 0.12);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
       --max: 1240px;
     }
 
@@ -41,67 +41,58 @@
       color: var(--text);
       font-family: 'Noto Sans JP', system-ui, sans-serif;
       background:
-        radial-gradient(circle at 8% 0%, rgba(234,243,255,0.9), transparent 22%),
-        radial-gradient(circle at 100% 4%, rgba(246,196,69,0.16), transparent 18%),
-        linear-gradient(180deg, #fff 0%, #fbfdff 100%);
+        radial-gradient(circle at 12% 0%, rgba(221,235,255,0.95), transparent 24%),
+        radial-gradient(circle at 100% 8%, rgba(21,195,255,0.11), transparent 18%),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
     }
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image: radial-gradient(rgba(24,78,158,0.05) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(15,94,255,0.05) 1px, transparent 1px);
       background-size: 22px 22px;
-      opacity: 0.28;
-      mask-image: linear-gradient(180deg, rgba(0,0,0,0.22), transparent 85%);
+      opacity: 0.26;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,0.18), transparent 82%);
     }
 
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
     h1, h2, h3, p { margin: 0; }
-    h1, h2, h3 { font-family: 'M PLUS Rounded 1c', system-ui, sans-serif; }
+    h1, h2, h3 { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
 
     .page {
       width: min(calc(100% - 28px), var(--max));
       margin: 0 auto;
-      padding: 16px 0 46px;
+      padding: 16px 0 44px;
       position: relative;
       z-index: 1;
     }
 
-    .notice {
+    .topbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 10px 16px;
+      padding: 12px 16px;
       border-radius: 18px;
-      border: 1px solid rgba(233,78,61,0.16);
-      background: rgba(255,246,244,0.96);
-      color: #a5382f;
+      border: 1px solid rgba(15,94,255,0.12);
+      background: rgba(255,255,255,0.88);
+      box-shadow: 0 12px 26px rgba(16,24,40,0.05);
+      color: var(--muted);
       font-size: 0.88rem;
-      font-weight: 800;
-      box-shadow: 0 12px 30px rgba(233,78,61,0.06);
+      font-weight: 700;
     }
-    .notice strong {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--accent);
-    }
+    .topbar strong { color: var(--primary); }
 
     .masthead {
       display: grid;
       grid-template-columns: auto 1fr auto;
       gap: 18px;
       align-items: center;
-      padding: 18px 0 12px;
+      padding: 18px 0 14px;
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .brand { display: flex; align-items: center; gap: 12px; }
     .brand-mark {
       width: 46px;
       height: 46px;
@@ -109,13 +100,13 @@
       display: grid;
       place-items: center;
       color: #fff;
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-weight: 900;
-      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      background: linear-gradient(135deg, var(--primary), var(--tertiary));
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+      font-weight: 800;
+      letter-spacing: 0.04em;
     }
-    .brand-copy strong { display: block; font-size: 1rem; letter-spacing: 0.03em; }
-    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.78rem; }
+    .brand-copy strong { display: block; font-size: 1rem; }
+    .brand-copy span { display: block; margin-top: 2px; color: var(--muted); font-size: 0.8rem; }
 
     .header-links {
       display: flex;
@@ -127,12 +118,12 @@
       font-weight: 700;
     }
     .header-links a { padding: 6px 0; border-bottom: 2px solid transparent; }
-    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(24,78,158,0.24); }
+    .header-links a:hover { color: var(--primary); border-bottom-color: rgba(15,94,255,0.24); }
 
     .header-cta {
       display: flex;
-      gap: 10px;
       flex-wrap: wrap;
+      gap: 10px;
       justify-content: flex-end;
     }
 
@@ -151,32 +142,30 @@
     .button:hover { transform: translateY(-1px); }
     .button-primary {
       color: #fff;
-      background: linear-gradient(135deg, var(--accent), #d43d30);
-      box-shadow: 0 14px 24px rgba(233,78,61,0.2);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 14px 24px rgba(15,94,255,0.2);
     }
     .button-blue {
       color: #fff;
-      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
-      box-shadow: 0 14px 24px rgba(24,78,158,0.18);
+      background: linear-gradient(135deg, #1b74ff, var(--tertiary));
+      box-shadow: 0 14px 24px rgba(21,195,255,0.18);
     }
     .button-ghost {
       color: var(--primary);
-      border-color: rgba(24,78,158,0.14);
-      background: rgba(24,78,158,0.04);
+      border-color: rgba(15,94,255,0.14);
+      background: rgba(15,94,255,0.04);
     }
 
     .hero {
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 26px;
-      align-items: stretch;
-      padding: 18px 0 24px;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: center;
+      padding: 18px 0 22px;
     }
-
     .hero-copy {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       gap: 16px;
       padding: 10px 0;
     }
@@ -188,33 +177,28 @@
       padding: 9px 14px;
       border-radius: 999px;
       color: var(--primary);
-      background: rgba(24,78,158,0.08);
-      border: 1px solid rgba(24,78,158,0.12);
+      background: rgba(15,94,255,0.08);
+      border: 1px solid rgba(15,94,255,0.12);
       font-size: 0.82rem;
       font-weight: 800;
       letter-spacing: 0.08em;
     }
     .hero-copy h1 {
-      font-size: clamp(2.9rem, 6vw, 5.8rem);
-      line-height: 1.03;
-      letter-spacing: 0.01em;
+      font-size: clamp(2.9rem, 6vw, 5.5rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      max-width: 11ch;
     }
     .hero-copy .lead {
-      max-width: 42rem;
+      max-width: 44rem;
       color: var(--muted);
       font-size: 1.03rem;
-      line-height: 1.92;
+      line-height: 1.9;
     }
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .hero-badges {
+    .hero-actions, .chip-row, .tag-row, .use-case-row, .cta-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 4px;
     }
     .chip {
       display: inline-flex;
@@ -224,25 +208,23 @@
       border-radius: 999px;
       border: 1px solid var(--line);
       background: #fff;
-      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
+      box-shadow: 0 12px 28px rgba(16,24,40,0.04);
       font-size: 0.86rem;
       font-weight: 800;
       color: var(--text);
     }
-
     .hero-panel {
+      position: relative;
       display: grid;
-      grid-template-columns: 1fr;
       gap: 12px;
-      align-content: start;
     }
     .hero-card {
       position: relative;
-      min-height: 600px;
+      min-height: 620px;
       border-radius: 34px;
       overflow: hidden;
-      border: 1px solid rgba(24,78,158,0.12);
-      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(234,243,255,0.9));
+      border: 1px solid rgba(15,94,255,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(244,248,255,0.95));
       box-shadow: var(--shadow-strong);
     }
     .hero-image {
@@ -250,23 +232,43 @@
       inset: 18px;
       border-radius: 28px;
       overflow: hidden;
-      background: #fff;
       transition: transform 0.25s ease;
     }
     .hero-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 38%;
+      object-position: center;
     }
-    .hero-caption,
-    .hero-stat,
-    .hero-tag {
+    .hero-badge, .hero-caption, .hero-stat {
       position: absolute;
       border-radius: 18px;
-      border: 1px solid rgba(24,78,158,0.12);
+      border: 1px solid rgba(15,94,255,0.12);
       background: rgba(255,255,255,0.94);
-      box-shadow: 0 14px 28px rgba(24,78,158,0.1);
+      box-shadow: 0 14px 28px rgba(16,24,40,0.08);
+    }
+    .hero-badge {
+      right: 20px;
+      top: 20px;
+      padding: 14px 16px;
+      min-width: 180px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      transform: rotate(4deg);
+      border-color: rgba(255,255,255,0.14);
+    }
+    .hero-badge small {
+      display: block;
+      opacity: 0.72;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.66rem;
+    }
+    .hero-badge strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 1rem;
+      line-height: 1.35;
     }
     .hero-caption {
       left: 18px;
@@ -277,52 +279,39 @@
     .hero-caption strong {
       display: block;
       color: var(--primary);
-      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 1rem;
       margin-bottom: 6px;
     }
     .hero-caption span {
       display: block;
       color: var(--muted);
       font-size: 0.88rem;
-      line-height: 1.75;
+      line-height: 1.74;
     }
     .hero-stat {
-      right: 18px;
-      top: 18px;
-      width: 170px;
+      right: 28px;
+      bottom: 28px;
+      width: 148px;
       padding: 14px 16px;
-      text-align: right;
-      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
-      color: #fff;
-      transform: rotate(4deg);
-      border-color: rgba(255,255,255,0.14);
-    }
-    .hero-stat small {
-      display: block;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.72;
-      font-size: 0.66rem;
+      transform: rotate(-5deg);
+      background: linear-gradient(180deg, #fff, #f8fbff);
     }
     .hero-stat strong {
       display: block;
-      margin-top: 4px;
-      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: var(--text);
       font-size: 1rem;
+      line-height: 1.3;
     }
-    .hero-tag {
-      right: 28px;
-      bottom: 26px;
-      width: 144px;
-      padding: 14px 16px;
-      transform: rotate(-5deg);
-      background: linear-gradient(135deg, #fff, #f6f8fc);
+    .hero-stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.5;
     }
-    .hero-tag strong { display: block; color: var(--text); font-family: 'M PLUS Rounded 1c', sans-serif; line-height: 1.35; }
-
     .hero-rail {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
     }
     .rail-card {
@@ -330,10 +319,10 @@
       border-radius: 22px;
       border: 1px solid var(--line);
       background: #fff;
-      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
+      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
     }
-    .rail-card strong { display: block; color: var(--primary); font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 1rem; }
-    .rail-card span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.88rem; line-height: 1.72; }
+    .rail-card strong { display: block; color: var(--primary); font-size: 0.98rem; }
+    .rail-card span { display: block; margin-top: 6px; color: var(--muted); font-size: 0.86rem; line-height: 1.7; }
 
     .ticker {
       overflow: hidden;
@@ -345,14 +334,15 @@
     }
     .ticker-track {
       display: flex;
-      gap: 28px;
+      gap: 22px;
       width: max-content;
       padding: 12px 0;
-      animation: marquee 24s linear infinite;
+      animation: marquee 22s linear infinite;
       color: var(--primary);
-      font-weight: 900;
-      letter-spacing: 0.14em;
+      font-weight: 800;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
+      font-size: 0.82rem;
     }
 
     .section {
@@ -374,59 +364,38 @@
       border-bottom: 1px solid var(--line);
     }
     .section-head p {
-      max-width: 40rem;
+      max-width: 42rem;
       color: var(--muted);
       line-height: 1.8;
       font-size: 0.95rem;
     }
     .section h2 {
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      line-height: 1.12;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
     }
 
-    .metrics {
+    .grid-2, .grid-3, .grid-4 {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
+      gap: 16px;
     }
-    .metric {
-      padding: 18px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, #fff, #fafcff);
-      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
-    }
-    .metric strong {
-      display: block;
-      color: var(--primary);
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-size: clamp(1.45rem, 3vw, 2.2rem);
-      line-height: 1;
-    }
-    .metric span {
-      display: block;
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.7;
-    }
-
-    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
     .card {
       padding: 22px;
       border-radius: 24px;
       border: 1px solid var(--line);
       background: #fff;
-      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
+      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       position: relative;
     }
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 18px 42px rgba(24,78,158,0.11);
+      box-shadow: 0 18px 42px rgba(15,94,255,0.11);
     }
     .card::before {
       content: '';
@@ -435,97 +404,31 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--primary), var(--gold));
+      background: linear-gradient(90deg, var(--primary), var(--tertiary));
     }
-    .card p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
-    .feature-row, .tag-row, .school-row, .result-list, .cta-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-    }
+    .card p { margin-top: 10px; color: var(--muted); line-height: 1.82; }
+
     .mini-tag {
+      display: inline-flex;
       padding: 8px 10px;
       border-radius: 999px;
-      background: rgba(24,78,158,0.06);
-      border: 1px solid rgba(24,78,158,0.1);
+      background: rgba(15,94,255,0.06);
+      border: 1px solid rgba(15,94,255,0.1);
       color: var(--primary);
       font-size: 0.76rem;
       font-weight: 800;
     }
     .feature {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 10px 14px;
       border-radius: 999px;
-      background: rgba(24,78,158,0.06);
+      background: rgba(15,94,255,0.06);
       color: var(--primary);
       font-size: 0.84rem;
       font-weight: 800;
     }
-
-    .course-grid .course {
-      min-height: 182px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .course .grade {
-      display: inline-flex;
-      width: fit-content;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(24,78,158,0.08);
-      color: var(--primary);
-      font-weight: 900;
-      font-size: 0.76rem;
-      letter-spacing: 0.08em;
-    }
-    .course .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px;
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
-    .course .meta span {
-      padding: 8px 10px;
-      border-radius: 999px;
-      background: var(--soft);
-      border: 1px solid var(--line);
-    }
-
-    .flow {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .flow-step {
-      padding: 18px;
-      border-radius: 22px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, #fff, #fbfdff);
-      box-shadow: 0 12px 28px rgba(24,78,158,0.06);
-      position: relative;
-    }
-    .flow-step::after {
-      content: '';
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      background: rgba(246,196,69,0.18);
-      border: 1px solid rgba(246,196,69,0.28);
-    }
-    .flow-step strong {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--primary);
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-size: 1.02rem;
-    }
-    .flow-step p { color: var(--muted); line-height: 1.75; }
 
     .photo-card {
       position: relative;
@@ -549,64 +452,45 @@
       padding: 10px 14px;
       border-radius: 999px;
       background: rgba(255,255,255,0.94);
-      border: 1px solid rgba(24,78,158,0.1);
+      border: 1px solid rgba(15,94,255,0.1);
       color: var(--primary);
       font-weight: 900;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
       font-size: 0.8rem;
     }
 
-    .ranking {
+    .flow {
       display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
-      gap: 16px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
     }
-    .result-list span {
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(24,78,158,0.06);
-      border: 1px solid rgba(24,78,158,0.1);
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 0.84rem;
-    }
-
-    .access {
-      display: grid;
-      grid-template-columns: 0.98fr 1.02fr;
-      gap: 16px;
-      align-items: start;
-    }
-    .map-card {
-      padding: 22px;
-      border-radius: 28px;
-      background: linear-gradient(180deg, #eaf3ff, #fff);
+    .flow-step {
+      padding: 18px;
+      border-radius: 22px;
       border: 1px solid var(--line);
-      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, #fff, #f9fbff);
+      box-shadow: 0 12px 28px rgba(16,24,40,0.05);
+      position: relative;
     }
-    .map-card .meta {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
+    .flow-step::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: rgba(21,195,255,0.14);
+      border: 1px solid rgba(21,195,255,0.24);
     }
-    .map-card .meta div {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.94rem;
+    .flow-step strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-size: 1rem;
+      font-weight: 800;
     }
-    .map-card .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
-
-    .voices {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .voice strong { display: block; color: var(--primary); font-family: 'M PLUS Rounded 1c', sans-serif; }
-    .voice p { margin-top: 10px; color: var(--muted); line-height: 1.8; }
+    .flow-step p { color: var(--muted); line-height: 1.75; }
 
     .faq { display: grid; gap: 12px; }
     .faq details {
@@ -614,7 +498,7 @@
       border-radius: 20px;
       border: 1px solid var(--line);
       background: #fff;
-      box-shadow: 0 12px 28px rgba(24,78,158,0.05);
+      box-shadow: 0 12px 28px rgba(16,24,40,0.04);
     }
     .faq summary {
       cursor: pointer;
@@ -632,15 +516,15 @@
       align-items: center;
       padding: 24px;
       border-radius: var(--radius-xl);
-      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      background: linear-gradient(135deg, #0f5eff, #16b8ff);
       color: #fff;
-      border: 1px solid rgba(24,78,158,0.14);
+      border: 1px solid rgba(15,94,255,0.14);
       box-shadow: var(--shadow-strong);
       margin-top: 28px;
     }
     .cta p {
       margin-top: 12px;
-      color: rgba(255,255,255,0.84);
+      color: rgba(255,255,255,0.86);
       line-height: 1.84;
     }
     .cta .button-ghost {
@@ -653,6 +537,7 @@
       border-radius: 24px;
       border: 1px solid rgba(255,255,255,0.12);
       background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
     }
     .cta-card .meta {
       display: grid;
@@ -665,7 +550,7 @@
       justify-content: space-between;
       gap: 16px;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.14);
+      border-bottom: 1px solid rgba(255,255,255,0.16);
     }
     .cta-card .meta div:last-child { border-bottom: 0; padding-bottom: 0; }
 
@@ -687,8 +572,8 @@
       transform: translateY(0);
     }
 
-    .float { animation: float 7.5s ease-in-out infinite; }
-    .float-slow { animation: float 10.5s ease-in-out infinite reverse; }
+    .float { animation: float 8.5s ease-in-out infinite; }
+    .float-slow { animation: float 11.5s ease-in-out infinite reverse; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0) rotate(var(--rotate, 0deg)); }
@@ -702,25 +587,26 @@
     @media (max-width: 1100px) {
       .masthead { grid-template-columns: 1fr; justify-items: start; }
       .header-cta { justify-content: flex-start; }
-      .hero, .ranking, .access, .cta { grid-template-columns: 1fr; }
+      .hero, .cta { grid-template-columns: 1fr; }
       .hero-panel { grid-template-columns: 1fr 1fr; }
-      .voices, .grid-3, .flow, .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-rail, .grid-3, .grid-4, .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .section-head { flex-direction: column; align-items: start; }
     }
 
     @media (max-width: 720px) {
       .page { width: min(calc(100% - 18px), var(--max)); padding-top: 10px; }
+      .topbar { flex-direction: column; align-items: flex-start; }
       .notice { flex-direction: column; align-items: flex-start; }
       .hero-panel { grid-template-columns: 1fr; }
-      .hero h1 { font-size: clamp(2.4rem, 13vw, 4rem); }
       .hero-card { min-height: 520px; }
       .hero-image { inset: 12px; }
+      .hero-copy h1 { font-size: clamp(2.3rem, 12vw, 4rem); }
       .hero-caption { width: 210px; }
-      .hero-stat { width: 146px; }
-      .hero-tag { width: 126px; }
+      .hero-badge { min-width: 150px; }
+      .hero-stat { width: 138px; }
       .section, .cta { padding: 18px; }
-      .grid-3, .flow, .metrics, .voices, .grid-2 { grid-template-columns: 1fr; }
-      .header-cta, .hero-actions, .feature-row, .tag-row, .school-row, .result-list, .cta-stack { width: 100%; }
+      .grid-2, .grid-3, .grid-4, .hero-rail, .flow { grid-template-columns: 1fr; }
+      .header-cta, .hero-actions, .chip-row, .tag-row, .use-case-row, .cta-stack { width: 100%; }
       .button { width: 100%; }
       .ticker-track { animation-duration: 18s; }
     }
@@ -728,86 +614,85 @@
 </head>
 <body>
   <div class="page">
-    <div class="notice fade-up">
-      <strong>緊急のお知らせ</strong>
-      <span>6月2日（火）に予定されている授業・テスト・イベント等については、地域ごとの案内をご確認ください。</span>
+    <div class="topbar fade-up">
+      <span><strong>PDC名古屋</strong> の新しいホームページ案</span>
+      <span>国家資格・実務活用・法人研修を一画面で伝える構成</span>
     </div>
 
     <header class="masthead fade-up" id="top">
       <div class="brand">
-        <div class="brand-mark">名</div>
+        <div class="brand-mark">PDC</div>
         <div class="brand-copy">
-          <strong>名進研</strong>
-          <span>名古屋・愛知・岐阜の中学受験塾</span>
+          <strong>PDCドローンスクール名古屋</strong>
+          <span>資格で終わらない、現場につながる学び</span>
         </div>
       </div>
 
       <nav class="header-links" aria-label="ページ内ナビゲーション">
-        <a href="#results">合格実績</a>
+        <a href="#strengths">強み</a>
         <a href="#courses">コース</a>
-        <a href="#flow">学習の流れ</a>
-        <a href="#school">名駅校</a>
+        <a href="#flow">流れ</a>
+        <a href="#uses">活用シーン</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <div class="header-cta">
-        <a class="button button-ghost" href="#school">校舎案内</a>
-        <a class="button button-blue" href="#cta">資料請求</a>
+        <a class="button button-ghost" href="#uses">法人相談</a>
+        <a class="button button-blue" href="#cta">無料説明会</a>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero-copy fade-up">
-        <span class="eyebrow">東海地区で40年</span>
-        <h1>合格へ、<br>ひとりにしない伴走を。</h1>
-        <p class="lead">名進研は、名古屋を中心に東海地区の中学受験を支える進学塾です。学年別コース、プレ中学入試、名駅校の通いやすさを、保護者の方がひと目で把握できるようにまとめました。</p>
+        <span class="eyebrow">Nagoya Drone School</span>
+        <h1>飛ばすだけで終わらせない。</h1>
+        <p class="lead">PDC名古屋は、国家資格、空撮、点検、測量、法人研修までをひと続きで考えるドローンスクールです。名古屋で学び、現場で使うところまでを、シンプルに案内します。</p>
 
-        <div class="hero-meta">
-          <span class="chip">1クラス原則24名</span>
-          <span class="chip">教師常駐</span>
-          <span class="chip">自習室 21:30まで</span>
-          <span class="chip">名駅校は駅近</span>
+        <div class="chip-row">
+          <span class="chip">一等・二等を見据えた講習</span>
+          <span class="chip">実務につながる訓練</span>
+          <span class="chip">法人研修の相談窓口</span>
+          <span class="chip">名古屋エリアで通いやすい</span>
         </div>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#courses">学年別コース</a>
-          <a class="button button-blue" href="#results">合格実績</a>
-          <a class="button button-ghost" href="#cta">無料体験</a>
-        </div>
-
-        <div class="hero-badges">
-          <span class="chip">私立中学受験</span>
-          <span class="chip">公立中高一貫校受検</span>
-          <span class="chip">名駅校</span>
+          <a class="button button-primary" href="#courses">コースを見る</a>
+          <a class="button button-blue" href="#cta">無料説明会</a>
+          <a class="button button-ghost" href="#flow">受講の流れ</a>
         </div>
       </div>
 
       <div class="hero-panel fade-up" id="heroVisual">
         <div class="hero-card">
           <div class="hero-image" id="heroImage">
-            <img src="./assets/nagoya-juku-hero.png" alt="名進研の明るい教室で先生と生徒が学ぶ様子">
+            <img src="./assets/pdc-hero.svg" alt="ドローン訓練を表現したヒーローアート">
           </div>
-          <div class="hero-caption float-slow" style="--rotate:-2deg;">
-            <strong>東海圏の受験を、<br>見える形で支える。</strong>
-            <span>合格実績、学習の流れ、校舎案内をひとつのページにまとめています。</span>
+          <div class="hero-badge float-slow" style="--rotate:4deg;">
+            <small>focus</small>
+            <strong>資格・実務・法人研修を一体化</strong>
           </div>
-          <div class="hero-stat float-slow" style="--rotate:4deg;">
-            <small>data</small>
-            <strong>39+ 校舎</strong>
+          <div class="hero-caption float" style="--rotate:-2deg;">
+            <strong>現場で使える判断力を、<br>名古屋で育てる。</strong>
+            <span>競合調査で強かった「通いやすさ」「屋内環境」「卒業後の相談」を、PDCの導線に落とし込みます。</span>
           </div>
-          <div class="hero-tag float" style="--rotate:5deg;">
-            <strong>Results<br>& Support</strong>
+          <div class="hero-stat float-slow" style="--rotate:5deg;">
+            <strong>相談しやすい入口</strong>
+            <span>個人も法人も、最初の一歩を迷わせません。</span>
           </div>
         </div>
 
         <div class="hero-rail">
           <div class="rail-card">
-            <strong>夏期講習 受付中</strong>
-            <span>小3〜小6の保護者に、学習のきっかけをわかりやすく案内。</span>
+            <strong>国家資格</strong>
+            <span>一等・二等を見据えた、わかりやすいコース案内。</span>
           </div>
           <div class="rail-card">
-            <strong>プレ中学入試</strong>
-            <span>志望校対策の前に、現在地をつかむための定番イベント。</span>
+            <strong>実務活用</strong>
+            <span>空撮、点検、測量、教育用途まで視野に入れる設計。</span>
+          </div>
+          <div class="rail-card">
+            <strong>法人相談</strong>
+            <span>社員研修や導入検討の相談先を、ひとつにまとめる。</span>
           </div>
         </div>
       </div>
@@ -815,81 +700,95 @@
 
     <section class="ticker fade-up" aria-label="キーワードの流れ">
       <div class="ticker-track">
-        <span>夏期講習 受付中</span><span>プレ中学入試</span><span>入会説明会</span><span>無料体験授業</span><span>名駅校</span><span>合格実績</span>
-        <span>夏期講習 受付中</span><span>プレ中学入試</span><span>入会説明会</span><span>無料体験授業</span><span>名駅校</span><span>合格実績</span>
+        <span>国家資格</span><span>空撮</span><span>点検</span><span>測量</span><span>法人研修</span><span>名古屋</span>
+        <span>国家資格</span><span>空撮</span><span>点検</span><span>測量</span><span>法人研修</span><span>名古屋</span>
       </div>
     </section>
 
     <section class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">データで見る名進研</span>
-          <h2>まずは、信頼の根拠を見せる。</h2>
+          <span class="eyebrow">調査から見えたこと</span>
+          <h2>名古屋で強いスクールが共通して持っていた要素。</h2>
         </div>
-        <p>ページの最初に、保護者が気にする数字を並べます。派手さよりも、判断しやすさを優先します。</p>
-      </div>
-      <div class="metrics">
-        <div class="metric"><strong data-count="40">0</strong><span>東海地区で積み上げてきた指導の年数。</span></div>
-        <div class="metric"><strong data-count="37">0</strong><span>愛知・岐阜に広がる校舎ネットワーク。</span></div>
-        <div class="metric"><strong data-count="24">0</strong><span>1クラス原則24名で、見守りやすい設計。</span></div>
-        <div class="metric"><strong data-count="21">0</strong><span>名駅校の自習室は夜まで利用可能。</span></div>
-      </div>
-    </section>
-
-    <section id="results" class="section fade-up">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">合格実績</span>
-          <h2>東海圏の志望校に、強い。</h2>
-        </div>
-        <p>東海中学、南山中学女子部、滝中学など、保護者が知りたい学校名をしっかり見せます。</p>
-      </div>
-      <div class="ranking">
-        <div class="card">
-          <h3>主な合格先</h3>
-          <p>東海中学、南山中学女子部、滝中学、愛知淑徳中学、南山中学男子部、名古屋中学、愛知中学、金城学院中学、椙山女学園中学、鶯谷中学。</p>
-          <div class="result-list">
-            <span>東海中学</span><span>南山女子部</span><span>滝中学</span><span>愛知淑徳</span><span>金城学院</span><span>名古屋中学</span>
-          </div>
-        </div>
-        <div class="photo-card">
-          <img src="./assets/nagoya-juku-school.png" alt="名駅近くの名進研校舎のイメージ" style="object-position:center 44%;">
-          <div class="badge">名駅校 / school view</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="courses" class="section fade-up course-grid">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">学年別コース</span>
-          <h2>今の学年で、何を選べばいいかがすぐわかる。</h2>
-        </div>
-        <p>低学年から高学年まで、コースの違いを短く整理。どの家庭も迷わない見せ方にしています。</p>
+        <p>競合調査では、国家資格だけでなく、屋内訓練、駅近、卒業後サポート、法人相談が選ばれる要因でした。PDC名古屋は、その期待値をすっきり整理して見せます。</p>
       </div>
       <div class="grid-3">
-        <div class="card course"><div><span class="grade">小1-2</span><h3>ピグマクラス</h3><p>楽しく学びながら、考える力と記述の芽を育てる低学年の入口です。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
-        <div class="card course"><div><span class="grade">小3</span><h3>Jクラス</h3><p>受験の土台をつくる学年。学習習慣と基礎の定着を重視します。</p></div><div class="meta"><span>算国</span><span>週1</span></div></div>
-        <div class="card course"><div><span class="grade">小4-6</span><h3>Dクラス / αクラス</h3><p>習い事との両立から最難関志望まで。目的に合わせて選べます。</p></div><div class="meta"><span>算国理社</span><span>週1〜4</span></div></div>
+        <div class="card">
+          <span class="mini-tag">通いやすさ</span>
+          <p>名古屋圏のスクールは、駅近やアクセスの良さを前面に出していました。PDCでも最初に「通いやすい」を見せます。</p>
+        </div>
+        <div class="card">
+          <span class="mini-tag">屋内練習</span>
+          <p>天候に左右されない練習環境は、大きな安心材料でした。PDCでは安定して訓練できる印象を強めます。</p>
+        </div>
+        <div class="card">
+          <span class="mini-tag">卒業後</span>
+          <p>資格取得後の相談導線、法改正情報、業務活用まで見せると、信頼感が一段上がります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="strengths" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">PDCの強み</span>
+          <h2>シンプルに、強く。迷わせない導線設計。</h2>
+        </div>
+        <p>ヒーローで結論を出し、カードで具体化する。情報は多くても、見る順番が散らからない構成にします。</p>
+      </div>
+      <div class="grid-4">
+        <div class="card"><h3>国家資格導線</h3><p>一等・二等を見据えた案内を短く整理し、入口をわかりやすく。</p></div>
+        <div class="card"><h3>実務活用</h3><p>空撮、点検、測量、教育用途まで、受講後の活用イメージを提示。</p></div>
+        <div class="card"><h3>法人向け</h3><p>研修・導入相談を、個人向けと分けて分かりやすく案内。</p></div>
+        <div class="card"><h3>名古屋発信</h3><p>都市部で学ぶメリットを、アクセスと訓練環境の両面から見せる。</p></div>
       </div>
       <div class="grid-2" style="margin-top:16px;">
         <div class="card">
-          <h3>受検・個別の選択肢</h3>
-          <p>公立中高一貫校受検、愛教大附属中学受験、個別指導など、名古屋の受験事情に合わせた選択ができます。</p>
-          <div class="tag-row">
-            <span class="mini-tag">私立中学受験</span>
-            <span class="mini-tag">公立中高一貫校受検</span>
-            <span class="mini-tag">個別指導</span>
+          <h3>受講者が最初に知りたいこと</h3>
+          <p>「資格は取れるのか」「現場で使えるのか」「法人でも相談できるのか」を、ページ冒頭で先に答えます。</p>
+          <div class="tag-row" style="margin-top:14px;">
+            <span class="feature">国家資格</span>
+            <span class="feature">空撮</span>
+            <span class="feature">点検</span>
+            <span class="feature">測量</span>
           </div>
         </div>
+        <div class="photo-card">
+          <img src="./assets/pdc-training.svg" alt="ドローン訓練と活用シーンを表現した補助アート" style="object-position:center;">
+          <div class="badge">practice / support / business</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section fade-up">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">コース</span>
+          <h2>学び方が、目的ごとにすぐわかる。</h2>
+        </div>
+        <p>実務志向の受講者と法人担当者の両方が、次に選ぶべき入り口を迷わないようにします。</p>
+      </div>
+      <div class="grid-2">
         <div class="card">
-          <h3>イベントとテスト</h3>
-          <p>プレ中学入試、志望校別プレ入試、説明会、夏期講習など、申込のきっかけを一画面にまとめます。</p>
-          <div class="tag-row">
-            <span class="mini-tag">プレ中学入試</span>
-            <span class="mini-tag">夏期講習</span>
-            <span class="mini-tag">説明会</span>
-          </div>
+          <h3>国家資格コース</h3>
+          <p>一等・二等を見据えた基本コース。まずは資格取得を軸に進めたい方向けです。</p>
+          <div class="tag-row"><span class="mini-tag">一等/二等</span><span class="mini-tag">資格取得</span><span class="mini-tag">安全運航</span></div>
+        </div>
+        <div class="card">
+          <h3>実務活用コース</h3>
+          <p>空撮、点検、測量など、仕事に転用しやすいテーマで学びたい方向けです。</p>
+          <div class="tag-row"><span class="mini-tag">空撮</span><span class="mini-tag">点検</span><span class="mini-tag">測量</span></div>
+        </div>
+        <div class="card">
+          <h3>法人研修</h3>
+          <p>社員教育、導入相談、業務活用の検討を進める企業向けの入口を用意します。</p>
+          <div class="tag-row"><span class="mini-tag">法人</span><span class="mini-tag">研修</span><span class="mini-tag">導入相談</span></div>
+        </div>
+        <div class="card">
+          <h3>体験・説明会</h3>
+          <p>まずは雰囲気を確かめたい人向け。ページ全体のCTAもここに集約します。</p>
+          <div class="tag-row"><span class="mini-tag">無料説明会</span><span class="mini-tag">体験</span><span class="mini-tag">相談</span></div>
         </div>
       </div>
     </section>
@@ -897,61 +796,49 @@
     <section id="flow" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">学習の流れ</span>
-          <h2>入塾後の道筋を、4段階で見せる。</h2>
+          <span class="eyebrow">受講の流れ</span>
+          <h2>申し込みから活用まで、4つに整理する。</h2>
         </div>
-        <p>授業だけではなく、復習・テスト・面談までをまとめて見せることで、保護者の不安を減らします。</p>
+        <p>説明会、受講、修了、活用の流れを明確にして、最初の一歩の不安を減らします。</p>
       </div>
       <div class="flow">
-        <div class="flow-step"><strong>1. 説明会</strong><p>入会前に、学習方針とクラス設計を確認します。</p></div>
-        <div class="flow-step"><strong>2. 授業</strong><p>授業で理解し、先生と一緒に疑問をその場で解消。</p></div>
-        <div class="flow-step"><strong>3. テスト</strong><p>プレ中学入試や模試で、現在地と課題を把握。</p></div>
-        <div class="flow-step"><strong>4. 伴走</strong><p>保護者会や面談で、家庭と塾が同じ目線で進めます。</p></div>
+        <div class="flow-step"><strong>1. 相談</strong><p>無料説明会や問い合わせで、目的に合うコースを確認します。</p></div>
+        <div class="flow-step"><strong>2. 訓練</strong><p>安全運航の考え方と、実践に必要な操作を段階的に学びます。</p></div>
+        <div class="flow-step"><strong>3. 修了</strong><p>国家資格や実務活用の入口として、次のステップを見通します。</p></div>
+        <div class="flow-step"><strong>4. 活用</strong><p>空撮・点検・測量・社内研修など、現場の使い道までつなげます。</p></div>
       </div>
     </section>
 
-    <section id="school" class="section fade-up">
+    <section id="uses" class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">名駅校</span>
-          <h2>駅から通いやすく、夜まで学べる。</h2>
+          <span class="eyebrow">活用シーン</span>
+          <h2>資格の先にある、仕事の使い道を見せる。</h2>
         </div>
-        <p>校舎の案内は、場所・電話・受付時間を短く整理。通わせる側の判断材料を優先します。</p>
+        <p>スクールの価値は、飛ばせるようになることだけではありません。どんな現場に繋がるのかを先に見せます。</p>
       </div>
-      <div class="access">
-        <div class="card">
-          <h3>名駅校のポイント</h3>
-          <p>名古屋駅から徒歩圏。引率、自習室、教師常駐で、夜の通塾にも安心感があります。</p>
-          <div class="tag-row">
-            <span class="mini-tag">駅近</span>
-            <span class="mini-tag">自習室 21:30まで</span>
-            <span class="mini-tag">教師常駐</span>
-          </div>
-        </div>
-        <div class="map-card">
-          <strong style="font-family:'M PLUS Rounded 1c',sans-serif;font-size:1.15rem;color:var(--primary);">名進研 名駅校</strong>
-          <div class="meta">
-            <div><span>住所</span><span>名古屋市西区名駅2丁目34-19</span></div>
-            <div><span>アクセス</span><span>名古屋駅から徒歩約7分</span></div>
-            <div><span>電話</span><span>052-582-2005</span></div>
-            <div><span>受付</span><span>火〜金 14:00〜16:30</span></div>
-          </div>
-        </div>
+      <div class="grid-3">
+        <div class="card"><h3>空撮</h3><p>映像制作や記録用途に。安全な飛行計画と安定した撮影を意識します。</p></div>
+        <div class="card"><h3>点検</h3><p>建物や設備の確認に。近接運航の考え方や、記録の見せ方が重要です。</p></div>
+        <div class="card"><h3>測量</h3><p>広い現場の把握に。再現性のある飛行と、データ活用の基礎を学びます。</p></div>
+        <div class="card"><h3>防災</h3><p>自治体・企業の備えとして、ドローン活用の可能性を理解します。</p></div>
+        <div class="card"><h3>教育</h3><p>社内教育や研修導入に。継続して学べる構造にします。</p></div>
+        <div class="card"><h3>相談導線</h3><p>導入前の相談窓口を明確にし、問い合わせのハードルを下げます。</p></div>
       </div>
     </section>
 
     <section class="section fade-up">
       <div class="section-head">
         <div>
-          <span class="eyebrow">保護者の声</span>
-          <h2>「わかりやすい」「相談しやすい」が選ばれる理由。</h2>
+          <span class="eyebrow">実感値</span>
+          <h2>受講後に残るのは、操作だけではない。</h2>
         </div>
-        <p>保護者の安心感は、塾選びの決め手になりやすいので、短い声で見せます。</p>
+        <p>体験談を盛りすぎず、受講者が得る変化を静かに言葉にします。</p>
       </div>
-      <div class="voices">
-        <div class="card voice"><strong>質問しやすい</strong><p>授業前後に先生へ相談でき、子どもも前向きに通えています。</p></div>
-        <div class="card voice"><strong>通いやすい</strong><p>駅近で引率もあるので、夜の通塾不安が少ないです。</p></div>
-        <div class="card voice"><strong>見通しが立つ</strong><p>模試や説明会の案内がまとまっていて、次に何をすればよいか分かりやすいです。</p></div>
+      <div class="grid-3">
+        <div class="card"><h3>判断が早くなる</h3><p>飛ばす前の確認ポイントが整理され、動きが安定します。</p></div>
+        <div class="card"><h3>目的が定まる</h3><p>資格・撮影・点検・研修のどこに進むか、見通しが立ちます。</p></div>
+        <div class="card"><h3>相談しやすい</h3><p>法人も個人も、次の一手を聞ける入口があるだけで安心感が変わります。</p></div>
       </div>
     </section>
 
@@ -959,51 +846,52 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">FAQ</span>
-          <h2>よくある質問を、先に解消する。</h2>
+          <h2>よくある不安を、先に解消する。</h2>
         </div>
-        <p>受験開始時期、クラス、講習、保護者連携。よくある問いに短く答えます。</p>
+        <p>申し込み前に迷いやすい点だけを短く並べます。</p>
       </div>
       <div class="faq">
         <details open>
-          <summary>受験学習は何年生から始めるのがよいですか？</summary>
-          <p>3・4年生での開始が、カリキュラムと両立を考えた目安です。</p>
+          <summary>未経験でも大丈夫ですか？</summary>
+          <p>はい。基礎から段階的に進める前提で、最初の不安を減らす構成にします。</p>
         </details>
         <details>
-          <summary>集団指導についていけるか心配です。</summary>
-          <p>質問対応、面談、クラス設計でフォローしながら進めます。</p>
+          <summary>法人での受講相談もできますか？</summary>
+          <p>できます。研修目的や導入目的に合わせて、別導線で案内する想定です。</p>
         </details>
         <details>
-          <summary>講習は受ける必要がありますか？</summary>
-          <p>春・夏・冬の講習は、復習と定着の大切な機会として位置づけています。</p>
+          <summary>資格取得のあとに何ができますか？</summary>
+          <p>空撮、点検、測量、社内研修など、実務活用を見据えた案内に繋げます。</p>
         </details>
         <details>
-          <summary>家庭との連絡はどうなりますか？</summary>
-          <p>保護者会、個別面談、電話連絡を通じて、家庭と塾が同じ認識を持てるようにします。</p>
+          <summary>まず何から見ればいいですか？</summary>
+          <p>「コースを見る」から目的別の入口を確認し、その後に無料説明会へ進むのが自然です。</p>
         </details>
       </div>
     </section>
 
     <section id="cta" class="cta fade-up">
       <div>
-        <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.18);">資料請求 / 体験授業</span>
-        <h2 style="margin-top:12px;">まずは、教室の空気を見てください。</h2>
-        <p>名進研の学び方、校舎の雰囲気、保護者サポートを一度に確認できる導線を、わかりやすくまとめました。</p>
-        <div class="hero-actions">
+        <span class="eyebrow" style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.18);">資料請求 / 体験 / 相談</span>
+        <h2 style="margin-top:12px;">まずは、PDC名古屋の空気を見てください。</h2>
+        <p>PDC名古屋のページでは、国家資格、実務活用、法人相談をひとつの導線にまとめ、迷わず次へ進める構成にしています。</p>
+        <div class="cta-stack" style="margin-top:18px;">
           <a class="button button-primary" href="#top">ページ上部へ</a>
-          <a class="button button-ghost" href="#school">名駅校を見る</a>
+          <a class="button button-blue" href="#courses">コースを見る</a>
+          <a class="button button-ghost" href="#uses">法人相談を見る</a>
         </div>
       </div>
       <div class="cta-card">
-        <strong style="font-family:'M PLUS Rounded 1c',sans-serif;font-size:1.15rem;">名進研 中学受験</strong>
+        <strong style="font-family:'Inter',sans-serif;font-size:1.1rem;">PDC Drone School Nagoya</strong>
         <div class="meta">
-          <div><span>対応</span><span>私立中学受験 / 公立中高一貫校受検</span></div>
-          <div><span>対象</span><span>小学1年生〜6年生</span></div>
-          <div><span>重点</span><span>実績 / 通いやすさ / 保護者サポート</span></div>
+          <div><span>重点</span><span>国家資格 / 実務活用 / 法人研修</span></div>
+          <div><span>印象</span><span>シンプル / スタイリッシュ / 都市型</span></div>
+          <div><span>導線</span><span>説明会 / 相談 / コース案内</span></div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">Copyright © Meishinken Concept Site</footer>
+    <footer class="footer">Copyright © PDC Drone School Nagoya Concept Site</footer>
   </div>
 
   <script>
@@ -1021,27 +909,6 @@
       el.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
       observer.observe(el);
     });
-
-    const counters = document.querySelectorAll('[data-count]');
-    const animateCount = (el, target) => {
-      const duration = 1100;
-      const start = performance.now();
-      const tick = (now) => {
-        const progress = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(target * eased).toLocaleString('ja-JP');
-        if (progress < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    };
-    const countObserver = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        animateCount(entry.target, Number(entry.target.dataset.count || '0'));
-        countObserver.unobserve(entry.target);
-      }
-    }, { threshold: 0.5 });
-    counters.forEach((el) => countObserver.observe(el));
 
     const heroImage = document.getElementById('heroImage');
     const heroVisual = document.getElementById('heroVisual');
