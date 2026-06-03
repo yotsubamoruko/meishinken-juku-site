@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-label="会社概要背景">
+  <rect width="1600" height="600" fill="#4a5f39"/>
+  <rect x="0" y="0" width="1600" height="600" fill="rgba(0,0,0,.16)"/>
+  <rect x="170" y="90" width="1260" height="420" rx="34" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.24)"/>
+  <g fill="#fff" opacity=".18">
+    <rect x="240" y="180" width="150" height="220" rx="14"/>
+    <rect x="420" y="150" width="150" height="250" rx="14"/>
+    <rect x="600" y="130" width="150" height="270" rx="14"/>
+    <rect x="780" y="170" width="150" height="230" rx="14"/>
+    <rect x="960" y="150" width="150" height="250" rx="14"/>
+    <rect x="1140" y="190" width="150" height="210" rx="14"/>
+  </g>
+  <text x="800" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="64" font-weight="900" fill="#fff">Company</text>
+</svg>

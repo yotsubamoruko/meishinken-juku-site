@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-label="制作実績背景">
+  <rect width="1600" height="600" fill="#3b4f2c"/>
+  <rect x="0" y="0" width="1600" height="600" fill="rgba(0,0,0,.18)"/>
+  <g opacity=".18" fill="#fff">
+    <rect x="120" y="120" width="300" height="160" rx="18"/>
+    <rect x="460" y="120" width="300" height="160" rx="18"/>
+    <rect x="800" y="120" width="300" height="160" rx="18"/>
+    <rect x="1140" y="120" width="300" height="160" rx="18"/>
+    <rect x="200" y="340" width="260" height="120" rx="18"/>
+    <rect x="560" y="340" width="260" height="120" rx="18"/>
+    <rect x="920" y="340" width="260" height="120" rx="18"/>
+  </g>
+  <text x="800" y="315" text-anchor="middle" font-family="system-ui, sans-serif" font-size="64" font-weight="900" fill="#fff">Template List</text>
+</svg>
