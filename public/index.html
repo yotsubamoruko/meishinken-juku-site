@@ -136,7 +136,7 @@ h2 img { width: 100px; transform: rotate(-10deg); position: absolute; left: -10p
 @media (min-width:800px) { .list-grid1 .list figure.icon { width: 150px; margin-top: -50px; } }
 
 .list-grid-simple .list * { margin: 0; padding: 0; }
-.list-grid-simple { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+.list-grid-simple { display: grid; grid-template-columns: 1fr; gap: 1.4rem; }
 .list-grid-simple .list { display: grid; position: relative; }
 .list-grid-simple .list h4 { margin-top: .5rem; font-weight: normal; }
 @media (min-width:800px) { .list-grid-simple { grid-template-columns: repeat(3, 1fr); } }
@@ -215,6 +215,26 @@ section > .bg-slideup:first-child { margin-top: calc(-1 * var(--space-large)); }
 .pc { display: none; }
 @media (min-width:900px) { .pc { display: block; } }
 @media (min-width:700px) { .c2 { display: flex; gap: 2rem; } .c2 .title { width: 30%; } .c2 .text { flex: 1; } }
+@media (max-width:699px) {
+  section { padding: 2rem 1rem; }
+  #mainimg { padding-top: 180%; }
+  #mainimg > div { top: 52px; }
+  #mainimg .text { font-size: 1.95rem; line-height: 1.35; margin-top: 12px; }
+  #mainimg .btn { flex-direction: column; width: 100%; }
+  #mainimg .btn a { width: 100%; text-align: center; }
+  .list-grid1 .list, .list-normal1 .list, .ta1 caption, .ta1 td, .ta1 th, .faq dt, .faq dd, .list-c2 .list, footer { font-size: .98rem; }
+  .list-grid1 .list { padding: 1.3rem; margin-bottom: 1.2rem; }
+  .list-grid1 .list figure.icon { width: 88px; margin-top: -30px; }
+  .list-grid1 .list h4 { font-size: 1.1rem; }
+  .list-grid1 .list p { font-size: .88rem; line-height: 1.7; }
+  .list-c2 .list { padding: 3rem 1rem; border-radius: 20px; }
+  .list-c2 h4 .main-text { font-size: 2.2rem; padding-bottom: 1.6rem; }
+  .list-normal1 .list { padding: 1.4rem; }
+  .list-normal1 figure { width: 100%; max-width: 220px; }
+  .ta1.plan { min-width: 320px; }
+  .text-slide { font-size: 18vw; }
+  footer { padding: 1.5rem 1rem; }
+}
 
 footer {
   background: var(--primary-color); color: var(--primary-inverse-color); padding: 2rem; display: flex; flex-direction: column-reverse;
