@@ -3,23 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お問い合わせ｜Easy5</title>
+<title>Contact | Cafe Laima</title>
+<link rel="stylesheet" href="styles.css">
 <style>
-  body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif;background:#f5f1ea;color:#1d1b18}
-  .wrap{width:min(calc(100% - 32px),900px);margin:0 auto;padding:28px 0}
-  .box{background:#fffdfa;border:1px solid #e4ddd2;border-radius:24px;box-shadow:0 16px 35px rgba(74,59,42,.10);padding:28px}
-  a.btn{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 18px;border-radius:999px;background:#6baf92;color:#fff;font-weight:800;text-decoration:none}
-  h1{margin:0 0 12px;font-size:2rem}
-  p{line-height:1.9;color:#66615b}
+body { padding: 24px 0 48px; }
+.page { width: min(900px, calc(100% - 32px)); margin: 0 auto; }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="box">
-      <h1>お問い合わせ</h1>
-      <p>Easy5へのお問い合わせページです。実運用ではフォームに接続してください。</p>
-      <p><a class="btn" href="index.html">トップへ戻る</a></p>
+<main class="page reveal is-visible">
+  <p class="eyebrow">CONTACT</p>
+  <h1 style="font-family:Cormorant Garamond,serif;font-size:clamp(3rem,8vw,5rem);line-height:.95;margin:12px 0 18px;">Cafe Laima へのご連絡</h1>
+  <p style="color:var(--muted);line-height:1.9;">営業時間や予約は、電話・メール・公式サイトからご確認ください。座敷席や子連れ利用についても事前相談がおすすめです。</p>
+  <div class="access-grid" style="margin-top:24px;">
+    <div class="map-card">
+      <p class="label">PHONE</p>
+      <strong>080-8437-3641</strong>
+      <p>10:00-16:00 / Sun, Mon closed</p>
+    </div>
+    <div class="map-card">
+      <p class="label">MAIL</p>
+      <strong>laimaherb@gmail.com</strong>
+      <p>予約・問い合わせはこちら。</p>
     </div>
   </div>
+  <p style="margin-top:24px;"><a class="button primary" href="index.html">トップへ戻る</a></p>
+</main>
 </body>
 </html>

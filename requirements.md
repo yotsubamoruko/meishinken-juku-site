@@ -1,64 +1,37 @@
-# Gluck 電気工事サイト 要件定義
+# Cafe Laima Website Requirements
 
-## 目的
+## Project Goal
+- Create a stylish, premium cafe website for Anjo City.
+- Use a calm Nordic editorial direction with rich motion and polished visual storytelling.
+- Publish the site on GitHub Pages.
 
-- 電気工事会社としての信頼感を強く伝える
-- 人材供給、現場管理、自社施工の3本柱を明快に見せる
-- 協力会社ネットワークと対応工事の広さを一目で理解できるようにする
+## Selected Cafe
+- Cafe Laima
+- Location: Anjo City, Sakurai-cho Sakuranishi 1-1-10
+- Hours: 10:00-16:00 (L/O 15:30)
+- Closed: Sunday and Monday
+- Core appeal: Nordic-Latvian cafe, organic vegetables, imported herbal tea, family-friendly tatami seating
 
-## 想定ユーザー
+## Content Structure
+- Hero with strong first impression and key facts
+- Concept section
+- Menu highlights
+- Space / atmosphere section
+- Access and business info section
+- Reservation / contact CTA
 
-- 施工会社への外注先を探している法人
-- 電気工事、人材供給、現場管理の相談先を探す企業
-- 協力会社や現場職人として案件を探す個人・事業者
+## UX / Motion
+- Rich but tasteful scroll animations
+- Card hover lifts and soft reveals
+- Parallax-like hero layers
+- No gimmicky motion; keep it elegant
 
-## 伝えるべき軸
+## Image Plan
+- Generate raster images with Codex image generation
+- Use one hero image and one food/lifestyle detail image
+- Keep the imagery premium, warm, and editorial
 
-- 人材供給も自社施工も扱えること
-- 全国対応の体制があること
-- 施工管理システムで現場を止めないこと
-- 自社請負工事の実績があること
-- 協力会社ネットワークの広さ
-
-## ページ構成
-
-- Hero
-- 数字で見る強み
-- 事業紹介3カラム
-- 対応工事アイコン一覧
-- 施工実績ギャラリー
-- 協力会社ネットワーク
-- 選ばれる理由
-- 会社情報 / CTA
-
-## コンテンツ要件
-
-- Heroには強いコピーと数値ブロックを置く
-- 事業紹介は「人材供給」「現場管理」「自社請負工事」の3つに分ける
-- 対応工事は横並びのアイコン群で見せる
-- 施工実績はタイル型にする
-- 地図表現は日本全体のネットワーク感を出す
-- 最後は電話と問い合わせフォームに誘導する
-
-## デザイン方針
-
-- 黒〜濃紺ベースに金色のアクセント
-- 産業・インフラ・施工管理の重厚感を出す
-- 余白はしっかり取りつつ、情報密度は高くする
-- 写真は夜景、工場、太陽光、設備、作業員で構成する
-- アニメーションは控えめだが、重さを出しすぎない
-
-## 画像方針
-
-- ヒーローは工場夜景と作業員の組み合わせ
-- 補助画像は太陽光、受変電、設備点検、施工中の現場
-- 文字を入れず、実写風の静止画として使う
-
-## 成果物
-
-- `requirements.md`
-- `design.md`
-- `research.md`
-- `public/index.html`
-- `public/assets/*`
-- GitHub Pages で公開
+## Technical Notes
+- Build as static HTML/CSS/JS for GitHub Pages
+- Preserve mobile readability first
+- Reuse existing Pages workflow that deploys from `public/`

@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Easy5 OGP"><rect width="1200" height="630" fill="#f5f1ea"/><rect x="48" y="48" width="1104" height="534" rx="32" fill="#fffdfa" stroke="#e4ddd2"/><text x="90" y="160" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#6baf92">名古屋のホームページ制作ならEasy5</text><text x="90" y="240" font-family="system-ui, sans-serif" font-size="54" font-weight="900" fill="#1d1b18">月額5,000円のサブスクWeb制作</text><rect x="90" y="304" width="420" height="20" rx="10" fill="#d9c7a4"/><rect x="90" y="356" width="300" height="86" rx="18" fill="#f8f3ea" stroke="#e4ddd2"/><rect x="412" y="356" width="300" height="86" rx="18" fill="#f8f3ea" stroke="#e4ddd2"/><rect x="734" y="356" width="380" height="86" rx="18" fill="#6baf92"/><text x="770" y="410" font-family="system-ui, sans-serif" font-size="30" font-weight="900" fill="#fff">無料相談受付中</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Cafe Laima OGP">
+  <rect width="1200" height="630" fill="#07101b"/>
+  <rect x="48" y="48" width="1104" height="534" rx="32" fill="#0E1B2E" stroke="rgba(255,255,255,0.08)"/>
+  <text x="90" y="160" font-family="Inter, sans-serif" font-size="24" font-weight="700" letter-spacing="0.2em" fill="#C8A96A">NORDIC LATVIA CAFE</text>
+  <text x="90" y="255" font-family="Cormorant Garamond, serif" font-size="66" font-weight="700" fill="#F7F3EB">Cafe Laima</text>
+  <text x="90" y="315" font-family="Noto Sans JP, sans-serif" font-size="28" font-weight="500" fill="#C8CEDB">安城市桜井の北欧風カフェ</text>
+  <rect x="90" y="350" width="420" height="18" rx="9" fill="#C8A96A"/>
+  <text x="90" y="430" font-family="Noto Sans JP, sans-serif" font-size="26" font-weight="700" fill="#F7F3EB">Organic / Herb Tea / Family Welcome</text>
+</svg>

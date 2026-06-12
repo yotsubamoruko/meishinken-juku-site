@@ -1,79 +1,79 @@
 ---
-version: gamma
-name: Industrial Night Grid
-description: Dark industrial corporate homepage with gold accents, dense information blocks, and a high-trust construction aesthetic
+version: alpha
+name: Nordic Quiet Luxury
+description: Elegant cafe website with deep navy, cream, soft gold, and editorial motion. Inspired by Nordic interiors and premium lifestyle magazines.
 colors:
-  primary: "#081123"
-  secondary: "#101B36"
-  tertiary: "#D8A53D"
-  accent: "#F0C35A"
-  sky: "#0F172A"
-  surface: "#10192E"
-  soft: "#131E36"
-  line: "#31405D"
-  text: "#F6F7FB"
-  muted: "#B8C1D9"
+  primary: "#0E1B2E"
+  secondary: "#16253D"
+  tertiary: "#C8A96A"
+  accent: "#E8D8B8"
+  sky: "#7FA6D8"
+  surface: "#111E33"
+  soft: "#F6F1E7"
+  line: "rgba(255,255,255,0.12)"
+  text: "#F8F7F2"
+  muted: "#C7CCDB"
 typography:
   h1:
-    fontFamily: "Inter"
-    fontSize: "5.4rem"
-    fontWeight: 800
-    lineHeight: 1.0
+    fontFamily: "Cormorant Garamond"
+    fontSize: "5.6rem"
+    fontWeight: 700
+    lineHeight: 0.95
   h2:
-    fontFamily: "Inter"
-    fontSize: "2.5rem"
-    fontWeight: 800
-    lineHeight: 1.08
+    fontFamily: "Cormorant Garamond"
+    fontSize: "2.7rem"
+    fontWeight: 700
+    lineHeight: 1.02
   h3:
     fontFamily: "Inter"
-    fontSize: "1.15rem"
+    fontSize: "1.1rem"
     fontWeight: 700
-    lineHeight: 1.25
+    lineHeight: 1.3
   body:
     fontFamily: "Noto Sans JP"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.82
+    lineHeight: 1.85
   label:
-    fontFamily: "Noto Sans JP"
-    fontSize: 0.82rem
+    fontFamily: "Inter"
+    fontSize: 0.8rem
     fontWeight: 700
-    letterSpacing: "0.08em"
+    letterSpacing: "0.18em"
 rounded:
-  sm: 12px
-  md: 16px
-  lg: 22px
-  xl: 28px
+  sm: 14px
+  md: 20px
+  lg: 28px
+  xl: 36px
 spacing:
   xs: 8px
   sm: 12px
   md: 16px
   lg: 24px
-  xl: 32px
+  xl: 36px
 components:
   button-primary:
     backgroundColor: "{colors.tertiary}"
-    textColor: "#111111"
+    textColor: "#151515"
     rounded: "999px"
     padding: "0 22px"
   button-ghost:
-    backgroundColor: "rgba(255,255,255,0.06)"
+    backgroundColor: "rgba(255,255,255,0.08)"
     textColor: "{colors.text}"
     rounded: "999px"
     padding: "0 22px"
   card:
-    backgroundColor: "{colors.surface}"
+    backgroundColor: "rgba(255,255,255,0.06)"
     textColor: "{colors.text}"
     rounded: "{rounded.lg}"
-    padding: "22px"
+    padding: "24px"
   section-band:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.text}"
     rounded: "{rounded.lg}"
-    padding: "20px"
+    padding: "22px"
   badge-accent:
-    backgroundColor: "{colors.tertiary}"
-    textColor: "#111111"
+    backgroundColor: "{colors.accent}"
+    textColor: "#172033"
     rounded: "{rounded.xl}"
     padding: "8px 12px"
   divider-line:
@@ -82,7 +82,7 @@ components:
     rounded: "{rounded.xl}"
     padding: "0"
   label-muted:
-    backgroundColor: "rgba(255,255,255,0.06)"
+    backgroundColor: "rgba(255,255,255,0.07)"
     textColor: "{colors.muted}"
     rounded: "{rounded.xl}"
     padding: "8px 10px"
@@ -90,31 +90,31 @@ components:
 
 ## Overview
 
-Heavy industrial homepage for an electrical construction company.
-Use a dark navy base, gold accents, and high-density blocks to evoke trust, scale, and on-site control.
+Premium cafe site for Cafe Laima in Anjo City.
+Present the place as a calm Nordic-lifestyle destination with organic food, herbal tea, family-friendly seating, and a polished editorial mood.
 
 ## Visual Direction
 
-- Hero is cinematic and dense, with a major headline and metric boxes.
-- Use strong vertical rhythm and clear separators.
-- Keep photos sharp, nocturnal, and practical.
-- Avoid soft lifestyle visuals; this is infrastructure work.
+- Deep navy and cream balance, with soft gold accents.
+- Editorial hero, spacious grids, elegant type, and subtle motion.
+- Use real-feeling food and interior imagery with warm highlights.
+- Avoid generic cafe pastel styling; keep it refined and distinctive.
 
 ## Motion
 
-- Subtle parallax on the hero collage.
-- Section reveal on scroll.
-- Numbers animate once when visible.
-- Use slow map glow and card lift on hover.
+- Fade-up sections on scroll.
+- Gentle parallax or layer drift in the hero.
+- Soft hover lift on cards and buttons.
+- Staggered reveal for menu and access details.
 
 ## Do
 
-- Show scale, control, and nationwide reach.
-- Separate business pillars clearly.
-- Make contact actions obvious.
+- Show the Nordic / Latvian story clearly.
+- Make the open hours, address, and contact easy to find.
+- Keep the site feeling premium and calm.
 
 ## Don't
 
-- Don’t make it feel like a generic corporate template.
-- Don’t use bright pastel tones or playful illustration.
-- Don’t hide the heavy industrial character.
+- Don't use overly playful colors.
+- Don't overload with decoration.
+- Don't hide practical info below the fold.
